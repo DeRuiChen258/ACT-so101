@@ -1,0 +1,16 @@
+# actlab structured log (JSON Lines) — stage=repo
+{
+"ts": "2026-09-19T19:09:07+08:00",
+"level": "INFO",
+"stage": "repo",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:09:07+08:00",
+"level": "INFO",
+"stage": "repo",
+"module": "stage",
+"message": "repo -> PASS: commit=c73cec56b04f50ebe9286c79905103866d970169 branch=main ACT impl=policies/act/",
+"duration_ms": 864.01355100000001
+}

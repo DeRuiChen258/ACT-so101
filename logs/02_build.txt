@@ -1,0 +1,112 @@
+=== [1/4] configure build/local (ACTLAB_WITH_TORCH=OFF) ===
+-- actlab: ACTLAB_WITH_TORCH=OFF (pure-logic local build)
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/build/local
+[1/16] Building CXX object CMakeFiles/actlab_local.dir/apps/actlab_main.cpp.o
+[2/16] Building CXX object CMakeFiles/actlab_core.dir/src/npy_io.cpp.o
+[3/16] Building CXX object CMakeFiles/actlab_core.dir/src/manifest.cpp.o
+[4/16] Building CXX object CMakeFiles/actlab_core.dir/src/stages/stage_repo.cpp.o
+[5/16] Building CXX object CMakeFiles/actlab_core.dir/src/stages/stage_env.cpp.o
+[6/16] Building CXX object CMakeFiles/actlab_core.dir/src/context.cpp.o
+[7/16] Building CXX object CMakeFiles/actlab_core.dir/src/cli.cpp.o
+[8/16] Building CXX object CMakeFiles/actlab_core.dir/src/stages/stage_install.cpp.o
+[9/16] Building CXX object CMakeFiles/actlab_core.dir/src/stages/stage_dataset.cpp.o
+[10/16] Building CXX object CMakeFiles/actlab_core.dir/src/stages/stage_verify.cpp.o
+/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/cpp/src/stages/stage_verify.cpp: In function ‘actlab::StageResult actlab::run_stage_verify(RunContext&)’:
+/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/cpp/src/stages/stage_verify.cpp:166:19: warning: C++ designated initializers only available with ‘-std=c++20’ or ‘-std=gnu++20’ [-Wc++20-extensions]
+  166 |       ProcOptions{.log_path = reload_log, .echo = true, .timeout_seconds = 600});
+      |                   ^
+/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/cpp/src/stages/stage_verify.cpp:166:43: warning: C++ designated initializers only available with ‘-std=c++20’ or ‘-std=gnu++20’ [-Wc++20-extensions]
+  166 |       ProcOptions{.log_path = reload_log, .echo = true, .timeout_seconds = 600});
+      |                                           ^
+/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/cpp/src/stages/stage_verify.cpp:166:57: warning: C++ designated initializers only available with ‘-std=c++20’ or ‘-std=gnu++20’ [-Wc++20-extensions]
+  166 |       ProcOptions{.log_path = reload_log, .echo = true, .timeout_seconds = 600});
+      |                                                         ^
+/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/cpp/src/stages/stage_verify.cpp:166:79: warning: missing initializer for member ‘actlab::ProcOptions::cwd’ [-Wmissing-field-initializers]
+  166 |       ProcOptions{.log_path = reload_log, .echo = true, .timeout_seconds = 600});
+      |                                                                               ^
+/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/cpp/src/stages/stage_verify.cpp:166:79: warning: missing initializer for member ‘actlab::ProcOptions::env’ [-Wmissing-field-initializers]
+[11/16] Building CXX object CMakeFiles/actlab_core.dir/src/stages/stage_evidence.cpp.o
+/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/cpp/src/stages/stage_evidence.cpp: In function ‘actlab::ScreenshotResult actlab::capture_terminal_screenshot(RunContext&, const std::string&, const std::string&, const std::string&, int)’:
+/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/cpp/src/stages/stage_evidence.cpp:98:65: warning: unused parameter ‘title’ [-Wunused-parameter]
+   98 |                                              const std::string& title, const std::string& shell_command,
+      |                                              ~~~~~~~~~~~~~~~~~~~^~~~~
+[12/16] Building CXX object CMakeFiles/actlab_core.dir/src/stages/stage_train.cpp.o
+/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/cpp/src/stages/stage_train.cpp:17:13: warning: ‘std::string actlab::{anonymous}::json_escape_light(const std::string&)’ defined but not used [-Wunused-function]
+   17 | std::string json_escape_light(const std::string& raw) {
+      |             ^~~~~~~~~~~~~~~~~
+[13/16] Building CXX object CMakeFiles/actlab_core.dir/src/stages/stage_report.cpp.o
+[14/16] Linking CXX static library libactlab_core.a
+[15/16] Linking CXX executable actlab_tests
+[16/16] Linking CXX executable actlab_local
+=== [2/4] configure build/gpu (LibTorch /home/violet/Workspace/IDE/libtorch) ===
+-- PyTorch: CUDA detected: 13.2
+-- PyTorch: CUDA nvcc is: /usr/local/cuda-13.2/bin/nvcc
+-- PyTorch: CUDA toolkit directory: /usr/local/cuda-13.2
+-- PyTorch: Header version is: 13.2
+-- /usr/local/cuda-13.2/lib64/libnvrtc.so shorthash is 9ca3b872
+-- USE_CUDNN is set to 0. Compiling without cuDNN support
+-- USE_CUSPARSELT is set to 0. Compiling without cuSPARSELt support
+-- USE_CUDSS is set to 0. Compiling without cuDSS support
+-- USE_CUFILE is set to 0. Compiling without cuFile support
+-- Autodetected CUDA architecture(s):  12.0
+CMake Warning at /home/violet/Workspace/IDE/libtorch/share/cmake/Caffe2/public/cuda.cmake:340 (message):
+  pytorch is not compatible with `CMAKE_CUDA_ARCHITECTURES` and will ignore
+  its value.  Please configure `TORCH_CUDA_ARCH_LIST` instead.
+Call Stack (most recent call first):
+  /home/violet/Workspace/IDE/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)
+  /home/violet/Workspace/IDE/libtorch/share/cmake/Torch/TorchConfig.cmake:62 (find_package)
+  CMakeLists.txt:59 (find_package)
+
+
+-- Added CUDA NVCC flags for: -gencode;arch=compute_120,code=sm_120
+CMake Warning at /home/violet/Workspace/IDE/libtorch/share/cmake/Torch/TorchConfig.cmake:22 (message):
+  library kineto not found.
+Call Stack (most recent call first):
+  /home/violet/Workspace/IDE/libtorch/share/cmake/Torch/TorchConfig.cmake:119 (append_torchlib_if_found)
+  CMakeLists.txt:59 (find_package)
+
+
+-- actlab: LibTorch found at /home/violet/Workspace/IDE/libtorch
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/build/gpu
+ninja: no work to do.
+=== [3/4] unit tests (no GPU / no network) ===
+[PASS] sha256_known_vectors
+[PASS] sha256_file_matches_string
+[PASS] metrics_parse_realistic_line
+[PASS] metrics_parse_rejects_noise
+[PASS] metrics_log_and_csv_roundtrip
+[PASS] schema_valid_dataset_passes
+[PASS] schema_detects_dimension_mismatch
+[PASS] schema_detects_missing_camera
+[PASS] schema_missing_file_fails
+[PASS] config_loader_accepts_valid_config
+[PASS] config_loader_rejects_multiple_obs_steps
+[PASS] config_loader_rejects_action_steps_over_chunk
+[PASS] config_loader_rejects_missing_field
+
+unit tests: 13 passed, 0 failed
+=== [4/4] gpu_smoke (LibTorch CUDA) ===
+# GPU / LibTorch probe (C++)
+
+| item | value |
+| --- | --- |
+| torch::cuda::is_available() | true |
+| device_count | 1 |
+| device_name | NVIDIA GeForce RTX 5070 Laptop GPU |
+| capability | 12.0 |
+| total memory (MiB) | 7799 |
+| free memory (MiB) | 7601 |
+| libtorch version | 2.12.0 |
+| libtorch build-version |  |
+| CUDA runtime header version | 13.2 |
+| _GLIBCXX_USE_CXX11_ABI | 1 |
+| driver version | 615.71.09 |
+| CUDA UMD version | 13.4 |
+
+matmul[1024x1024] finite=true checksum=2.68735e+08
+memory: allocated=44 MiB reserved=54 MiB peak=44 MiB
+GPU_SMOKE_PASS

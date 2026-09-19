@@ -1,0 +1,50 @@
+# ==============================================================================
+# act_baseline.yaml — ACT 基线实验的唯一超参事实源
+# 参数名与默认值依据：src/lerobot/policies/act/configuration_act.py (v0.6.2)
+#   n_obs_steps / chunk_size / n_action_steps / vision_backbone / dim_model /
+#   n_heads / dim_feedforward / n_encoder_layers / n_decoder_layers / use_vae /
+#   latent_dim / n_vae_encoder_layers / dropout / kl_weight / temporal_ensemble_coeff /
+#   optimizer_lr / optimizer_weight_decay
+# 说明：temporal_ensemble_coeff: 0.0 表示不启用（configuration_act 要求其非 None 时
+#       n_action_steps 必须为 1）；本基线采用 action chunking（n_action_steps=16）。
+# ==============================================================================
+
+policy:
+  n_obs_steps: 1
+  chunk_size: 100
+  n_action_steps: 16
+  vision_backbone: resnet18
+  dim_model: 512
+  dim_feedforward: 3200
+  n_heads: 8
+  n_encoder_layers: 4
+  n_decoder_layers: 1
+  use_vae: true
+  latent_dim: 32
+  n_vae_encoder_layers: 4
+  dropout: 0.1
+  kl_weight: 10.0
+  temporal_ensemble_coeff: 0.0
+
+training:
+  optimizer: adamw
+  optimizer_lr: 1.0e-05
+  optimizer_weight_decay: 1.0e-04
+  batch_size: 8
+  steps: 3000
+  num_workers: 2
+  seed: 1000
+  save_freq: 500
+  log_freq: 50
+  precision: fp32
+  policy_type: act
+  job_name: act_baseline
+
+dataset:
+  repo_id: lerobot/svla_so101_pickplace
+  fallback_repo_id: lerobot/pusht
+  source_priority: modelscope,hf
+  expected_fps: 30
+  expected_state_dim: 6
+  expected_action_dim: 6
+  min_episodes: 10

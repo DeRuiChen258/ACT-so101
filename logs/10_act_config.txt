@@ -1,0 +1,25 @@
+# Stage S8 config freeze
+# timestamp: 2026-09-19T19:16:49+08:00
+# config_sha256(act_baseline|paths|runtime): ef5a67204b30d77580b45db82fe93fb9bbfdd238b0f1b24c5d7aec39e3e55b69
+
+chunk_size            : 100
+n_action_steps        : 16
+n_obs_steps           : 1
+vision_backbone       : resnet18
+dim_model             : 512
+dim_feedforward       : 3200
+n_heads               : 8
+n_encoder_layers      : 4
+n_decoder_layers      : 1
+use_vae / latent_dim  : true / 32
+dropout / kl_weight   : 0.1 / 10
+temporal_ensemble     : none
+optimizer / lr / wd   : adamw / 1e-05 / 0.0001
+batch_size            : 8
+steps                 : 3000
+num_workers           : 2
+seed / precision      : 1000 / fp32
+save_freq / log_freq  : 500 / 50
+policy_type / job     : act / act_baseline
+dataset.repo_id       : lerobot/svla_so101_pickplace
+device                : cuda

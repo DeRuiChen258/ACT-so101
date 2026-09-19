@@ -1,0 +1,14 @@
+# final environment / artifact overview
+# generated_at: 2026-09-19T20:25:02+08:00
+
+GPU              : NVIDIA GeForce RTX 5070 Laptop GPU
+capability       : 12.0
+LibTorch         : 2.12.0 (2.12.0+cu132)
+LeRobot commit   : c73cec56b04f50ebe9286c79905103866d970169
+dataset          : lerobot/svla_so101_pickplace (50 episodes, 11939 frames)
+checkpoint       : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/last/pretrained_model
+torchscript      : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt
+final loss       : 0.716
+steps            : 3000
+latency mean(ms) : 12.6928
+artifacts        : 390

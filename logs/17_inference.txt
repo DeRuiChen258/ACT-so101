@@ -1,0 +1,21 @@
+# Stage S14 C++ inference (primary path)
+# timestamp: 2026-09-19T20:19:54+08:00
+torchscript: /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt
+device: cuda
+module inputs: self images state 
+loaded samples: 8
+forward output shape: (1, 100, 6)
+action stats: {
+"shape": [
+1,
+100,
+6
+],
+"dtype": "Float",
+"finite": true,
+"min": -108.85920715332031,
+"max": 100.02041625976562,
+"mean": 7.7189297676086426
+}
+latency mean/p50/p95/min/max (ms): 12.6928 / 12.4469 / 14.0457 / 11.2657 / 14.1297
+temporal ensemble: disabled (temporal_ensemble_coeff not set)

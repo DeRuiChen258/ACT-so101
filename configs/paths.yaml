@@ -1,0 +1,22 @@
+# ==============================================================================
+# paths.yaml — 路径与外部依赖位置（环境层 = Physical_AI，实验层 = 本目录）
+# 设计依据：用户指令「环境配置在 Physical_AI，实验与产物在 ACT 目录」+ 提示词 §4.1
+# ==============================================================================
+
+paths:
+  # 环境层（只放可复用的环境资产）
+  repo_dir: /home/violet/Workspace/IDE/Physical_AI/repo
+  # 数据集位置：用户指定放在 /home/violet/Workspace/Data 下新建目录；
+  # HF_LEROBOT_HOME 指向该目录，数据集本体落在 <data_dir>/<repo_id>
+  data_dir: /home/violet/Workspace/Data/lerobot_act
+  libtorch_dir: /home/violet/Workspace/IDE/libtorch
+  conda_root: /home/violet/Workspace/miniconda
+  env_name: lerobot_act
+  # 实验层（相对本目录解析）
+  outputs_dir: outputs
+  artifacts_dir: artifacts
+  torchscript_rel: torchscript
+  onnx_rel: onnx
+  screenshot_tool: import
+  # SO-101 MuJoCo 可视化模型（MuJoCo Menagerie，SO-ARM100/SO-101 同族，6 关节）
+  so101_mujoco_model: /home/violet/Workspace/IDE/Physical_AI/third_party/mujoco_menagerie/trs_so_arm100/so_arm100.xml

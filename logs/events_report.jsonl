@@ -1,0 +1,106 @@
+# actlab structured log (JSON Lines) — stage=report
+{
+"ts": "2026-09-19T19:51:44+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:51:45+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "stage",
+"message": "report -> PASS: README.md generated; final_loss=0.716 steps=3000",
+"duration_ms": 588.039039
+}
+{
+"ts": "2026-09-19T19:52:31+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:52:32+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "stage",
+"message": "report -> PASS: README.md generated; final_loss=0.716 steps=3000",
+"duration_ms": 587.59348699999998
+}
+{
+"ts": "2026-09-19T20:13:13+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:13:14+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "stage",
+"message": "report -> PASS: README.md generated; final_loss=0.716 steps=3000",
+"duration_ms": 596.75137199999995
+}
+{
+"ts": "2026-09-19T20:17:18+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:17:19+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "stage",
+"message": "report -> PASS: README.md generated; final_loss=0.716 steps=3000",
+"duration_ms": 602.33089800000005
+}
+{
+"ts": "2026-09-19T20:19:41+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:19:42+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "stage",
+"message": "report -> PASS: README.md generated; final_loss=0.716 steps=3000",
+"duration_ms": 598.35922800000003
+}
+{
+"ts": "2026-09-19T20:23:35+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:23:36+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "stage",
+"message": "report -> PASS: README.md generated; final_loss=0.716 steps=3000",
+"duration_ms": 618.34637199999997
+}
+{
+"ts": "2026-09-19T20:25:02+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:25:03+08:00",
+"level": "INFO",
+"stage": "report",
+"module": "stage",
+"message": "report -> PASS: README.md generated; final_loss=0.716 steps=3000",
+"duration_ms": 590.894091
+}

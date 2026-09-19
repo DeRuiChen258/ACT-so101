@@ -1,0 +1,608 @@
+# actlab structured log (JSON Lines) — stage=install
+{
+"ts": "2026-09-19T19:09:17+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:09:17+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version"
+}
+{
+"ts": "2026-09-19T19:09:17+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=108",
+"duration_ms": 108.96836999999999
+}
+{
+"ts": "2026-09-19T19:09:17+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]"
+}
+{
+"ts": "2026-09-19T19:10:35+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=77318",
+"duration_ms": 77318.955096000005
+}
+{
+"ts": "2026-09-19T19:10:35+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'"
+}
+{
+"ts": "2026-09-19T19:10:36+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=1821",
+"duration_ms": 1821.0522430000001
+}
+{
+"ts": "2026-09-19T19:10:36+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help"
+}
+{
+"ts": "2026-09-19T19:10:40+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=3051",
+"duration_ms": 3051.87797
+}
+{
+"ts": "2026-09-19T19:10:40+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'"
+}
+{
+"ts": "2026-09-19T19:10:42+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2503",
+"duration_ms": 2503.484363
+}
+{
+"ts": "2026-09-19T19:10:54+08:00",
+"level": "ERROR",
+"stage": "install",
+"module": "stage",
+"message": "install -> FAIL: lerobot-train --help is missing required flags",
+"duration_ms": 97046.201184999998
+}
+{
+"ts": "2026-09-19T19:11:36+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:11:36+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version"
+}
+{
+"ts": "2026-09-19T19:11:36+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=84",
+"duration_ms": 84.859053000000003
+}
+{
+"ts": "2026-09-19T19:11:36+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]"
+}
+{
+"ts": "2026-09-19T19:11:38+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=1299",
+"duration_ms": 1299.889357
+}
+{
+"ts": "2026-09-19T19:11:38+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'"
+}
+{
+"ts": "2026-09-19T19:11:39+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=1490",
+"duration_ms": 1490.938114
+}
+{
+"ts": "2026-09-19T19:11:39+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help"
+}
+{
+"ts": "2026-09-19T19:11:42+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2706",
+"duration_ms": 2706.1376580000001
+}
+{
+"ts": "2026-09-19T19:11:42+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --policy.type=act --help"
+}
+{
+"ts": "2026-09-19T19:11:45+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2667",
+"duration_ms": 2667.8880829999998
+}
+{
+"ts": "2026-09-19T19:11:45+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'"
+}
+{
+"ts": "2026-09-19T19:11:47+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2510",
+"duration_ms": 2510.3047799999999
+}
+{
+"ts": "2026-09-19T19:11:59+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "stage",
+"message": "install -> PASS: editable install OK; CLI flags present; ACT resolvable",
+"duration_ms": 22931.965308999999
+}
+{
+"ts": "2026-09-19T19:45:05+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:45:05+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version"
+}
+{
+"ts": "2026-09-19T19:45:05+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=111",
+"duration_ms": 111.791405
+}
+{
+"ts": "2026-09-19T19:45:05+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]"
+}
+{
+"ts": "2026-09-19T19:45:08+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2299",
+"duration_ms": 2299.9758550000001
+}
+{
+"ts": "2026-09-19T19:45:08+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'"
+}
+{
+"ts": "2026-09-19T19:45:09+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=1660",
+"duration_ms": 1660.495469
+}
+{
+"ts": "2026-09-19T19:45:09+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help"
+}
+{
+"ts": "2026-09-19T19:45:12+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2698",
+"duration_ms": 2698.0657150000002
+}
+{
+"ts": "2026-09-19T19:45:12+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --policy.type=act --help"
+}
+{
+"ts": "2026-09-19T19:45:15+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2796",
+"duration_ms": 2796.6069600000001
+}
+{
+"ts": "2026-09-19T19:45:15+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'"
+}
+{
+"ts": "2026-09-19T19:45:17+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2499",
+"duration_ms": 2499.1136550000001
+}
+{
+"ts": "2026-09-19T19:46:10+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "stage",
+"message": "install -> PASS: editable install OK; CLI flags present; ACT resolvable",
+"duration_ms": 65141.736346999998
+}
+{
+"ts": "2026-09-19T19:49:08+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:49:08+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version"
+}
+{
+"ts": "2026-09-19T19:49:08+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=100",
+"duration_ms": 100.32804899999999
+}
+{
+"ts": "2026-09-19T19:49:08+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]"
+}
+{
+"ts": "2026-09-19T19:49:09+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=1305",
+"duration_ms": 1305.770495
+}
+{
+"ts": "2026-09-19T19:49:09+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'"
+}
+{
+"ts": "2026-09-19T19:49:11+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=1528",
+"duration_ms": 1528.940756
+}
+{
+"ts": "2026-09-19T19:49:11+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help"
+}
+{
+"ts": "2026-09-19T19:49:14+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2693",
+"duration_ms": 2693.0461359999999
+}
+{
+"ts": "2026-09-19T19:49:14+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --policy.type=act --help"
+}
+{
+"ts": "2026-09-19T19:49:16+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2614",
+"duration_ms": 2614.3105
+}
+{
+"ts": "2026-09-19T19:49:16+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'"
+}
+{
+"ts": "2026-09-19T19:49:19+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2543",
+"duration_ms": 2543.9368220000001
+}
+{
+"ts": "2026-09-19T19:50:09+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:50:09+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version"
+}
+{
+"ts": "2026-09-19T19:50:09+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=92",
+"duration_ms": 92.994389999999996
+}
+{
+"ts": "2026-09-19T19:50:09+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]"
+}
+{
+"ts": "2026-09-19T19:50:10+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=1249",
+"duration_ms": 1249.303629
+}
+{
+"ts": "2026-09-19T19:50:10+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'"
+}
+{
+"ts": "2026-09-19T19:50:12+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=1551",
+"duration_ms": 1551.1150580000001
+}
+{
+"ts": "2026-09-19T19:50:12+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help"
+}
+{
+"ts": "2026-09-19T19:50:15+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2680",
+"duration_ms": 2680.1983959999998
+}
+{
+"ts": "2026-09-19T19:50:15+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --policy.type=act --help"
+}
+{
+"ts": "2026-09-19T19:50:17+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2584",
+"duration_ms": 2584.8553109999998
+}
+{
+"ts": "2026-09-19T19:50:17+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'"
+}
+{
+"ts": "2026-09-19T19:50:20+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2448",
+"duration_ms": 2448.76944
+}
+{
+"ts": "2026-09-19T19:51:13+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "stage",
+"message": "install -> PASS: editable install OK; CLI flags present; ACT resolvable",
+"duration_ms": 63562.858717000003
+}
+{
+"ts": "2026-09-19T19:51:24+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:51:24+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version"
+}
+{
+"ts": "2026-09-19T19:51:24+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=99",
+"duration_ms": 99.999488999999997
+}
+{
+"ts": "2026-09-19T19:51:24+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]"
+}
+{
+"ts": "2026-09-19T19:51:25+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=1317",
+"duration_ms": 1317.179529
+}
+{
+"ts": "2026-09-19T19:51:25+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'"
+}
+{
+"ts": "2026-09-19T19:51:27+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=1620",
+"duration_ms": 1620.530434
+}
+{
+"ts": "2026-09-19T19:51:27+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help"
+}
+{
+"ts": "2026-09-19T19:51:30+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2785",
+"duration_ms": 2785.8460190000001
+}
+{
+"ts": "2026-09-19T19:51:30+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --policy.type=act --help"
+}
+{
+"ts": "2026-09-19T19:51:33+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2781",
+"duration_ms": 2781.4891819999998
+}
+{
+"ts": "2026-09-19T19:51:33+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'"
+}
+{
+"ts": "2026-09-19T19:51:35+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "proc",
+"message": "exit=0 duration_ms=2631",
+"duration_ms": 2631.6267290000001
+}
+{
+"ts": "2026-09-19T19:51:38+08:00",
+"level": "INFO",
+"stage": "install",
+"module": "stage",
+"message": "install -> PASS: editable install OK; CLI flags present; ACT resolvable",
+"duration_ms": 14499.714838
+}

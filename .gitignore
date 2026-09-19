@@ -1,23 +1,43 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# ==============================================================================
+# ACT-so101 .gitignore
+# 原则：源码 / 配置 / 文档 / 日志 / 证据 / 图表入库；
+#       可再生成的大体积二进制不入库（清单与获取方式见 README 第 11 节）。
+# ==============================================================================
+
+# ---- 外部依赖与数据集（本机为软链接；用 / 锚定顶层，软链接与目录一并匹配）----
+/data
+/repo
+
+# ---- 本机过程记录（保留在本地，不对外发布）----
+/Prompt
+/.agent
+
+# ---- 构建与训练输出 ----
+build/
+outputs/
+
+# ---- 大体积模型与数据产物 ----
+*.rrd
+*.pt
+*.onnx
+*.safetensors
+*.ckpt
+*.bin
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---- 编辑器 / 系统 ----
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
+.idea/
+*.swp
+.DS_Store
+
+# ---- 运行时转储 ----
+nohup.out
+*.log.gz

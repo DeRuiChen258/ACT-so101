@@ -1,0 +1,171 @@
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda
+=== export_act_torchscript.py ===
+checkpoint : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model
+out_dir    : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript
+device     : cuda
+Loading weights from local directory
+policy     : ACTPolicy params=51,597,190
+policy cfg : chunk_size=100 n_action_steps=16
+camera_keys: ['observation.images.up', 'observation.images.side']
+example    : images=[(1, 3, 480, 640)] state=(1, 6)
+wrapper out: shape=(1, 100, 6) device=cpu
+equivalence: max_abs_diff=0.000e+00 relative=0.000e+00
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/processor/normalize_processor.py:283: TracerWarning: torch.as_tensor results are registered as constants in the trace. You can safely ignore this warning if you use this function to create tensors out of constant variables that would be the same every time you call this function. In any other case, this might cause the trace to be incorrect.
+  tensor = torch.as_tensor(new_observation[key])
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:464: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_pos_embed = list(self.encoder_1d_feature_pos_embed.weight.unsqueeze(1))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:464: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_pos_embed = list(self.encoder_1d_feature_pos_embed.weight.unsqueeze(1))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:487: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_tokens.extend(list(cam_features))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:487: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_tokens.extend(list(cam_features))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:488: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_pos_embed.extend(list(cam_pos_embed))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:488: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_pos_embed.extend(list(cam_pos_embed))
+saved TorchScript: /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt (147480850 bytes)
+signature:
+forward(__torch__.___torch_mangle_343.ExportWrapper self, Tensor[] images, Tensor state) -> Tensor
+reload max_abs_diff=2.976e-02
+reference_outputs.json: 8 samples
+  sample_000 shape=[1, 100, 6] min=-46.5360 max=64.6914
+  sample_001 shape=[1, 100, 6] min=-36.3974 max=74.4905
+  sample_002 shape=[1, 100, 6] min=-50.4325 max=66.5518
+  sample_003 shape=[1, 100, 6] min=-93.2105 max=94.7348
+  sample_004 shape=[1, 100, 6] min=-74.8768 max=80.3653
+  sample_005 shape=[1, 100, 6] min=-58.5473 max=69.1906
+  sample_006 shape=[1, 100, 6] min=-88.4296 max=92.2488
+  sample_007 shape=[1, 100, 6] min=-103.7752 max=98.3047
+
+EXPORT_FAIL
+[exit_code=1 duration_ms=6507.18]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda
+=== export_act_torchscript.py ===
+checkpoint : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model
+out_dir    : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript
+device     : cuda
+Loading weights from local directory
+policy     : ACTPolicy params=51,597,190
+policy cfg : chunk_size=100 n_action_steps=16
+camera_keys: ['observation.images.up', 'observation.images.side']
+example    : images=[(1, 3, 480, 640)] state=(1, 6)
+wrapper out: shape=(1, 100, 6) device=cpu
+equivalence(exported vs official pipeline): max_abs_diff=0.000e+00 relative=0.000e+00 (action_scale≈64.691)
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/processor/normalize_processor.py:283: TracerWarning: torch.as_tensor results are registered as constants in the trace. You can safely ignore this warning if you use this function to create tensors out of constant variables that would be the same every time you call this function. In any other case, this might cause the trace to be incorrect.
+  tensor = torch.as_tensor(new_observation[key])
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:464: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_pos_embed = list(self.encoder_1d_feature_pos_embed.weight.unsqueeze(1))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:464: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_pos_embed = list(self.encoder_1d_feature_pos_embed.weight.unsqueeze(1))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:487: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_tokens.extend(list(cam_features))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:487: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_tokens.extend(list(cam_features))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:488: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_pos_embed.extend(list(cam_pos_embed))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:488: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_pos_embed.extend(list(cam_pos_embed))
+saved TorchScript: /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt (147480850 bytes)
+signature:
+forward(__torch__.___torch_mangle_343.ExportWrapper self, Tensor[] images, Tensor state) -> Tensor
+reload(torch.jit.load + freeze vs eager): max_abs_diff=2.976e-02 relative=4.600e-04
+reference_outputs.json: 8 samples
+  sample_000 shape=[1, 100, 6] min=-46.5360 max=64.6914
+  sample_001 shape=[1, 100, 6] min=-36.3974 max=74.4905
+  sample_002 shape=[1, 100, 6] min=-50.4325 max=66.5518
+  sample_003 shape=[1, 100, 6] min=-93.2105 max=94.7348
+  sample_004 shape=[1, 100, 6] min=-74.8768 max=80.3653
+  sample_005 shape=[1, 100, 6] min=-58.5473 max=69.1906
+  sample_006 shape=[1, 100, 6] min=-88.4296 max=92.2488
+  sample_007 shape=[1, 100, 6] min=-103.7752 max=98.3047
+
+EXPORT_PASS
+[exit_code=0 duration_ms=4859.47]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda
+=== export_act_torchscript.py ===
+checkpoint : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model
+out_dir    : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript
+device     : cuda
+Loading weights from local directory
+policy     : ACTPolicy params=51,597,190
+policy cfg : chunk_size=100 n_action_steps=16
+camera_keys: ['observation.images.up', 'observation.images.side']
+example    : images=[(1, 3, 480, 640)] state=(1, 6)
+wrapper out: shape=(1, 100, 6) device=cpu
+equivalence(exported vs official pipeline): max_abs_diff=0.000e+00 relative=0.000e+00 (action_scale≈108.870)
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/processor/normalize_processor.py:283: TracerWarning: torch.as_tensor results are registered as constants in the trace. You can safely ignore this warning if you use this function to create tensors out of constant variables that would be the same every time you call this function. In any other case, this might cause the trace to be incorrect.
+  tensor = torch.as_tensor(new_observation[key])
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:464: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_pos_embed = list(self.encoder_1d_feature_pos_embed.weight.unsqueeze(1))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:464: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_pos_embed = list(self.encoder_1d_feature_pos_embed.weight.unsqueeze(1))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:487: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_tokens.extend(list(cam_features))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:487: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_tokens.extend(list(cam_features))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:488: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_pos_embed.extend(list(cam_pos_embed))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:488: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_pos_embed.extend(list(cam_pos_embed))
+saved TorchScript: /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt (147480850 bytes)
+signature:
+forward(__torch__.___torch_mangle_343.ExportWrapper self, Tensor[] images, Tensor state) -> Tensor
+reload(torch.jit.load + freeze vs eager): max_abs_diff=3.912e-02 relative=3.594e-04
+reference_outputs.json: 8 samples
+  sample_000 shape=[1, 100, 6] min=-108.8696 max=100.0226
+  sample_001 shape=[1, 100, 6] min=-55.9800 max=102.8139
+  sample_002 shape=[1, 100, 6] min=-68.8568 max=98.9278
+  sample_003 shape=[1, 100, 6] min=-107.1259 max=102.4435
+  sample_004 shape=[1, 100, 6] min=-103.1041 max=102.6509
+  sample_005 shape=[1, 100, 6] min=-89.0699 max=99.7336
+  sample_006 shape=[1, 100, 6] min=-104.8712 max=103.1774
+  sample_007 shape=[1, 100, 6] min=-99.1262 max=104.2545
+
+EXPORT_PASS
+[exit_code=0 duration_ms=4752.26]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda
+=== export_act_torchscript.py ===
+checkpoint : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model
+out_dir    : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript
+device     : cuda
+Loading weights from local directory
+policy     : ACTPolicy params=51,597,190
+policy cfg : chunk_size=100 n_action_steps=16
+camera_keys: ['observation.images.up', 'observation.images.side']
+example    : images=[(1, 3, 480, 640)] state=(1, 6)
+wrapper out: shape=(1, 100, 6) device=cpu
+equivalence(exported vs official pipeline): max_abs_diff=0.000e+00 relative=0.000e+00 (action_scale≈108.870)
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/processor/normalize_processor.py:283: TracerWarning: torch.as_tensor results are registered as constants in the trace. You can safely ignore this warning if you use this function to create tensors out of constant variables that would be the same every time you call this function. In any other case, this might cause the trace to be incorrect.
+  tensor = torch.as_tensor(new_observation[key])
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:464: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_pos_embed = list(self.encoder_1d_feature_pos_embed.weight.unsqueeze(1))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:464: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_pos_embed = list(self.encoder_1d_feature_pos_embed.weight.unsqueeze(1))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:487: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_tokens.extend(list(cam_features))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:487: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_tokens.extend(list(cam_features))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:488: TracerWarning: Iterating over a tensor might cause the trace to be incorrect. Passing a tensor of different shape won't change the number of iterations executed (and might lead to errors or silently give incorrect results).
+  encoder_in_pos_embed.extend(list(cam_pos_embed))
+/home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act/modeling_act.py:488: TracerWarning: Using len to get tensor shape might cause the trace to be incorrect. Recommended usage would be tensor.shape[0]. Passing a tensor of different shape might lead to errors or silently give incorrect results.
+  encoder_in_pos_embed.extend(list(cam_pos_embed))
+saved TorchScript: /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt (147480850 bytes)
+signature:
+forward(__torch__.___torch_mangle_343.ExportWrapper self, Tensor[] images, Tensor state) -> Tensor
+reload(torch.jit.load + freeze vs eager): max_abs_diff=3.912e-02 relative=3.594e-04
+reference_outputs.json: 8 samples
+  sample_000 shape=[1, 100, 6] min=-108.8696 max=100.0226
+  sample_001 shape=[1, 100, 6] min=-55.9800 max=102.8139
+  sample_002 shape=[1, 100, 6] min=-68.8568 max=98.9278
+  sample_003 shape=[1, 100, 6] min=-107.1259 max=102.4435
+  sample_004 shape=[1, 100, 6] min=-103.1041 max=102.6509
+  sample_005 shape=[1, 100, 6] min=-89.0699 max=99.7336
+  sample_006 shape=[1, 100, 6] min=-104.8712 max=103.1774
+  sample_007 shape=[1, 100, 6] min=-99.1262 max=104.2545
+
+EXPORT_PASS
+[exit_code=0 duration_ms=4797.91]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda
+run_process: execvp failed for /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python: No such file or directory
+[exit_code=127 duration_ms=7.34013]

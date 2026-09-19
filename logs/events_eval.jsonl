@@ -1,0 +1,91 @@
+# actlab structured log (JSON Lines) — stage=eval
+{
+"ts": "2026-09-19T19:42:28+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:42:29+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "stage",
+"message": "eval -> PASS: Offline Evaluation on 8 real samples; python_max_diff=0.044495",
+"duration_ms": 1437.9277159999999
+}
+{
+"ts": "2026-09-19T19:42:49+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:42:51+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "stage",
+"message": "eval -> PASS: Offline Evaluation on 8 real samples; python_max_diff=0.044495",
+"duration_ms": 2020.7200089999999
+}
+{
+"ts": "2026-09-19T19:52:29+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:52:31+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "stage",
+"message": "eval -> PASS: Offline Evaluation on 8 real samples; python_max_diff=0.044495",
+"duration_ms": 2108.8091760000002
+}
+{
+"ts": "2026-09-19T20:19:39+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:19:41+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "stage",
+"message": "eval -> PASS: Offline Evaluation on 8 real samples; python_max_diff=0.044495",
+"duration_ms": 2147.8325100000002
+}
+{
+"ts": "2026-09-19T20:23:33+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:23:35+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "stage",
+"message": "eval -> PASS: Offline Evaluation on 8 real samples; python_max_diff=0.044495",
+"duration_ms": 2043.8592759999999
+}
+{
+"ts": "2026-09-19T20:24:59+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:25:02+08:00",
+"level": "INFO",
+"stage": "eval",
+"module": "stage",
+"message": "eval -> PASS: Offline Evaluation on 8 real samples; python_max_diff=0.044495",
+"duration_ms": 2150.3813740000001
+}

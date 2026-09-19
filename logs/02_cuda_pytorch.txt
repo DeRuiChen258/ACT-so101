@@ -1,0 +1,48 @@
+# Stage S0 CUDA probe (C++ / LibTorch)
+
+# GPU / LibTorch probe (C++)
+
+| item | value |
+| --- | --- |
+| torch::cuda::is_available() | true |
+| device_count | 1 |
+| device_name | NVIDIA GeForce RTX 5070 Laptop GPU |
+| capability | 12.0 |
+| total memory (MiB) | 7799 |
+| free memory (MiB) | 7601 |
+| libtorch version | 2.12.0 |
+| libtorch build-version | 2.12.0+cu132 |
+| CUDA runtime header version | 13.2 |
+| _GLIBCXX_USE_CXX11_ABI | 1 |
+| driver version | 615.71.09 |
+| CUDA UMD version | 13.4 |
+
+===== gpu_smoke (independent C++ process) =====
+# GPU / LibTorch probe (C++)
+
+| item | value |
+| --- | --- |
+| torch::cuda::is_available() | true |
+| device_count | 1 |
+| device_name | NVIDIA GeForce RTX 5070 Laptop GPU |
+| capability | 12.0 |
+| total memory (MiB) | 7799 |
+| free memory (MiB) | 7468 |
+| libtorch version | 2.12.0 |
+| libtorch build-version |  |
+| CUDA runtime header version | 13.2 |
+| _GLIBCXX_USE_CXX11_ABI | 1 |
+| driver version | 615.71.09 |
+| CUDA UMD version | 13.4 |
+
+matmul[1024x1024] finite=true checksum=2.68813e+08
+memory: allocated=44 MiB reserved=54 MiB peak=44 MiB
+GPU_SMOKE_PASS
+[exit=0]
+
+===== training env torch arch_list =====
+arch_list ['sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+cuda_available True
+[exit=0]
+
+# interpretation: sm_120 declared by training env arch_list; functional proof = gpu_smoke CUDA matmul success

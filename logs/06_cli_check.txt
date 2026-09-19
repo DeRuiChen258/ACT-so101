@@ -1,0 +1,1286 @@
+# Stage S3 CLI check
+# timestamp: 2026-09-19T19:51:30+08:00
+
+usage: lerobot_train.py [-h] [--config_path str] [--dataset str]
+                        [--dataset.repo_id str] [--dataset.repo_type str]
+                        [--dataset.root [str]]
+                        [--dataset.episodes [list[int]]]
+                        [--dataset.exclude_episodes [list[int]]]
+                        [--image_transforms str]
+                        [--dataset.image_transforms.enable bool]
+                        [--dataset.image_transforms.max_num_transforms int]
+                        [--dataset.image_transforms.random_order bool]
+                        [--dataset.image_transforms.tfs dict[str,ImageTransformConfig]]
+                        [--dataset.revision [str]]
+                        [--dataset.use_imagenet_stats bool]
+                        [--dataset.video_backend str]
+                        [--dataset.return_uint8 bool]
+                        [--dataset.depth_output_unit str]
+                        [--dataset.streaming bool]
+                        [--dataset.eval_split float] [--env str]
+                        [--env.type {aloha,pusht,gym_manipulator,libero,metaworld,robocasa,vlabench,isaaclab_arena,unitree_g1_mujoco,libero_plus,robotwin,robomme}]
+                        [--policy str]
+                        [--policy.type {act,diffusion,eo1,evo1,groot,molmoact2,fastwam,gaussian_actor,lawam,lingbot_va,multi_task_dit,pi0,pi0_fast,pi05,smolvla,tdmpc,vla_jepa,vqbet,wall_x,xvla}]
+                        [--reward_model str]
+                        [--reward_model.type {reward_classifier,robometer,sarm,topreward}]
+                        [--output_dir [Path]] [--job_name [str]]
+                        [--resume bool] [--seed [int]]
+                        [--cudnn_deterministic bool] [--num_workers int]
+                        [--batch_size int] [--prefetch_factor int]
+                        [--persistent_workers bool]
+                        [--dataloader_multiprocessing_context [str]]
+                        [--steps int] [--env_eval_freq int] [--log_freq int]
+                        [--eval_steps int] [--max_eval_samples int]
+                        [--tolerance_s float] [--save_checkpoint bool]
+                        [--save_freq int]
+                        [--checkpoint_format CheckpointFormat]
+                        [--use_policy_training_preset bool] [--optimizer str]
+                        [--optimizer.type {adam,adamw,sgd,xvla-adamw,multi_adam,molmoact2_adamw}]
+                        [--scheduler str]
+                        [--scheduler.type {diffuser,vqbet,constant_with_warmup,cosine_annealing_with_warmup,cosine_decay_with_warmup,molmoact2_cosine_with_warmup,lawam_cosine_with_min_lr}]
+                        [--parallelism str] [--parallelism.dp_replicate int]
+                        [--parallelism.dp_shard int] [--context_parallel str]
+                        [--parallelism.context_parallel.ring_degree int]
+                        [--parallelism.context_parallel.ulysses_degree int]
+                        [--parallelism.cfg_parallel int] [--accelerator str]
+                        [--accelerator.mixed_precision str]
+                        [--gradient_accumulation str]
+                        [--accelerator.gradient_accumulation.steps int]
+                        [--fsdp str]
+                        [--accelerator.fsdp.reshard_after_forward bool]
+                        [--accelerator.fsdp.wrap_modules [list[str]]]
+                        [--accelerator.fsdp.min_num_params [int]]
+                        [--accelerator.fsdp.cpu_offload bool]
+                        [--accelerator.fsdp.ignored_modules [str]] [--ddp str]
+                        [--accelerator.ddp.find_unused_parameters bool]
+                        [--accelerator.ddp.gradient_as_bucket_view bool]
+                        [--accelerator.ddp.static_graph bool] [--compile str]
+                        [--accelerator.compile.enabled bool]
+                        [--accelerator.compile.backend str]
+                        [--accelerator.compile.mode [str]]
+                        [--accelerator.compile.regional bool]
+                        [--activation_checkpointing str]
+                        [--accelerator.activation_checkpointing.mode ActivationCheckpointingMode]
+                        [--eval str] [--eval.n_episodes int]
+                        [--eval.batch_size int] [--eval.use_async_envs bool]
+                        [--eval.recording bool]
+                        [--eval.recording_repo_id [str]]
+                        [--eval.recording_private bool] [--ema str]
+                        [--ema.enable bool] [--ema.decay [float]]
+                        [--ema.update_after_step int] [--ema.inv_gamma float]
+                        [--ema.power float] [--ema.min_decay float]
+                        [--ema.max_decay float] [--ema.use_for_eval bool]
+                        [--wandb str] [--wandb.enable bool]
+                        [--wandb.disable_artifact bool] [--wandb.project str]
+                        [--wandb.entity [str]] [--wandb.notes [str]]
+                        [--wandb.run_id [str]] [--wandb.resume [str]]
+                        [--wandb.mode [str]] [--wandb.console str]
+                        [--wandb.console_multipart bool]
+                        [--wandb.console_chunk_max_seconds int]
+                        [--wandb.add_tags bool] [--peft str]
+                        [--peft.target_modules [list[str]|str]]
+                        [--peft.full_training_modules [list[str]]]
+                        [--peft.method_type str] [--peft.init_type [str]]
+                        [--peft.r int] [--peft.lora_alpha [int]] [--job str]
+                        [--job.target [str]] [--job.image str]
+                        [--job.timeout [str]] [--job.detach bool]
+                        [--job.tags list[str]] [--save_checkpoint_to_hub bool]
+                        [--sample_weighting str] [--sample_weighting.type str]
+                        [--sample_weighting.progress_path [str]]
+                        [--sample_weighting.head_mode str]
+                        [--sample_weighting.kappa float]
+                        [--sample_weighting.epsilon float]
+                        [--sample_weighting.extra_params dict]
+                        [--rename_map dict[str,str]]
+
+options:
+  -h, --help            show this help message and exit
+  --config_path str     Path for a config file to parse with draccus (default:
+                        None)
+  --dataset str         Config file for dataset (default: None)
+  --image_transforms str
+                        Config file for image_transforms (default: None)
+  --env str             Config file for env (default: None)
+  --policy str          Config file for policy (default: None)
+  --reward_model str    Config file for reward_model (default: None)
+  --optimizer str       Config file for optimizer (default: None)
+  --scheduler str       Config file for scheduler (default: None)
+  --parallelism str     Config file for parallelism (default: None)
+  --context_parallel str
+                        Config file for context_parallel (default: None)
+  --accelerator str     Config file for accelerator (default: None)
+  --gradient_accumulation str
+                        Config file for gradient_accumulation (default: None)
+  --fsdp str            Config file for fsdp (default: None)
+  --ddp str             Config file for ddp (default: None)
+  --compile str         Config file for compile (default: None)
+  --activation_checkpointing str
+                        Config file for activation_checkpointing (default:
+                        None)
+  --eval str            Config file for eval (default: None)
+  --ema str             Config file for ema (default: None)
+  --wandb str           Config file for wandb (default: None)
+  --peft str            Config file for peft (default: None)
+  --job str             Config file for job (default: None)
+  --sample_weighting str
+                        Config file for sample_weighting (default: None)
+
+TrainPipelineConfig:
+
+  --output_dir [Path]   Set `dir` to where you would like to save all of the
+                        run outputs. If you run another training session with
+                        the same value for `dir` its contents will be
+                        overwritten unless you set `resume` to true. (default:
+                        None)
+  --job_name [str]
+  --resume bool         Set `resume` to true to resume a previous run. Pass
+                        `--config_path` pointing at either a local
+                        checkpoint's train_config.json or a Hub repo id
+                        holding `checkpoints/<step>/` subtrees (the latest
+                        checkpoint is downloaded and resumed from). Note that
+                        when resuming, the default behavior is to use the
+                        configuration from the checkpoint, regardless of
+                        what's provided with the training command at the time
+                        of resumption (CLI `--*` flags still override).
+                        (default: False)
+  --seed [int]          `seed` is used for training (eg: model initialization,
+                        dataset shuffling) AND for the evaluation
+                        environments. (default: 1000)
+  --cudnn_deterministic bool
+                        Set to True to use deterministic cuDNN algorithms for
+                        reproducibility. This disables cudnn.benchmark and may
+                        reduce training speed by ~10-20 percent. (default:
+                        False)
+  --num_workers int     Number of workers for the dataloader. (default: 4)
+  --batch_size int      
+  --prefetch_factor int
+  --persistent_workers bool
+  --dataloader_multiprocessing_context [str]
+                        DataLoader worker start method. "spawn" is safer than
+                        "fork" with non-fork-safe libs (PyAV / torchcodec /
+                        ffmpeg), but adds some worker-startup time per run
+                        since workers re-import modules instead of inheriting
+                        parent state. Override with
+                        `--dataloader_multiprocessing_context=fork` when
+                        appropriate, or set it to `null` to use Python's
+                        platform default. (default: spawn)
+  --steps int           
+  --env_eval_freq int   Run policy in the simulation environment every N steps
+                        to measure reward/success (0 = disabled). (default:
+                        20000)
+  --log_freq int        
+  --eval_steps int      Compute eval loss on held-out episodes every N steps
+                        (0 = disabled). Requires eval_split > 0. (default: 0)
+  --max_eval_samples int
+                        Cap on total eval samples, split uniformly across
+                        tasks (0 = use all held-out data). (default: 0)
+  --tolerance_s float   
+  --save_checkpoint bool
+  --save_freq int       Checkpoint is saved every `save_freq` training
+                        iterations and after the last training step. A non-
+                        positive value disables periodic saving, keeping only
+                        the final checkpoint. (default: 20000)
+  --checkpoint_format CheckpointFormat
+                        Model-artifact format inside checkpoints; non-default
+                        values require a sharded run. (default:
+                        CheckpointFormat.SAFETENSORS)
+  --use_policy_training_preset bool
+  --save_checkpoint_to_hub bool
+                        Push each saved checkpoint to the Hub (policy.repo_id)
+                        as it is written, not just the final model (useful to
+                        monitor progress mid-run). Optional; the final model
+                        is pushed regardless. Works the same locally and
+                        remotely. (default: False)
+  --rename_map dict[str,str]
+                        Rename map for the observation to override the image
+                        and state keys (default: {})
+
+DatasetConfig ['dataset']:
+
+  --dataset.repo_id str
+                        You may provide a list of datasets here. `train.py`
+                        creates them all and concatenates them. Note: only
+                        data keys common between the datasets are kept. Each
+                        dataset gets and additional transform that inserts the
+                        "dataset_index" into the returned item. The index
+                        mapping is made according to the order in which the
+                        datasets are provided. (default: None)
+  --dataset.repo_type str
+                        Hub repository type: "dataset" (default) or "bucket"
+                        for an HF Storage Bucket (hf://buckets/). Whether a
+                        bucket needs streaming=true depends on the dataset's
+                        storage format, so that is checked at load time in the
+                        dataset factory. (default: dataset)
+  --dataset.root [str]  Root directory for a concrete local dataset tree (e.g.
+                        'dataset/path'). If None, local datasets are looked up
+                        under $HF_LEROBOT_HOME/repo_id and Hub downloads use a
+                        revision-safe cache under $HF_LEROBOT_HOME/hub.
+                        (default: None)
+  --dataset.episodes [list[int]]
+  --dataset.exclude_episodes [list[int]]
+                        Episode indices to drop (e.g. corrupt or heterogeneous
+                        ones). Applied on top of `episodes`. (default: None)
+  --dataset.revision [str]
+  --dataset.use_imagenet_stats bool
+  --dataset.video_backend str
+  --dataset.return_uint8 bool
+                        When True, RGB video frames are returned as uint8
+                        tensors (0-255) instead of float32 (0.0-1.0). This
+                        reduces memory and speeds up DataLoader IPC. The
+                        training pipeline handles the conversion. (default:
+                        False)
+  --dataset.depth_output_unit str
+                        Physical unit depth maps are dequantized to at load
+                        time: "mm" (millimeters) or "m" (metres). Has no
+                        effect on datasets without depth cameras. (default:
+                        mm)
+  --dataset.streaming bool
+  --dataset.eval_split float
+                        Fraction of episodes held out per task for offline
+                        evaluation (0.0 = disabled). (default: 0.0)
+
+ImageTransformsConfig ['dataset.image_transforms']:
+  
+      These transforms are all using standard torchvision.transforms.v2
+      You can find out how these transformations affect images here:
+      https://pytorch.org/vision/0.18/auto_examples/transforms/plot_transforms_illustrations.html
+      We use a custom RandomSubsetApply container to sample them.
+      
+
+  --dataset.image_transforms.enable bool
+                        Set this flag to `true` to enable transforms during
+                        training (default: False)
+  --dataset.image_transforms.max_num_transforms int
+                        This is the maximum number of transforms (sampled from
+                        these below) that will be applied to each frame. It's
+                        an integer in the interval [1,
+                        number_of_available_transforms]. (default: 3)
+  --dataset.image_transforms.random_order bool
+                        By default, transforms are applied in Torchvision's
+                        suggested order (shown below). Set this to True to
+                        apply them in a random order. (default: False)
+  --dataset.image_transforms.tfs dict[str,ImageTransformConfig]
+
+Optional ['env']:
+
+EnvConfig ['env']:
+
+  --env.type {aloha,pusht,gym_manipulator,libero,metaworld,robocasa,vlabench,isaaclab_arena,unitree_g1_mujoco,libero_plus,robotwin,robomme}
+                        Which type of EnvConfig ['env'] to use (default: None)
+
+Optional ['policy']:
+
+PreTrainedConfig ['policy']:
+  
+      Base configuration class for policy models.
+  
+      Args:
+          n_obs_steps: Number of environment steps worth of observations to pass to the policy (takes the
+              current step and additional steps going back).
+          input_features: A dictionary defining the PolicyFeature of the input data for the policy. The key represents
+              the input data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+          output_features: A dictionary defining the PolicyFeature of the output data for the policy. The key represents
+              the output data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+          normalization_mapping: A dictionary that maps from a str value of FeatureType (e.g., "STATE", "VISUAL") to
+              a corresponding NormalizationMode (e.g., NormalizationMode.MIN_MAX)
+      
+
+  --policy.type {act,diffusion,eo1,evo1,groot,molmoact2,fastwam,gaussian_actor,lawam,lingbot_va,multi_task_dit,pi0,pi0_fast,pi05,smolvla,tdmpc,vla_jepa,vqbet,wall_x,xvla}
+                        Which type of PreTrainedConfig ['policy'] to use
+                        (default: None)
+
+Optional ['reward_model']:
+
+RewardModelConfig ['reward_model']:
+  Base configuration for reward models.
+  
+      Args:
+      input_features: A dictionary defining the PolicyFeature of the input data for the reward. The key represents
+          the input data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+      output_features: A dictionary defining the PolicyFeature of the output data for the reward. The key represents
+          the output data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+      
+
+  --reward_model.type {reward_classifier,robometer,sarm,topreward}
+                        Which type of RewardModelConfig ['reward_model'] to
+                        use (default: None)
+
+Optional ['optimizer']:
+
+OptimizerConfig ['optimizer']:
+
+  --optimizer.type {adam,adamw,sgd,xvla-adamw,multi_adam,molmoact2_adamw}
+                        Which type of OptimizerConfig ['optimizer'] to use
+                        (default: None)
+
+Optional ['scheduler']:
+
+LRSchedulerConfig ['scheduler']:
+
+  --scheduler.type {diffuser,vqbet,constant_with_warmup,cosine_annealing_with_warmup,cosine_decay_with_warmup,molmoact2_cosine_with_warmup,lawam_cosine_with_min_lr}
+                        Which type of LRSchedulerConfig ['scheduler'] to use
+                        (default: None)
+
+ParallelismConfig ['parallelism']:
+  Process topology: dp_replicate / dp_shard (HSDP) and context-parallel degree placeholders.
+
+  --parallelism.dp_replicate int
+  --parallelism.dp_shard int
+                        -1 is an explicit opt-in sentinel: shard over
+                        world_size // (dp_replicate * cp). (default: 1)
+  --parallelism.cfg_parallel int
+                        Classifier-free-guidance parallelism — inference-only
+                        (cosmos/vllm-omni precedent: cond/uncond branches on
+                        different ranks). Reserved for the serving round;
+                        training validates it to 1. Meaningful values are 1 or
+                        2 (Cosmos3 has two CFG branches). (default: 1)
+
+ContextParallelConfig ['parallelism.context_parallel']:
+  Ring x Ulysses context parallelism (sequence parallelism for attention).
+  
+      Both degrees are configured placeholders in this release: the CP engine is not implemented
+      yet, and enabling either degree > 1 fails fast at config validation. The fields exist now so
+      that the CLI surface, checkpoint metadata, and mesh math are stable when the engine lands.
+      
+
+  --parallelism.context_parallel.ring_degree int
+  --parallelism.context_parallel.ulysses_degree int
+
+AcceleratorConfig ['accelerator']:
+  Execution runtime handed to the Accelerator: mixed precision, gradient accumulation,
+  FSDP/DDP tuning knobs, compile & activation-checkpointing placeholders.
+
+  --accelerator.mixed_precision str
+
+GradientAccumulationConfig ['accelerator.gradient_accumulation']:
+  Mirror of the `GradientAccumulationPlugin` subset LeRobot supports.
+  
+      Only the step count is a knob. ``sync_with_dataloader`` is pinned to False by
+      :meth:`build_plugin`: the training loop cycles a finite dataloader, so accelerate's default
+      of syncing at every dataloader end would force an optimizer step at every dataset epoch
+      boundary instead of every ``steps`` micro-batches.
+      
+
+  --accelerator.gradient_accumulation.steps int
+
+FSDPConfig ['accelerator.fsdp']:
+  Mirror of the `FullyShardedDataParallelPlugin` subset LeRobot supports (FSDP2 only).
+  
+      Exactly one wrap policy applies: `wrap_modules` (module *class names* forming the FSDP
+      units — and, later, the activation-checkpointing units) or `min_num_params` (size-based).
+      When both are None, the policy's own `_fsdp_wrap_modules` declaration is used; a run where
+      no wrap source exists at all fails loudly rather than silently wrapping only the root.
+      
+
+  --accelerator.fsdp.reshard_after_forward bool
+  --accelerator.fsdp.wrap_modules [list[str]]
+  --accelerator.fsdp.min_num_params [int]
+  --accelerator.fsdp.cpu_offload bool
+  --accelerator.fsdp.ignored_modules [str]
+                        Regex matched against module FQNs to exclude their
+                        parameters from sharding. (default: None)
+
+DDPConfig ['accelerator.ddp']:
+  Mirror of the `DistributedDataParallelKwargs` subset LeRobot exposes.
+
+  --accelerator.ddp.find_unused_parameters bool
+                        Today's in-script default, kept for models with
+                        conditional computation. (default: True)
+  --accelerator.ddp.gradient_as_bucket_view bool
+  --accelerator.ddp.static_graph bool
+
+CompileConfig ['accelerator.compile']:
+  torch.compile knobs — a configured placeholder: wiring lands in a later round.
+  
+      The setup-order contract it will follow is already fixed: compile applies
+      after CP dispatch install and activation checkpointing, before `fully_shard`, regionally
+      (per wrap unit) — the only combination proven with FSDP2.
+      
+
+  --accelerator.compile.enabled bool
+  --accelerator.compile.backend str
+  --accelerator.compile.mode [str]
+  --accelerator.compile.regional bool
+
+ActivationCheckpointingConfig ['accelerator.activation_checkpointing']:
+  Activation-checkpointing knobs — a configured placeholder: wiring lands in a later round.
+  
+      AC units will coincide with the FSDP wrap units (one declaration drives both), applied
+      before torch.compile and `fully_shard` (the same ordering contract as CompileConfig).
+      
+
+  --accelerator.activation_checkpointing.mode ActivationCheckpointingMode
+
+EvalConfig ['eval']:
+
+  --eval.n_episodes int
+  --eval.batch_size int
+                        `batch_size` specifies the number of environments to
+                        use in a gym.vector.VectorEnv. Set to 0 for auto-
+                        tuning based on available CPU cores and n_episodes.
+                        (default: 0)
+  --eval.use_async_envs bool
+                        `use_async_envs` specifies whether to use asynchronous
+                        environments (multiprocessing). Defaults to True;
+                        automatically downgraded to SyncVectorEnv when
+                        batch_size=1. (default: True)
+  --eval.recording bool
+                        Whether to record eval rollouts as a LeRobot dataset
+                        on disk. (default: False)
+  --eval.recording_repo_id [str]
+                        If set, push recorded eval datasets to the Hub under
+                        this repo id (one repo per task, suffixed by task and
+                        env index). Requires recording=true. (default: None)
+  --eval.recording_private bool
+                        Whether the pushed recording repositories should be
+                        private. (default: False)
+
+EMAConfig ['ema']:
+  Maintain an EMA shadow of the policy weights during training (see EMAConfig).
+
+  --ema.enable bool     
+  --ema.decay [float]   Constant decay coefficient (openpi-style, e.g. 0.99
+                        for pi0/pi05). When set, the warmup schedule below is
+                        bypassed and the shadow uses this decay at every step.
+                        (default: None)
+  --ema.update_after_step int
+                        Number of optimizer steps during which the shadow
+                        stays a hard copy of the live weights. (default: 0)
+  --ema.inv_gamma float
+                        Warmup schedule parameters (see class docstring).
+                        (default: 1.0)
+  --ema.power float     
+  --ema.min_decay float
+  --ema.max_decay float
+  --ema.use_for_eval bool
+                        Evaluate the EMA weights (instead of the live ones)
+                        during periodic env eval. Offline eval-loss
+                        (--eval_steps) always uses the live weights: it runs
+                        on every rank while the EMA shadow only lives on the
+                        main process. (default: True)
+
+WandBConfig ['wandb']:
+
+  --wandb.enable bool   
+  --wandb.disable_artifact bool
+                        Set to true to disable saving an artifact despite
+                        training.save_checkpoint=True (default: False)
+  --wandb.project str   
+  --wandb.entity [str]
+  --wandb.notes [str]
+  --wandb.run_id [str]
+  --wandb.resume [str]  Allowed values: 'allow', 'must', 'never', or 'auto'.
+                        (default: None)
+  --wandb.mode [str]    Allowed values: 'online', 'offline' 'disabled'.
+                        Defaults to 'online' (default: None)
+  --wandb.console str   
+  --wandb.console_multipart bool
+  --wandb.console_chunk_max_seconds int
+  --wandb.add_tags bool
+                        If True, save configuration as tags in the WandB run.
+                        (default: True)
+
+Optional ['peft']:
+
+PeftConfig ['peft']:
+
+  --peft.target_modules [list[str]|str]
+                        PEFT offers many fine-tuning methods, layer adapters
+                        being the most common and currently also the most
+                        effective methods so we'll focus on those in this
+                        high-level config interface. Either a string (module
+                        name suffix or 'all-linear'), a list of module name
+                        suffixes or a regular expression describing module
+                        names to target with the configured PEFT method. Some
+                        policies have a default value for this so that you
+                        don't *have* to choose which layers to adapt but it
+                        might still be worthwhile depending on your case.
+                        (default: None)
+  --peft.full_training_modules [list[str]]
+                        Names/suffixes of modules to fully fine-tune and store
+                        alongside adapter weights. Useful for layers that are
+                        not part of a pre-trained model (e.g., action state
+                        projections). Depending on the policy this defaults to
+                        layers that are newly created in pre-trained policies.
+                        If you're fine-tuning an already trained policy you
+                        might want to set this to `[]`. Corresponds to PEFT's
+                        `modules_to_save`. (default: None)
+  --peft.method_type str
+                        The PEFT (adapter) method to apply to the policy.
+                        Needs to be a valid PEFT type. (default: LORA)
+  --peft.init_type [str]
+                        Adapter initialization method. Look at the specific
+                        PEFT adapter documentation for defaults. (default:
+                        None)
+  --peft.r int          We expect that all PEFT adapters are in some way doing
+                        rank-decomposition therefore this parameter specifies
+                        the rank used for the adapter. In general a higher
+                        rank means more trainable parameters and closer to
+                        full fine-tuning. (default: 16)
+  --peft.lora_alpha [int]
+                        Alpha parameter for LoRA scaling (scaling = lora_alpha
+                        / r). In general, a higher alpha means stronger
+                        adaptation signal. If None, the PEFT library defaults
+                        to alpha=8, which may dampen high-rank adapters.
+                        Common values are r (alpha == rank) or 2*r. (default:
+                        None)
+
+JobConfig ['job']:
+  Where to run training (local default, or an HF Jobs flavor). See JobConfig.
+
+  --job.target [str]    Where training runs. None (omitted) or "local" runs on
+                        this machine. Any other value is an HF Jobs flavor and
+                        submits the run to HF Jobs. List available flavors +
+                        pricing with `hf jobs hardware` command. (default:
+                        None)
+  --job.image str       Runtime image for the remote job (ignored for local
+                        runs). (default: huggingface/lerobot-gpu:latest)
+  --job.timeout [str]   Max wall-clock for the remote job as an HF Jobs
+                        duration string (e.g. "2h"). Defaults to "2d": We pass
+                        an explicit, generous cap instead. Set a smaller value
+                        to fail fast, or a larger one for long runs. (default:
+                        2d)
+  --job.detach bool     Submit and exit instead of streaming the job logs in
+                        the foreground. (default: False)
+  --job.tags list[str]  Extra tags attached to the HF job and to any dataset
+                        this run pushes to the Hub. A "lerobot" tag is always
+                        added; e.g. --job.tags '["lelab"]' adds more.
+                        (default: [])
+
+Optional ['sample_weighting']:
+  Sample weighting configuration (e.g., for RA-BC training)
+
+SampleWeightingConfig ['sample_weighting']:
+  Sample weighting configuration (e.g., for RA-BC training)
+
+  --sample_weighting.type str
+  --sample_weighting.progress_path [str]
+  --sample_weighting.head_mode str
+  --sample_weighting.kappa float
+  --sample_weighting.epsilon float
+  --sample_weighting.extra_params dict
+                        Additional type-specific params can be added here or
+                        passed via extra_params (default: {})
+
+[exit_code=0 duration_ms=2785]
+
+===== lerobot_train --policy.type=act --help (ACT 专有参数) =====
+usage: lerobot_train.py [-h] [--config_path str] [--dataset str]
+                        [--dataset.repo_id str] [--dataset.repo_type str]
+                        [--dataset.root [str]]
+                        [--dataset.episodes [list[int]]]
+                        [--dataset.exclude_episodes [list[int]]]
+                        [--image_transforms str]
+                        [--dataset.image_transforms.enable bool]
+                        [--dataset.image_transforms.max_num_transforms int]
+                        [--dataset.image_transforms.random_order bool]
+                        [--dataset.image_transforms.tfs dict[str,ImageTransformConfig]]
+                        [--dataset.revision [str]]
+                        [--dataset.use_imagenet_stats bool]
+                        [--dataset.video_backend str]
+                        [--dataset.return_uint8 bool]
+                        [--dataset.depth_output_unit str]
+                        [--dataset.streaming bool]
+                        [--dataset.eval_split float] [--env str]
+                        [--env.type {aloha,pusht,gym_manipulator,libero,metaworld,robocasa,vlabench,isaaclab_arena,unitree_g1_mujoco,libero_plus,robotwin,robomme}]
+                        [--policy str]
+                        [--policy.type {act,diffusion,eo1,evo1,groot,molmoact2,fastwam,gaussian_actor,lawam,lingbot_va,multi_task_dit,pi0,pi0_fast,pi05,smolvla,tdmpc,vla_jepa,vqbet,wall_x,xvla}]
+                        [--policy.n_obs_steps int]
+                        [--policy.input_features [dict[str,PolicyFeature]]]
+                        [--policy.output_features [dict[str,PolicyFeature]]]
+                        [--policy.device [str]] [--policy.use_amp bool]
+                        [--policy.use_peft bool] [--policy.push_to_hub bool]
+                        [--policy.repo_id [str]] [--policy.private [bool]]
+                        [--policy.tags [list[str]]] [--policy.license [str]]
+                        [--policy.pretrained_path [Path]]
+                        [--policy.pretrained_revision [str]]
+                        [--policy.chunk_size int]
+                        [--policy.n_action_steps int]
+                        [--policy.normalization_mapping dict[str,NormalizationMode]]
+                        [--policy.vision_backbone str]
+                        [--policy.pretrained_backbone_weights [str]]
+                        [--policy.replace_final_stride_with_dilation int]
+                        [--policy.pre_norm bool] [--policy.dim_model int]
+                        [--policy.n_heads int] [--policy.dim_feedforward int]
+                        [--policy.feedforward_activation str]
+                        [--policy.n_encoder_layers int]
+                        [--policy.n_decoder_layers int]
+                        [--policy.use_vae bool] [--policy.latent_dim int]
+                        [--policy.n_vae_encoder_layers int]
+                        [--policy.temporal_ensemble_coeff [float]]
+                        [--policy.dropout float] [--policy.kl_weight float]
+                        [--policy.optimizer_lr float]
+                        [--policy.optimizer_weight_decay float]
+                        [--policy.optimizer_lr_backbone float]
+                        [--reward_model str]
+                        [--reward_model.type {reward_classifier,robometer,sarm,topreward}]
+                        [--output_dir [Path]] [--job_name [str]]
+                        [--resume bool] [--seed [int]]
+                        [--cudnn_deterministic bool] [--num_workers int]
+                        [--batch_size int] [--prefetch_factor int]
+                        [--persistent_workers bool]
+                        [--dataloader_multiprocessing_context [str]]
+                        [--steps int] [--env_eval_freq int] [--log_freq int]
+                        [--eval_steps int] [--max_eval_samples int]
+                        [--tolerance_s float] [--save_checkpoint bool]
+                        [--save_freq int]
+                        [--checkpoint_format CheckpointFormat]
+                        [--use_policy_training_preset bool] [--optimizer str]
+                        [--optimizer.type {adam,adamw,sgd,xvla-adamw,multi_adam,molmoact2_adamw}]
+                        [--scheduler str]
+                        [--scheduler.type {diffuser,vqbet,constant_with_warmup,cosine_annealing_with_warmup,cosine_decay_with_warmup,molmoact2_cosine_with_warmup,lawam_cosine_with_min_lr}]
+                        [--parallelism str] [--parallelism.dp_replicate int]
+                        [--parallelism.dp_shard int] [--context_parallel str]
+                        [--parallelism.context_parallel.ring_degree int]
+                        [--parallelism.context_parallel.ulysses_degree int]
+                        [--parallelism.cfg_parallel int] [--accelerator str]
+                        [--accelerator.mixed_precision str]
+                        [--gradient_accumulation str]
+                        [--accelerator.gradient_accumulation.steps int]
+                        [--fsdp str]
+                        [--accelerator.fsdp.reshard_after_forward bool]
+                        [--accelerator.fsdp.wrap_modules [list[str]]]
+                        [--accelerator.fsdp.min_num_params [int]]
+                        [--accelerator.fsdp.cpu_offload bool]
+                        [--accelerator.fsdp.ignored_modules [str]] [--ddp str]
+                        [--accelerator.ddp.find_unused_parameters bool]
+                        [--accelerator.ddp.gradient_as_bucket_view bool]
+                        [--accelerator.ddp.static_graph bool] [--compile str]
+                        [--accelerator.compile.enabled bool]
+                        [--accelerator.compile.backend str]
+                        [--accelerator.compile.mode [str]]
+                        [--accelerator.compile.regional bool]
+                        [--activation_checkpointing str]
+                        [--accelerator.activation_checkpointing.mode ActivationCheckpointingMode]
+                        [--eval str] [--eval.n_episodes int]
+                        [--eval.batch_size int] [--eval.use_async_envs bool]
+                        [--eval.recording bool]
+                        [--eval.recording_repo_id [str]]
+                        [--eval.recording_private bool] [--ema str]
+                        [--ema.enable bool] [--ema.decay [float]]
+                        [--ema.update_after_step int] [--ema.inv_gamma float]
+                        [--ema.power float] [--ema.min_decay float]
+                        [--ema.max_decay float] [--ema.use_for_eval bool]
+                        [--wandb str] [--wandb.enable bool]
+                        [--wandb.disable_artifact bool] [--wandb.project str]
+                        [--wandb.entity [str]] [--wandb.notes [str]]
+                        [--wandb.run_id [str]] [--wandb.resume [str]]
+                        [--wandb.mode [str]] [--wandb.console str]
+                        [--wandb.console_multipart bool]
+                        [--wandb.console_chunk_max_seconds int]
+                        [--wandb.add_tags bool] [--peft str]
+                        [--peft.target_modules [list[str]|str]]
+                        [--peft.full_training_modules [list[str]]]
+                        [--peft.method_type str] [--peft.init_type [str]]
+                        [--peft.r int] [--peft.lora_alpha [int]] [--job str]
+                        [--job.target [str]] [--job.image str]
+                        [--job.timeout [str]] [--job.detach bool]
+                        [--job.tags list[str]] [--save_checkpoint_to_hub bool]
+                        [--sample_weighting str] [--sample_weighting.type str]
+                        [--sample_weighting.progress_path [str]]
+                        [--sample_weighting.head_mode str]
+                        [--sample_weighting.kappa float]
+                        [--sample_weighting.epsilon float]
+                        [--sample_weighting.extra_params dict]
+                        [--rename_map dict[str,str]]
+
+options:
+  -h, --help            show this help message and exit
+  --config_path str     Path for a config file to parse with draccus (default:
+                        None)
+  --dataset str         Config file for dataset (default: None)
+  --image_transforms str
+                        Config file for image_transforms (default: None)
+  --env str             Config file for env (default: None)
+  --policy str          Config file for policy (default: None)
+  --reward_model str    Config file for reward_model (default: None)
+  --optimizer str       Config file for optimizer (default: None)
+  --scheduler str       Config file for scheduler (default: None)
+  --parallelism str     Config file for parallelism (default: None)
+  --context_parallel str
+                        Config file for context_parallel (default: None)
+  --accelerator str     Config file for accelerator (default: None)
+  --gradient_accumulation str
+                        Config file for gradient_accumulation (default: None)
+  --fsdp str            Config file for fsdp (default: None)
+  --ddp str             Config file for ddp (default: None)
+  --compile str         Config file for compile (default: None)
+  --activation_checkpointing str
+                        Config file for activation_checkpointing (default:
+                        None)
+  --eval str            Config file for eval (default: None)
+  --ema str             Config file for ema (default: None)
+  --wandb str           Config file for wandb (default: None)
+  --peft str            Config file for peft (default: None)
+  --job str             Config file for job (default: None)
+  --sample_weighting str
+                        Config file for sample_weighting (default: None)
+
+TrainPipelineConfig:
+
+  --output_dir [Path]   Set `dir` to where you would like to save all of the
+                        run outputs. If you run another training session with
+                        the same value for `dir` its contents will be
+                        overwritten unless you set `resume` to true. (default:
+                        None)
+  --job_name [str]
+  --resume bool         Set `resume` to true to resume a previous run. Pass
+                        `--config_path` pointing at either a local
+                        checkpoint's train_config.json or a Hub repo id
+                        holding `checkpoints/<step>/` subtrees (the latest
+                        checkpoint is downloaded and resumed from). Note that
+                        when resuming, the default behavior is to use the
+                        configuration from the checkpoint, regardless of
+                        what's provided with the training command at the time
+                        of resumption (CLI `--*` flags still override).
+                        (default: False)
+  --seed [int]          `seed` is used for training (eg: model initialization,
+                        dataset shuffling) AND for the evaluation
+                        environments. (default: 1000)
+  --cudnn_deterministic bool
+                        Set to True to use deterministic cuDNN algorithms for
+                        reproducibility. This disables cudnn.benchmark and may
+                        reduce training speed by ~10-20 percent. (default:
+                        False)
+  --num_workers int     Number of workers for the dataloader. (default: 4)
+  --batch_size int      
+  --prefetch_factor int
+  --persistent_workers bool
+  --dataloader_multiprocessing_context [str]
+                        DataLoader worker start method. "spawn" is safer than
+                        "fork" with non-fork-safe libs (PyAV / torchcodec /
+                        ffmpeg), but adds some worker-startup time per run
+                        since workers re-import modules instead of inheriting
+                        parent state. Override with
+                        `--dataloader_multiprocessing_context=fork` when
+                        appropriate, or set it to `null` to use Python's
+                        platform default. (default: spawn)
+  --steps int           
+  --env_eval_freq int   Run policy in the simulation environment every N steps
+                        to measure reward/success (0 = disabled). (default:
+                        20000)
+  --log_freq int        
+  --eval_steps int      Compute eval loss on held-out episodes every N steps
+                        (0 = disabled). Requires eval_split > 0. (default: 0)
+  --max_eval_samples int
+                        Cap on total eval samples, split uniformly across
+                        tasks (0 = use all held-out data). (default: 0)
+  --tolerance_s float   
+  --save_checkpoint bool
+  --save_freq int       Checkpoint is saved every `save_freq` training
+                        iterations and after the last training step. A non-
+                        positive value disables periodic saving, keeping only
+                        the final checkpoint. (default: 20000)
+  --checkpoint_format CheckpointFormat
+                        Model-artifact format inside checkpoints; non-default
+                        values require a sharded run. (default:
+                        CheckpointFormat.SAFETENSORS)
+  --use_policy_training_preset bool
+  --save_checkpoint_to_hub bool
+                        Push each saved checkpoint to the Hub (policy.repo_id)
+                        as it is written, not just the final model (useful to
+                        monitor progress mid-run). Optional; the final model
+                        is pushed regardless. Works the same locally and
+                        remotely. (default: False)
+  --rename_map dict[str,str]
+                        Rename map for the observation to override the image
+                        and state keys (default: {})
+
+DatasetConfig ['dataset']:
+
+  --dataset.repo_id str
+                        You may provide a list of datasets here. `train.py`
+                        creates them all and concatenates them. Note: only
+                        data keys common between the datasets are kept. Each
+                        dataset gets and additional transform that inserts the
+                        "dataset_index" into the returned item. The index
+                        mapping is made according to the order in which the
+                        datasets are provided. (default: None)
+  --dataset.repo_type str
+                        Hub repository type: "dataset" (default) or "bucket"
+                        for an HF Storage Bucket (hf://buckets/). Whether a
+                        bucket needs streaming=true depends on the dataset's
+                        storage format, so that is checked at load time in the
+                        dataset factory. (default: dataset)
+  --dataset.root [str]  Root directory for a concrete local dataset tree (e.g.
+                        'dataset/path'). If None, local datasets are looked up
+                        under $HF_LEROBOT_HOME/repo_id and Hub downloads use a
+                        revision-safe cache under $HF_LEROBOT_HOME/hub.
+                        (default: None)
+  --dataset.episodes [list[int]]
+  --dataset.exclude_episodes [list[int]]
+                        Episode indices to drop (e.g. corrupt or heterogeneous
+                        ones). Applied on top of `episodes`. (default: None)
+  --dataset.revision [str]
+  --dataset.use_imagenet_stats bool
+  --dataset.video_backend str
+  --dataset.return_uint8 bool
+                        When True, RGB video frames are returned as uint8
+                        tensors (0-255) instead of float32 (0.0-1.0). This
+                        reduces memory and speeds up DataLoader IPC. The
+                        training pipeline handles the conversion. (default:
+                        False)
+  --dataset.depth_output_unit str
+                        Physical unit depth maps are dequantized to at load
+                        time: "mm" (millimeters) or "m" (metres). Has no
+                        effect on datasets without depth cameras. (default:
+                        mm)
+  --dataset.streaming bool
+  --dataset.eval_split float
+                        Fraction of episodes held out per task for offline
+                        evaluation (0.0 = disabled). (default: 0.0)
+
+ImageTransformsConfig ['dataset.image_transforms']:
+  
+      These transforms are all using standard torchvision.transforms.v2
+      You can find out how these transformations affect images here:
+      https://pytorch.org/vision/0.18/auto_examples/transforms/plot_transforms_illustrations.html
+      We use a custom RandomSubsetApply container to sample them.
+      
+
+  --dataset.image_transforms.enable bool
+                        Set this flag to `true` to enable transforms during
+                        training (default: False)
+  --dataset.image_transforms.max_num_transforms int
+                        This is the maximum number of transforms (sampled from
+                        these below) that will be applied to each frame. It's
+                        an integer in the interval [1,
+                        number_of_available_transforms]. (default: 3)
+  --dataset.image_transforms.random_order bool
+                        By default, transforms are applied in Torchvision's
+                        suggested order (shown below). Set this to True to
+                        apply them in a random order. (default: False)
+  --dataset.image_transforms.tfs dict[str,ImageTransformConfig]
+
+Optional ['env']:
+
+EnvConfig ['env']:
+
+  --env.type {aloha,pusht,gym_manipulator,libero,metaworld,robocasa,vlabench,isaaclab_arena,unitree_g1_mujoco,libero_plus,robotwin,robomme}
+                        Which type of EnvConfig ['env'] to use (default: None)
+
+Optional ['policy']:
+
+PreTrainedConfig ['policy']:
+  
+      Base configuration class for policy models.
+  
+      Args:
+          n_obs_steps: Number of environment steps worth of observations to pass to the policy (takes the
+              current step and additional steps going back).
+          input_features: A dictionary defining the PolicyFeature of the input data for the policy. The key represents
+              the input data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+          output_features: A dictionary defining the PolicyFeature of the output data for the policy. The key represents
+              the output data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+          normalization_mapping: A dictionary that maps from a str value of FeatureType (e.g., "STATE", "VISUAL") to
+              a corresponding NormalizationMode (e.g., NormalizationMode.MIN_MAX)
+      
+
+  --policy.type {act,diffusion,eo1,evo1,groot,molmoact2,fastwam,gaussian_actor,lawam,lingbot_va,multi_task_dit,pi0,pi0_fast,pi05,smolvla,tdmpc,vla_jepa,vqbet,wall_x,xvla}
+                        Which type of PreTrainedConfig ['policy'] to use
+                        (default: None)
+
+ACTConfig ['policy']:
+  Configuration class for the Action Chunking Transformers policy.
+  
+      Defaults are configured for training on bimanual Aloha tasks like "insertion" or "transfer".
+  
+      The parameters you will most likely need to change are the ones which depend on the environment / sensors.
+      Those are: `input_features` and `output_features`.
+  
+      Notes on the inputs and outputs:
+          - Either:
+              - At least one key starting with "observation.image is required as an input.
+                AND/OR
+              - The key "observation.environment_state" is required as input.
+          - If there are multiple keys beginning with "observation.images." they are treated as multiple camera
+            views. Right now we only support all images having the same shape.
+          - May optionally work without an "observation.state" key for the proprioceptive robot state.
+          - "action" is required as an output key.
+  
+      Args:
+          n_obs_steps: Number of environment steps worth of observations to pass to the policy (takes the
+              current step and additional steps going back).
+          chunk_size: The size of the action prediction "chunks" in units of environment steps.
+          n_action_steps: The number of action steps to run in the environment for one invocation of the policy.
+              This should be no greater than the chunk size. For example, if the chunk size size 100, you may
+              set this to 50. This would mean that the model predicts 100 steps worth of actions, runs 50 in the
+              environment, and throws the other 50 out.
+          input_features: A dictionary defining the PolicyFeature of the input data for the policy. The key represents
+              the input data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+          output_features: A dictionary defining the PolicyFeature of the output data for the policy. The key represents
+              the output data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+          normalization_mapping: A dictionary that maps from a str value of FeatureType (e.g., "STATE", "VISUAL") to
+              a corresponding NormalizationMode (e.g., NormalizationMode.MIN_MAX)
+          vision_backbone: Name of the torchvision resnet backbone to use for encoding images.
+          pretrained_backbone_weights: Pretrained weights from torchvision to initialize the backbone.
+              `None` means no pretrained weights.
+          replace_final_stride_with_dilation: Whether to replace the ResNet's final 2x2 stride with a dilated
+              convolution.
+          pre_norm: Whether to use "pre-norm" in the transformer blocks.
+          dim_model: The transformer blocks' main hidden dimension.
+          n_heads: The number of heads to use in the transformer blocks' multi-head attention.
+          dim_feedforward: The dimension to expand the transformer's hidden dimension to in the feed-forward
+              layers.
+          feedforward_activation: The activation to use in the transformer block's feed-forward layers.
+          n_encoder_layers: The number of transformer layers to use for the transformer encoder.
+          n_decoder_layers: The number of transformer layers to use for the transformer decoder.
+          use_vae: Whether to use a variational objective during training. This introduces another transformer
+              which is used as the VAE's encoder (not to be confused with the transformer encoder - see
+              documentation in the policy class).
+          latent_dim: The VAE's latent dimension.
+          n_vae_encoder_layers: The number of transformer layers to use for the VAE's encoder.
+          temporal_ensemble_coeff: Coefficient for the exponential weighting scheme to apply for temporal
+              ensembling. Defaults to None which means temporal ensembling is not used. `n_action_steps` must be
+              1 when using this feature, as inference needs to happen at every step to form an ensemble. For
+              more information on how ensembling works, please see `ACTTemporalEnsembler`.
+          dropout: Dropout to use in the transformer layers (see code for details).
+          kl_weight: The weight to use for the KL-divergence component of the loss if the variational objective
+              is enabled. Loss is then calculated as: `reconstruction_loss + kl_weight * kld_loss`.
+      
+
+  --policy.n_obs_steps int
+                        Input / output structure. (default: 1)
+  --policy.input_features [dict[str,PolicyFeature]]
+  --policy.output_features [dict[str,PolicyFeature]]
+  --policy.device [str]
+                        e.g. "cuda", "cuda:0", "cpu", or "mps" (default: None)
+  --policy.use_amp bool
+                        `use_amp` determines whether to use Automatic Mixed
+                        Precision (AMP) for training and evaluation. With AMP,
+                        automatic gradient scaling is used. (default: False)
+  --policy.use_peft bool
+                        Whether the policy employed PEFT for training.
+                        (default: False)
+  --policy.push_to_hub bool
+                        type: ignore[assignment] # TODO: use a different name
+                        to avoid override (default: True)
+  --policy.repo_id [str]
+  --policy.private [bool]
+                        Upload on private repository on the Hugging Face hub.
+                        (default: None)
+  --policy.tags [list[str]]
+                        Add tags to your policy on the hub. (default: None)
+  --policy.license [str]
+                        Add tags to your policy on the hub. (default: None)
+  --policy.pretrained_path [Path]
+                        Either the repo ID of a model hosted on the Hub or a
+                        path to a directory containing weights saved using
+                        `Policy.save_pretrained`. If not provided, the policy
+                        is initialized from scratch. (default: None)
+  --policy.pretrained_revision [str]
+                        Optional Hub revision (commit hash, branch, or tag) to
+                        pin the pretrained model version. (default: None)
+  --policy.chunk_size int
+  --policy.n_action_steps int
+  --policy.normalization_mapping dict[str,NormalizationMode]
+  --policy.vision_backbone str
+  --policy.pretrained_backbone_weights [str]
+  --policy.replace_final_stride_with_dilation int
+  --policy.pre_norm bool
+                        Transformer layers. (default: False)
+  --policy.dim_model int
+  --policy.n_heads int  
+  --policy.dim_feedforward int
+  --policy.feedforward_activation str
+  --policy.n_encoder_layers int
+  --policy.n_decoder_layers int
+  --policy.use_vae bool
+  --policy.latent_dim int
+  --policy.n_vae_encoder_layers int
+  --policy.temporal_ensemble_coeff [float]
+  --policy.dropout float
+                        Training and loss computation. (default: 0.1)
+  --policy.kl_weight float
+  --policy.optimizer_lr float
+                        Training preset (default: 1e-05)
+  --policy.optimizer_weight_decay float
+  --policy.optimizer_lr_backbone float
+
+Optional ['reward_model']:
+
+RewardModelConfig ['reward_model']:
+  Base configuration for reward models.
+  
+      Args:
+      input_features: A dictionary defining the PolicyFeature of the input data for the reward. The key represents
+          the input data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+      output_features: A dictionary defining the PolicyFeature of the output data for the reward. The key represents
+          the output data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+      
+
+  --reward_model.type {reward_classifier,robometer,sarm,topreward}
+                        Which type of RewardModelConfig ['reward_model'] to
+                        use (default: None)
+
+Optional ['optimizer']:
+
+OptimizerConfig ['optimizer']:
+
+  --optimizer.type {adam,adamw,sgd,xvla-adamw,multi_adam,molmoact2_adamw}
+                        Which type of OptimizerConfig ['optimizer'] to use
+                        (default: None)
+
+Optional ['scheduler']:
+
+LRSchedulerConfig ['scheduler']:
+
+  --scheduler.type {diffuser,vqbet,constant_with_warmup,cosine_annealing_with_warmup,cosine_decay_with_warmup,molmoact2_cosine_with_warmup,lawam_cosine_with_min_lr}
+                        Which type of LRSchedulerConfig ['scheduler'] to use
+                        (default: None)
+
+ParallelismConfig ['parallelism']:
+  Process topology: dp_replicate / dp_shard (HSDP) and context-parallel degree placeholders.
+
+  --parallelism.dp_replicate int
+  --parallelism.dp_shard int
+                        -1 is an explicit opt-in sentinel: shard over
+                        world_size // (dp_replicate * cp). (default: 1)
+  --parallelism.cfg_parallel int
+                        Classifier-free-guidance parallelism — inference-only
+                        (cosmos/vllm-omni precedent: cond/uncond branches on
+                        different ranks). Reserved for the serving round;
+                        training validates it to 1. Meaningful values are 1 or
+                        2 (Cosmos3 has two CFG branches). (default: 1)
+
+ContextParallelConfig ['parallelism.context_parallel']:
+  Ring x Ulysses context parallelism (sequence parallelism for attention).
+  
+      Both degrees are configured placeholders in this release: the CP engine is not implemented
+      yet, and enabling either degree > 1 fails fast at config validation. The fields exist now so
+      that the CLI surface, checkpoint metadata, and mesh math are stable when the engine lands.
+      
+
+  --parallelism.context_parallel.ring_degree int
+  --parallelism.context_parallel.ulysses_degree int
+
+AcceleratorConfig ['accelerator']:
+  Execution runtime handed to the Accelerator: mixed precision, gradient accumulation,
+  FSDP/DDP tuning knobs, compile & activation-checkpointing placeholders.
+
+  --accelerator.mixed_precision str
+
+GradientAccumulationConfig ['accelerator.gradient_accumulation']:
+  Mirror of the `GradientAccumulationPlugin` subset LeRobot supports.
+  
+      Only the step count is a knob. ``sync_with_dataloader`` is pinned to False by
+      :meth:`build_plugin`: the training loop cycles a finite dataloader, so accelerate's default
+      of syncing at every dataloader end would force an optimizer step at every dataset epoch
+      boundary instead of every ``steps`` micro-batches.
+      
+
+  --accelerator.gradient_accumulation.steps int
+
+FSDPConfig ['accelerator.fsdp']:
+  Mirror of the `FullyShardedDataParallelPlugin` subset LeRobot supports (FSDP2 only).
+  
+      Exactly one wrap policy applies: `wrap_modules` (module *class names* forming the FSDP
+      units — and, later, the activation-checkpointing units) or `min_num_params` (size-based).
+      When both are None, the policy's own `_fsdp_wrap_modules` declaration is used; a run where
+      no wrap source exists at all fails loudly rather than silently wrapping only the root.
+      
+
+  --accelerator.fsdp.reshard_after_forward bool
+  --accelerator.fsdp.wrap_modules [list[str]]
+  --accelerator.fsdp.min_num_params [int]
+  --accelerator.fsdp.cpu_offload bool
+  --accelerator.fsdp.ignored_modules [str]
+                        Regex matched against module FQNs to exclude their
+                        parameters from sharding. (default: None)
+
+DDPConfig ['accelerator.ddp']:
+  Mirror of the `DistributedDataParallelKwargs` subset LeRobot exposes.
+
+  --accelerator.ddp.find_unused_parameters bool
+                        Today's in-script default, kept for models with
+                        conditional computation. (default: True)
+  --accelerator.ddp.gradient_as_bucket_view bool
+  --accelerator.ddp.static_graph bool
+
+CompileConfig ['accelerator.compile']:
+  torch.compile knobs — a configured placeholder: wiring lands in a later round.
+  
+      The setup-order contract it will follow is already fixed: compile applies
+      after CP dispatch install and activation checkpointing, before `fully_shard`, regionally
+      (per wrap unit) — the only combination proven with FSDP2.
+      
+
+  --accelerator.compile.enabled bool
+  --accelerator.compile.backend str
+  --accelerator.compile.mode [str]
+  --accelerator.compile.regional bool
+
+ActivationCheckpointingConfig ['accelerator.activation_checkpointing']:
+  Activation-checkpointing knobs — a configured placeholder: wiring lands in a later round.
+  
+      AC units will coincide with the FSDP wrap units (one declaration drives both), applied
+      before torch.compile and `fully_shard` (the same ordering contract as CompileConfig).
+      
+
+  --accelerator.activation_checkpointing.mode ActivationCheckpointingMode
+
+EvalConfig ['eval']:
+
+  --eval.n_episodes int
+  --eval.batch_size int
+                        `batch_size` specifies the number of environments to
+                        use in a gym.vector.VectorEnv. Set to 0 for auto-
+                        tuning based on available CPU cores and n_episodes.
+                        (default: 0)
+  --eval.use_async_envs bool
+                        `use_async_envs` specifies whether to use asynchronous
+                        environments (multiprocessing). Defaults to True;
+                        automatically downgraded to SyncVectorEnv when
+                        batch_size=1. (default: True)
+  --eval.recording bool
+                        Whether to record eval rollouts as a LeRobot dataset
+                        on disk. (default: False)
+  --eval.recording_repo_id [str]
+                        If set, push recorded eval datasets to the Hub under
+                        this repo id (one repo per task, suffixed by task and
+                        env index). Requires recording=true. (default: None)
+  --eval.recording_private bool
+                        Whether the pushed recording repositories should be
+                        private. (default: False)
+
+EMAConfig ['ema']:
+  Maintain an EMA shadow of the policy weights during training (see EMAConfig).
+
+  --ema.enable bool     
+  --ema.decay [float]   Constant decay coefficient (openpi-style, e.g. 0.99
+                        for pi0/pi05). When set, the warmup schedule below is
+                        bypassed and the shadow uses this decay at every step.
+                        (default: None)
+  --ema.update_after_step int
+                        Number of optimizer steps during which the shadow
+                        stays a hard copy of the live weights. (default: 0)
+  --ema.inv_gamma float
+                        Warmup schedule parameters (see class docstring).
+                        (default: 1.0)
+  --ema.power float     
+  --ema.min_decay float
+  --ema.max_decay float
+  --ema.use_for_eval bool
+                        Evaluate the EMA weights (instead of the live ones)
+                        during periodic env eval. Offline eval-loss
+                        (--eval_steps) always uses the live weights: it runs
+                        on every rank while the EMA shadow only lives on the
+                        main process. (default: True)
+
+WandBConfig ['wandb']:
+
+  --wandb.enable bool   
+  --wandb.disable_artifact bool
+                        Set to true to disable saving an artifact despite
+                        training.save_checkpoint=True (default: False)
+  --wandb.project str   
+  --wandb.entity [str]
+  --wandb.notes [str]
+  --wandb.run_id [str]
+  --wandb.resume [str]  Allowed values: 'allow', 'must', 'never', or 'auto'.
+                        (default: None)
+  --wandb.mode [str]    Allowed values: 'online', 'offline' 'disabled'.
+                        Defaults to 'online' (default: None)
+  --wandb.console str   
+  --wandb.console_multipart bool
+  --wandb.console_chunk_max_seconds int
+  --wandb.add_tags bool
+                        If True, save configuration as tags in the WandB run.
+                        (default: True)
+
+Optional ['peft']:
+
+PeftConfig ['peft']:
+
+  --peft.target_modules [list[str]|str]
+                        PEFT offers many fine-tuning methods, layer adapters
+                        being the most common and currently also the most
+                        effective methods so we'll focus on those in this
+                        high-level config interface. Either a string (module
+                        name suffix or 'all-linear'), a list of module name
+                        suffixes or a regular expression describing module
+                        names to target with the configured PEFT method. Some
+                        policies have a default value for this so that you
+                        don't *have* to choose which layers to adapt but it
+                        might still be worthwhile depending on your case.
+                        (default: None)
+  --peft.full_training_modules [list[str]]
+                        Names/suffixes of modules to fully fine-tune and store
+                        alongside adapter weights. Useful for layers that are
+                        not part of a pre-trained model (e.g., action state
+                        projections). Depending on the policy this defaults to
+                        layers that are newly created in pre-trained policies.
+                        If you're fine-tuning an already trained policy you
+                        might want to set this to `[]`. Corresponds to PEFT's
+                        `modules_to_save`. (default: None)
+  --peft.method_type str
+                        The PEFT (adapter) method to apply to the policy.
+                        Needs to be a valid PEFT type. (default: LORA)
+  --peft.init_type [str]
+                        Adapter initialization method. Look at the specific
+                        PEFT adapter documentation for defaults. (default:
+                        None)
+  --peft.r int          We expect that all PEFT adapters are in some way doing
+                        rank-decomposition therefore this parameter specifies
+                        the rank used for the adapter. In general a higher
+                        rank means more trainable parameters and closer to
+                        full fine-tuning. (default: 16)
+  --peft.lora_alpha [int]
+                        Alpha parameter for LoRA scaling (scaling = lora_alpha
+                        / r). In general, a higher alpha means stronger
+                        adaptation signal. If None, the PEFT library defaults
+                        to alpha=8, which may dampen high-rank adapters.
+                        Common values are r (alpha == rank) or 2*r. (default:
+                        None)
+
+JobConfig ['job']:
+  Where to run training (local default, or an HF Jobs flavor). See JobConfig.
+
+  --job.target [str]    Where training runs. None (omitted) or "local" runs on
+                        this machine. Any other value is an HF Jobs flavor and
+                        submits the run to HF Jobs. List available flavors +
+                        pricing with `hf jobs hardware` command. (default:
+                        None)
+  --job.image str       Runtime image for the remote job (ignored for local
+                        runs). (default: huggingface/lerobot-gpu:latest)
+  --job.timeout [str]   Max wall-clock for the remote job as an HF Jobs
+                        duration string (e.g. "2h"). Defaults to "2d": We pass
+                        an explicit, generous cap instead. Set a smaller value
+                        to fail fast, or a larger one for long runs. (default:
+                        2d)
+  --job.detach bool     Submit and exit instead of streaming the job logs in
+                        the foreground. (default: False)
+  --job.tags list[str]  Extra tags attached to the HF job and to any dataset
+                        this run pushes to the Hub. A "lerobot" tag is always
+                        added; e.g. --job.tags '["lelab"]' adds more.
+                        (default: [])
+
+Optional ['sample_weighting']:
+  Sample weighting configuration (e.g., for RA-BC training)
+
+SampleWeightingConfig ['sample_weighting']:
+  Sample weighting configuration (e.g., for RA-BC training)
+
+  --sample_weighting.type str
+  --sample_weighting.progress_path [str]
+  --sample_weighting.head_mode str
+  --sample_weighting.kappa float
+  --sample_weighting.epsilon float
+  --sample_weighting.extra_params dict
+                        Additional type-specific params can be added here or
+                        passed via extra_params (default: {})
+
+[exit_code=0 duration_ms=2781]
+
+===== policy.type=act resolution =====
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+policy_class ACTPolicy
+config_class ACTConfig
+chunk_size 100
+n_action_steps 100
+dim_model 512
+ACTPOLICY_OK
+
+[exit_code=0 duration_ms=2631]
+
+missing required train flags: none

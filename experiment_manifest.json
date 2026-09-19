@@ -1,0 +1,3869 @@
+{
+  "schema": "actlab.experiment_manifest/1",
+  "generated_at": "2026-09-19T19:05:36+08:00",
+  "artifacts": [
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/00_hardware_check.txt",
+      "bytes": 5323,
+      "sha256": "c47b11de72bb7e82d1b55d3140996c7b427e6980b3ae7adb1178075bb854ef15",
+      "note": "hardware probe",
+      "recorded_at": "2026-09-19T19:05:40+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/01_python_environment.txt",
+      "bytes": 1307,
+      "sha256": "812f24124cabedbc0f368dc6c73c9aa21a571c2b4663e7b09f159d8046f23cd7",
+      "note": "python/conda probe",
+      "recorded_at": "2026-09-19T19:05:40+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/02_cuda_pytorch.txt",
+      "bytes": 1023,
+      "sha256": "8aa2c42ddc70fdb76b24499968cf3501fdda4ffdaf8133635d89a471b434aa06",
+      "note": "CUDA/LibTorch probe",
+      "recorded_at": "2026-09-19T19:05:40+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/00_hardware_check.txt",
+      "bytes": 5323,
+      "sha256": "304c0b428451c5b3d6170ca8fdecb7d3ae9286f053069503065550baa72e7873",
+      "note": "hardware probe",
+      "recorded_at": "2026-09-19T19:08:59+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/01_python_environment.txt",
+      "bytes": 1307,
+      "sha256": "812f24124cabedbc0f368dc6c73c9aa21a571c2b4663e7b09f159d8046f23cd7",
+      "note": "python/conda probe",
+      "recorded_at": "2026-09-19T19:08:59+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/02_cuda_pytorch.txt",
+      "bytes": 1367,
+      "sha256": "fc43bfb46d193dbd3f5bb5d31710c4ae7b6347a46b407cd541d3239c7e718cf0",
+      "note": "CUDA/LibTorch probe",
+      "recorded_at": "2026-09-19T19:08:59+08:00"
+    },
+    {
+      "stage": "S1",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/03_repo_probe.txt",
+      "bytes": 811,
+      "sha256": "3fcd22ce9fe7d48ad002bf5cc9f963cf27caa27e0d16c058e248591f5f888ef5",
+      "note": "repo probe",
+      "recorded_at": "2026-09-19T19:09:07+08:00"
+    },
+    {
+      "stage": "S2",
+      "kind": "analysis",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/architecture_analysis.md",
+      "bytes": 1853,
+      "sha256": "ca88f88086ea591678b6278ab4d2038cf4d80cc0ba8a2a3e0475c0500152acd0",
+      "note": "architecture analysis",
+      "recorded_at": "2026-09-19T19:09:07+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/04_lerobot_install.txt",
+      "bytes": 28449,
+      "sha256": "220700e42a4be7bd55f966adc90cd8ec7ad11d8c5ac6152a3086e76477ed617f",
+      "note": "pip install evidence",
+      "recorded_at": "2026-09-19T19:10:43+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/06_cli_check.txt",
+      "bytes": 31093,
+      "sha256": "74836a3d0b3fa2a8f5e9d5e3e69a1ab59f25086702ab2944675f3bc285e4d919",
+      "note": "CLI check",
+      "recorded_at": "2026-09-19T19:10:43+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/configs/conda_env.lock.yml",
+      "bytes": 3222,
+      "sha256": "7dfce04cfb5b268b3b55ea6a1b0a5d07fa29952be5a8fde0e68dff1072b50ded",
+      "note": "conda env lock",
+      "recorded_at": "2026-09-19T19:10:43+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/pip_freeze.txt",
+      "bytes": 1903,
+      "sha256": "0d80fa909826546fa78cfaaaee538447b33ba8a985aae0b47bedf964060be20e",
+      "note": "pip freeze",
+      "recorded_at": "2026-09-19T19:10:43+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/04_lerobot_install.txt",
+      "bytes": 21256,
+      "sha256": "942971a6bc0dacd930c10198bdc7a2b55fcc47dcfe7081e5a279fab5d299f1f4",
+      "note": "pip install evidence",
+      "recorded_at": "2026-09-19T19:11:48+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/06_cli_check.txt",
+      "bytes": 70842,
+      "sha256": "605587e9ca87c8185bbf0efc8aa8567348590a92020fa4ebadfba8e36feb4ac1",
+      "note": "CLI check",
+      "recorded_at": "2026-09-19T19:11:48+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/configs/conda_env.lock.yml",
+      "bytes": 3222,
+      "sha256": "7dfce04cfb5b268b3b55ea6a1b0a5d07fa29952be5a8fde0e68dff1072b50ded",
+      "note": "conda env lock",
+      "recorded_at": "2026-09-19T19:11:48+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/pip_freeze.txt",
+      "bytes": 1903,
+      "sha256": "0d80fa909826546fa78cfaaaee538447b33ba8a985aae0b47bedf964060be20e",
+      "note": "pip freeze",
+      "recorded_at": "2026-09-19T19:11:48+08:00"
+    },
+    {
+      "stage": "S4",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/07_dataset_download.txt",
+      "bytes": 3081,
+      "sha256": "9462c5682c54b04d8b8bad13217c5e52592a232129a3e784c646f8fab6451453",
+      "note": "dataset acquisition",
+      "recorded_at": "2026-09-19T19:12:32+08:00"
+    },
+    {
+      "stage": "S5",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/08_dataset_schema.txt",
+      "bytes": 978,
+      "sha256": "0a4191b4ac3803028773312bf0f6d176c6534b69edfba37ef930f7505e339523",
+      "note": "schema audit",
+      "recorded_at": "2026-09-19T19:12:32+08:00"
+    },
+    {
+      "stage": "S6",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/09_dataset_viz.txt",
+      "bytes": 239,
+      "sha256": "3b96d0fb91f418df128e036b23cb8db708c120e473529a47b8ef6c9276b4ea0e",
+      "note": "dataset visualization",
+      "recorded_at": "2026-09-19T19:12:32+08:00"
+    },
+    {
+      "stage": "S4",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/07_dataset_download.txt",
+      "bytes": 2068,
+      "sha256": "f60d7230d1ef2357dc900ff496ff567ab872da474924204f1e208ddd4c44cf0b",
+      "note": "dataset acquisition",
+      "recorded_at": "2026-09-19T19:13:37+08:00"
+    },
+    {
+      "stage": "S5",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/08_dataset_schema.txt",
+      "bytes": 978,
+      "sha256": "0a4191b4ac3803028773312bf0f6d176c6534b69edfba37ef930f7505e339523",
+      "note": "schema audit",
+      "recorded_at": "2026-09-19T19:13:37+08:00"
+    },
+    {
+      "stage": "S6",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/dataset_frames.png",
+      "bytes": 253843,
+      "sha256": "6ccc4ad2ebb76f13a1df52b252f0f36e6d9920b1d1f4cbe44da316010e447ed5",
+      "note": "real dataset frames montage",
+      "recorded_at": "2026-09-19T19:13:37+08:00"
+    },
+    {
+      "stage": "S6",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/09_dataset_viz.txt",
+      "bytes": 486,
+      "sha256": "4d95ba9da73429a308fa7672dda803df0ca8e124a85e85d70e99d0b9e5f9a348",
+      "note": "dataset visualization",
+      "recorded_at": "2026-09-19T19:13:37+08:00"
+    },
+    {
+      "stage": "S4",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/07_dataset_download.txt",
+      "bytes": 24639,
+      "sha256": "deda54ad45ee7b225b2ea2266af58216d314a2a61b740e5a0b6db8cf3c89627e",
+      "note": "dataset acquisition",
+      "recorded_at": "2026-09-19T19:16:41+08:00"
+    },
+    {
+      "stage": "S5",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/08_dataset_schema.txt",
+      "bytes": 978,
+      "sha256": "0a4191b4ac3803028773312bf0f6d176c6534b69edfba37ef930f7505e339523",
+      "note": "schema audit",
+      "recorded_at": "2026-09-19T19:16:41+08:00"
+    },
+    {
+      "stage": "S6",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/dataset_frames.png",
+      "bytes": 253843,
+      "sha256": "5a33c85c58806902cdee4fa2982344beb0bd454ce4fcd024ea3adf9e8a4de3af",
+      "note": "real dataset frames montage",
+      "recorded_at": "2026-09-19T19:16:41+08:00"
+    },
+    {
+      "stage": "S6",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/09_dataset_viz.txt",
+      "bytes": 486,
+      "sha256": "642d97e19a4360d3abf51e7305b7247263cc2e95ffae73891f81c8b08a7b780e",
+      "note": "dataset visualization",
+      "recorded_at": "2026-09-19T19:16:41+08:00"
+    },
+    {
+      "stage": "S8",
+      "kind": "config",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/10_act_config.txt",
+      "bytes": 842,
+      "sha256": "3226ffbca8986c3fa5f5b1672b1aaac75d33d38b94f7e929b062e2cd85f0f3b7",
+      "note": "frozen config snapshot",
+      "recorded_at": "2026-09-19T19:16:49+08:00"
+    },
+    {
+      "stage": "S9",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/11_act_model_init.txt",
+      "bytes": 3959,
+      "sha256": "c2b22de21630d02cd087f50a11fe525076734533723e93df2c9b8b0e28d89b72",
+      "note": "ACT init/forward/backward probe",
+      "recorded_at": "2026-09-19T19:17:26+08:00"
+    },
+    {
+      "stage": "S10",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/12_training_smoke.txt",
+      "bytes": 2251,
+      "sha256": "2af8c61ce269e45d5a5fc8f3dbc208d638c3c50170f7f21acc2c379b69fbe6e6",
+      "note": "training log",
+      "recorded_at": "2026-09-19T19:17:29+08:00"
+    },
+    {
+      "stage": "S9",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/11_act_model_init.txt",
+      "bytes": 1787,
+      "sha256": "badde83fc0d3a4060ddc10238f75587d9b799fbb2a18307fba96db697d745670",
+      "note": "ACT init/forward/backward probe",
+      "recorded_at": "2026-09-19T19:18:52+08:00"
+    },
+    {
+      "stage": "S10/S11",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/metrics.jsonl",
+      "bytes": 338,
+      "sha256": "45e5201c46a71bd7941ff1bf0f622b97f1f9c36b1811b7071630800f50d6b142",
+      "note": "parsed metrics",
+      "recorded_at": "2026-09-19T19:19:38+08:00"
+    },
+    {
+      "stage": "S10/S11",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/loss_curve.csv",
+      "bytes": 177,
+      "sha256": "41f0bf0d46b4b8e451536f28b3c19bdd0518290b302c13f20b2224deff0c9194",
+      "note": "loss curve csv",
+      "recorded_at": "2026-09-19T19:19:38+08:00"
+    },
+    {
+      "stage": "S10/S11",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/loss_curve.png",
+      "bytes": 29920,
+      "sha256": "dc6b32b3a04c7b9a77c5616fd4da12a13c1c0e280c91afad53e062d9a3240709",
+      "note": "PNG rendered from real log data via ImageMagick",
+      "recorded_at": "2026-09-19T19:19:38+08:00"
+    },
+    {
+      "stage": "S10",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/12_training_smoke.txt",
+      "bytes": 19630,
+      "sha256": "9bf12a392355fabfe16b9ac9de93627336054cc19de3d012c2cdab7b4217748a",
+      "note": "training log",
+      "recorded_at": "2026-09-19T19:19:38+08:00"
+    },
+    {
+      "stage": "S10/S11",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/metrics.jsonl",
+      "bytes": 10753,
+      "sha256": "b2ebee2e0a06f698c09e7ba65144304376c5629c12265a8f18d2472bb5f1d553",
+      "note": "parsed metrics",
+      "recorded_at": "2026-09-19T19:40:44+08:00"
+    },
+    {
+      "stage": "S10/S11",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/loss_curve.csv",
+      "bytes": 3272,
+      "sha256": "36bed34220a754378573e853f5f331498ae5f5e55d3000eb3e6f05a2222ddfa4",
+      "note": "loss curve csv",
+      "recorded_at": "2026-09-19T19:40:44+08:00"
+    },
+    {
+      "stage": "S10/S11",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/loss_curve.png",
+      "bytes": 22852,
+      "sha256": "43ec0cc37d5ccef0ed16ed6d78205a5d622f9ee59daa72fa3122c9425f42c155",
+      "note": "PNG rendered from real log data via ImageMagick",
+      "recorded_at": "2026-09-19T19:40:44+08:00"
+    },
+    {
+      "stage": "S11",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/13_training_release.txt",
+      "bytes": 267408,
+      "sha256": "91ab5e2d188a97c3ae08970ea4b2b45a97da58a588e233f91059a1b152f79d0f",
+      "note": "training log",
+      "recorded_at": "2026-09-19T19:40:44+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 3740,
+      "sha256": "234c8937ad146f0189a2283751c2043fc0a6a6211e22a43e6e630c22f1ca271d",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:19+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "bytes": 3748,
+      "sha256": "657a4800699e00504f476714703316422ed257dd85b6d3f1e617a7ff0218b9f1",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:19+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/policy_preprocessor.json",
+      "bytes": 1324,
+      "sha256": "c1054c40c6fdfd1ad0768b58fd2a2cb6e0de2f6323259befcbeb6a072de680a5",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:19+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/train_config.json",
+      "bytes": 7632,
+      "sha256": "cd590313f2536639aecf32b0fc9f34ee2d09f5fdcd299d42a8fa42320865b2f9",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:19+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/policy_postprocessor.json",
+      "bytes": 660,
+      "sha256": "648b415125a183dfd6cbc47c1dc04ab3f2d912654ef22a12ca5e8b93d7d85cdd",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:19+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/config.json",
+      "bytes": 1697,
+      "sha256": "7c96d9faf048c290b0bff208dbc2ee988d5ffe3a5bf74a6a17e1561d64fa81f6",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:19+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/model.safetensors",
+      "bytes": 206699768,
+      "sha256": "d0e8ebb69dff7619cd5472165b03b36343cf57aa8b29cf0be6f757f8908a0e2a",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:20+08:00"
+    },
+    {
+      "stage": "S13",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/15_checkpoint.txt",
+      "bytes": 5035,
+      "sha256": "34989c94cffe8766016c4f326512b38ab5480353061b8cb8583ffd39c179c79b",
+      "note": "checkpoint/export log",
+      "recorded_at": "2026-09-19T19:41:27+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 3740,
+      "sha256": "234c8937ad146f0189a2283751c2043fc0a6a6211e22a43e6e630c22f1ca271d",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:43+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "bytes": 3748,
+      "sha256": "657a4800699e00504f476714703316422ed257dd85b6d3f1e617a7ff0218b9f1",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:43+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/policy_preprocessor.json",
+      "bytes": 1324,
+      "sha256": "c1054c40c6fdfd1ad0768b58fd2a2cb6e0de2f6323259befcbeb6a072de680a5",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:43+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/train_config.json",
+      "bytes": 7632,
+      "sha256": "cd590313f2536639aecf32b0fc9f34ee2d09f5fdcd299d42a8fa42320865b2f9",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:43+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/policy_postprocessor.json",
+      "bytes": 660,
+      "sha256": "648b415125a183dfd6cbc47c1dc04ab3f2d912654ef22a12ca5e8b93d7d85cdd",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:43+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/config.json",
+      "bytes": 1697,
+      "sha256": "7c96d9faf048c290b0bff208dbc2ee988d5ffe3a5bf74a6a17e1561d64fa81f6",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:43+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model/model.safetensors",
+      "bytes": 206699768,
+      "sha256": "d0e8ebb69dff7619cd5472165b03b36343cf57aa8b29cf0be6f757f8908a0e2a",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:41:44+08:00"
+    },
+    {
+      "stage": "S13",
+      "kind": "torchscript",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt",
+      "bytes": 147480850,
+      "sha256": "13f57b504bde6083e32ce4abafdfd8eada6b703b09bcda27b879635623e82d28",
+      "note": "exported TorchScript policy",
+      "recorded_at": "2026-09-19T19:41:49+08:00"
+    },
+    {
+      "stage": "S13",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/16_model_reload.txt",
+      "bytes": 1758,
+      "sha256": "f8772a20fd364a1b12115b7057907d0f9582d09a6be3371a4ad43e787879da15",
+      "note": "new-process reload evidence",
+      "recorded_at": "2026-09-19T19:41:55+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 3740,
+      "sha256": "234c8937ad146f0189a2283751c2043fc0a6a6211e22a43e6e630c22f1ca271d",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:42:06+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "bytes": 3748,
+      "sha256": "657a4800699e00504f476714703316422ed257dd85b6d3f1e617a7ff0218b9f1",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:42:06+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_preprocessor.json",
+      "bytes": 1324,
+      "sha256": "c1054c40c6fdfd1ad0768b58fd2a2cb6e0de2f6323259befcbeb6a072de680a5",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:42:06+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/train_config.json",
+      "bytes": 7621,
+      "sha256": "78a1ad749e4de562c1665b9370bb5d19616fb242377577ed62694e86558f493f",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:42:06+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_postprocessor.json",
+      "bytes": 660,
+      "sha256": "648b415125a183dfd6cbc47c1dc04ab3f2d912654ef22a12ca5e8b93d7d85cdd",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:42:06+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/config.json",
+      "bytes": 1697,
+      "sha256": "7c96d9faf048c290b0bff208dbc2ee988d5ffe3a5bf74a6a17e1561d64fa81f6",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:42:06+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/model.safetensors",
+      "bytes": 206699768,
+      "sha256": "1a78481baa98e91c490e1ff1936ba296fce444ebb8a706a63630c82cb4b8abce",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T19:42:07+08:00"
+    },
+    {
+      "stage": "S13",
+      "kind": "torchscript",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt",
+      "bytes": 147480850,
+      "sha256": "2062696acc38932a73d089975858db0c4144b0ddc5c7dbce5410a0895b73ff2d",
+      "note": "exported TorchScript policy",
+      "recorded_at": "2026-09-19T19:42:13+08:00"
+    },
+    {
+      "stage": "S13",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/16_model_reload.txt",
+      "bytes": 3510,
+      "sha256": "2dd7688a191d5d86dcbd88351cab66fe45d481f6635d3c3bf8b4520fec86f5cd",
+      "note": "new-process reload evidence",
+      "recorded_at": "2026-09-19T19:42:14+08:00"
+    },
+    {
+      "stage": "S14",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/17_inference.txt",
+      "bytes": 627,
+      "sha256": "35faabfe683da4cf7f1cb271867844a1c994f914b598d501074dd9cb57572772",
+      "note": "C++ inference",
+      "recorded_at": "2026-09-19T19:42:25+08:00"
+    },
+    {
+      "stage": "S14",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/inference_latency.csv",
+      "bytes": 120,
+      "sha256": "18581f41f88c47d505844f8c03349978539701c1188f6d4a44637301e5a039e1",
+      "note": "latency measurements",
+      "recorded_at": "2026-09-19T19:42:25+08:00"
+    },
+    {
+      "stage": "S15",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/eval_summary.md",
+      "bytes": 1130,
+      "sha256": "e1b3b468a8a2dc0499f36d291357fe3127b137401ca6de4b520420a93dfa4653",
+      "note": "offline evaluation",
+      "recorded_at": "2026-09-19T19:42:29+08:00"
+    },
+    {
+      "stage": "S14",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/17_inference.txt",
+      "bytes": 628,
+      "sha256": "e8ded832a7580e2511e42f341814fc78bd1c7c8270d2d99dbfaf55c29ac4d9e0",
+      "note": "C++ inference",
+      "recorded_at": "2026-09-19T19:42:48+08:00"
+    },
+    {
+      "stage": "S14",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/inference_latency.csv",
+      "bytes": 121,
+      "sha256": "c4b5f0a23ccc5841c6b67afbffbbde21f591c5542d389944f25f5f48e11a82df",
+      "note": "latency measurements",
+      "recorded_at": "2026-09-19T19:42:48+08:00"
+    },
+    {
+      "stage": "S15",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/eval_summary.md",
+      "bytes": 1132,
+      "sha256": "d7e49ff5b6b40867415c205e5124d6b739cc6f01d785cd162f734768bd43ece0",
+      "note": "offline evaluation",
+      "recorded_at": "2026-09-19T19:42:50+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/00_hardware_check.png",
+      "bytes": 6627,
+      "sha256": "b8343454f39285a8fa5ce717630ca16a62b04661cbcce81ac0349aa4a1cd612d",
+      "note": "OS/GPU/CUDA/Python/conda/git/ffmpeg 探测",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/02_cuda_pytorch.png",
+      "bytes": 6218,
+      "sha256": "8e94c01dd598c30d3dac241985320c180841605b39f46efa9169e6e39fc60a94",
+      "note": "torch CUDA / sm_120 可用性",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/03_repo_clone.png",
+      "bytes": 3876,
+      "sha256": "ba377e07209d7cd71635b8c91fd63071fea68b74ea5bdfcb28c5d622f275efef",
+      "note": "LeRobot 源码 commit/branch",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png",
+      "bytes": 8147,
+      "sha256": "f8c37246d2c0d17c3a4b648a920f53e2c622d32545c193df85c7d0f0bf4d88a7",
+      "note": "editable 安装与 import 验证",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png",
+      "bytes": 4907,
+      "sha256": "3652789046cb1a77bdf3d278db7f1014f175d1d6a32c82b755789f56183e4873",
+      "note": "数据集落盘与规模",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png",
+      "bytes": 4648,
+      "sha256": "2af6480c421b99413d14c23e65b7cfb4679711e8e1f97bc39de63351dcc089be",
+      "note": "可视化产物（.rrd / 帧拼图）",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/10_act_config.png",
+      "bytes": 7232,
+      "sha256": "f371f544d2c6a9e6fc3ebb694c9b657b0136f93ece9ba37cbdace70dfab5a5d9",
+      "note": "冻结的超参与配置哈希",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/11_act_model_init.png",
+      "bytes": 7421,
+      "sha256": "37e17497a16f03b13fa30a48cc544402b641741f5692630b428b37c3ff67b1f2",
+      "note": "最小初始化/前向/反向后端验证",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/12_training_start.png",
+      "bytes": 11563,
+      "sha256": "dd696c573ec47045d31568ab6c3e38e032817a35f7fa04cbdef629103fa62e43",
+      "note": "smoke 训练启动",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/13_training_progress.png",
+      "bytes": 10876,
+      "sha256": "ebbd46c8c435546126a0bf78db95c06fa9d34ea3a3f3877d1ed876264fe9b983",
+      "note": "release 训练进行中",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/14_training_loss.png",
+      "bytes": 4591,
+      "sha256": "f3d658d175817ad904e26803a2f9514a8991708afcaad008f84a29250a5ba443",
+      "note": "loss 曲线（真实日志）",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/15_checkpoint.png",
+      "bytes": 10688,
+      "sha256": "71bf0a39903f7664a1c2a45b6207fca1b9ca77617682cc222c673cf5010186da",
+      "note": "checkpoint 目录与哈希",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/16_model_reload.png",
+      "bytes": 5483,
+      "sha256": "1c8c8e837562a45304a963f846b4e241259b183041150a2e0f2702d7b124971f",
+      "note": "新进程 C++ 重载",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/17_inference.png",
+      "bytes": 4108,
+      "sha256": "20d0a762167fb95036bf99aadcb4accf58f21d3b902045098dda15c9000ab370",
+      "note": "C++ 推理与延时统计",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/18_evaluation.png",
+      "bytes": 6512,
+      "sha256": "e949f0183a333174cf0f0a95b778c2828caec65b50f8e7cede518d970b0ea6ec",
+      "note": "Offline Evaluation 结果",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "index",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/index.md",
+      "bytes": 3428,
+      "sha256": "4cc2b7fd5edcc0f260f347c9d092a2ef82226102919af89e22b0021b1fed92c1",
+      "note": "evidence index",
+      "recorded_at": "2026-09-19T19:42:54+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/00_hardware_check.txt",
+      "bytes": 5323,
+      "sha256": "45ec7ec7098a20cc6b90427709b14acf14932cf8416c2a8b27ace42b5733b863",
+      "note": "hardware probe",
+      "recorded_at": "2026-09-19T19:45:03+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/01_python_environment.txt",
+      "bytes": 1307,
+      "sha256": "812f24124cabedbc0f368dc6c73c9aa21a571c2b4663e7b09f159d8046f23cd7",
+      "note": "python/conda probe",
+      "recorded_at": "2026-09-19T19:45:03+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/02_cuda_pytorch.txt",
+      "bytes": 1367,
+      "sha256": "5e2050a4ae91ca8f10bdb465c51a68cbb92f00132d93f86604bcb6c7e6d65ec4",
+      "note": "CUDA/LibTorch probe",
+      "recorded_at": "2026-09-19T19:45:03+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/04_lerobot_install.txt",
+      "bytes": 21257,
+      "sha256": "4aaeb2db4e1ae39f8dd3b53c5c7ae45d88c9230fb85a44707a0f238dad22d5f0",
+      "note": "pip install evidence",
+      "recorded_at": "2026-09-19T19:45:19+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/06_cli_check.txt",
+      "bytes": 70842,
+      "sha256": "aef864dfea3f09ed7d78e7fca9b65e51c4028390b88c8bcca2d32ddaedce1327",
+      "note": "CLI check",
+      "recorded_at": "2026-09-19T19:45:19+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/configs/conda_env.lock.yml",
+      "bytes": 3277,
+      "sha256": "17efac245426b5a043fcadf694a280b3b4bab0070d9326a9cb1b3675cc75680a",
+      "note": "conda env lock",
+      "recorded_at": "2026-09-19T19:45:19+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/pip_freeze.txt",
+      "bytes": 1942,
+      "sha256": "8694ea31c08f23a8e73ad964afd703a3e04920feecc5ceb34d538dd83c7cb8a8",
+      "note": "pip freeze",
+      "recorded_at": "2026-09-19T19:45:19+08:00"
+    },
+    {
+      "stage": "S4",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/07_dataset_download.txt",
+      "bytes": 24639,
+      "sha256": "a6dd14a5df42231ff819be18d43865c0884313152b04f546b294b2626b09d6ff",
+      "note": "dataset acquisition",
+      "recorded_at": "2026-09-19T19:48:46+08:00"
+    },
+    {
+      "stage": "S5",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/08_dataset_schema.txt",
+      "bytes": 978,
+      "sha256": "0a4191b4ac3803028773312bf0f6d176c6534b69edfba37ef930f7505e339523",
+      "note": "schema audit",
+      "recorded_at": "2026-09-19T19:48:46+08:00"
+    },
+    {
+      "stage": "S6",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/dataset_frames.png",
+      "bytes": 253843,
+      "sha256": "ba2097a9b86d5b683f742a153f3a504520a9ce35bc180bf9f12d302dde9108f6",
+      "note": "real dataset frames montage",
+      "recorded_at": "2026-09-19T19:48:46+08:00"
+    },
+    {
+      "stage": "S6",
+      "kind": "visualization",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/lerobot_svla_so101_pickplace_episode_0.rrd",
+      "bytes": 4757265026,
+      "sha256": "9b28e0407c0f116171617af93168aa7946dd6e594aaba9ddede0980e17d222da",
+      "note": "official dataset visualization (rerun)",
+      "recorded_at": "2026-09-19T19:48:59+08:00"
+    },
+    {
+      "stage": "S6",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/09_dataset_viz.txt",
+      "bytes": 486,
+      "sha256": "9263cc548010457babe0c1041ba1870b192a7924f8ab08a3741dcc1d87c56c9a",
+      "note": "dataset visualization",
+      "recorded_at": "2026-09-19T19:48:59+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/04_lerobot_install.txt",
+      "bytes": 21257,
+      "sha256": "23d04a48c622375c8d76f3df9429e2b2082860357bf024bb32680ff788c8cf5a",
+      "note": "pip install evidence",
+      "recorded_at": "2026-09-19T19:49:20+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/06_cli_check.txt",
+      "bytes": 70842,
+      "sha256": "f92e98aa2084970b6522431c3648f703d95e3f37f0ebedbf92ea7b5bc7cc3168",
+      "note": "CLI check",
+      "recorded_at": "2026-09-19T19:49:20+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/configs/conda_env.lock.yml",
+      "bytes": 3277,
+      "sha256": "17efac245426b5a043fcadf694a280b3b4bab0070d9326a9cb1b3675cc75680a",
+      "note": "conda env lock",
+      "recorded_at": "2026-09-19T19:49:20+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/pip_freeze.txt",
+      "bytes": 1942,
+      "sha256": "8694ea31c08f23a8e73ad964afd703a3e04920feecc5ceb34d538dd83c7cb8a8",
+      "note": "pip freeze",
+      "recorded_at": "2026-09-19T19:49:20+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/04_lerobot_install.txt",
+      "bytes": 21256,
+      "sha256": "7f191ff64066c31394bf34ed0eb6595483a6b28a160a0c6a23c554049ce17234",
+      "note": "pip install evidence",
+      "recorded_at": "2026-09-19T19:50:21+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/06_cli_check.txt",
+      "bytes": 70842,
+      "sha256": "0284873ca1e7094e1bbaca27841486a0194c943182c55c338f48bb80965acac4",
+      "note": "CLI check",
+      "recorded_at": "2026-09-19T19:50:21+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/configs/conda_env.lock.yml",
+      "bytes": 3277,
+      "sha256": "17efac245426b5a043fcadf694a280b3b4bab0070d9326a9cb1b3675cc75680a",
+      "note": "conda env lock",
+      "recorded_at": "2026-09-19T19:50:21+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/pip_freeze.txt",
+      "bytes": 1942,
+      "sha256": "8694ea31c08f23a8e73ad964afd703a3e04920feecc5ceb34d538dd83c7cb8a8",
+      "note": "pip freeze",
+      "recorded_at": "2026-09-19T19:50:21+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/04_lerobot_install.txt",
+      "bytes": 21256,
+      "sha256": "0659b60f3186c64034d479f5c46ffb5d1096844f09748f02f19f9ec67c8ba57c",
+      "note": "pip install evidence",
+      "recorded_at": "2026-09-19T19:51:37+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/06_cli_check.txt",
+      "bytes": 70842,
+      "sha256": "827eef554966b7c3b1cd9d7d7d7b73a3ce85a69aa8affc628f0307f9a82bb026",
+      "note": "CLI check",
+      "recorded_at": "2026-09-19T19:51:37+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/configs/conda_env.lock.yml",
+      "bytes": 3277,
+      "sha256": "17efac245426b5a043fcadf694a280b3b4bab0070d9326a9cb1b3675cc75680a",
+      "note": "conda env lock",
+      "recorded_at": "2026-09-19T19:51:37+08:00"
+    },
+    {
+      "stage": "S3",
+      "kind": "lock",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/pip_freeze.txt",
+      "bytes": 1942,
+      "sha256": "8694ea31c08f23a8e73ad964afd703a3e04920feecc5ceb34d538dd83c7cb8a8",
+      "note": "pip freeze",
+      "recorded_at": "2026-09-19T19:51:37+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/00_hardware_check.png",
+      "bytes": 6668,
+      "sha256": "6f54a3cd2815cf2e2c2eb8e65291169416387f1ba4ebdab0b9b807399739e08f",
+      "note": "OS/GPU/CUDA/Python/conda/git/ffmpeg 探测",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/01_python_environment.png",
+      "bytes": 4576,
+      "sha256": "622bd67df35f3e103fba1062ecbda6cbfe3d372c454fa93bedcbed294c48f166",
+      "note": "conda env 与 python 版本",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/02_cuda_pytorch.png",
+      "bytes": 6223,
+      "sha256": "e76eeea28beb444e13f4f41572914f104068fe44572e47fa04c3f34a0aec6d11",
+      "note": "torch CUDA / sm_120 可用性",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/03_repo_clone.png",
+      "bytes": 3876,
+      "sha256": "ba377e07209d7cd71635b8c91fd63071fea68b74ea5bdfcb28c5d622f275efef",
+      "note": "LeRobot 源码 commit/branch",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png",
+      "bytes": 8129,
+      "sha256": "d3c04e25451d6cde943437889f20949f7b5cfaeecabd300eb5cb2c750b0e4d76",
+      "note": "editable 安装与 import 验证",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/05_lerobot_version.png",
+      "bytes": 5497,
+      "sha256": "dd577c50dec2f27ede72dc350ccde12bc34ffcdb2e08fd4aa4763669e3dc093a",
+      "note": "版本锁定（pip freeze / conda lock）",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/06_cli_check.png",
+      "bytes": 7673,
+      "sha256": "37a60074d9fe117a8fb322b102d19485e8598fb7134e7c247ba1cccd7bfc1613",
+      "note": "lerobot-train --help 关键参数",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png",
+      "bytes": 4886,
+      "sha256": "a3ab0f4773d19855e9cb0fcd4d24bd576beb85bc31934563a92a65f1ae97e181",
+      "note": "数据集落盘与规模",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/08_dataset_structure.png",
+      "bytes": 5863,
+      "sha256": "9703d233789ad70ac467c8e0f446f62b5a9dd137114c50cfbf1106571073fa92",
+      "note": "schema 审计结果",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png",
+      "bytes": 4725,
+      "sha256": "2d6de855fd2b2bdfa85f3a00d4593771d93955eea346059e4d6a78eab17da5c3",
+      "note": "可视化产物（.rrd / 帧拼图）",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/10_act_config.png",
+      "bytes": 7232,
+      "sha256": "f371f544d2c6a9e6fc3ebb694c9b657b0136f93ece9ba37cbdace70dfab5a5d9",
+      "note": "冻结的超参与配置哈希",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/11_act_model_init.png",
+      "bytes": 7421,
+      "sha256": "37e17497a16f03b13fa30a48cc544402b641741f5692630b428b37c3ff67b1f2",
+      "note": "最小初始化/前向/反向后端验证",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/12_training_start.png",
+      "bytes": 11563,
+      "sha256": "dd696c573ec47045d31568ab6c3e38e032817a35f7fa04cbdef629103fa62e43",
+      "note": "smoke 训练启动（100 步）",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/13_training_progress.png",
+      "bytes": 10876,
+      "sha256": "ebbd46c8c435546126a0bf78db95c06fa9d34ea3a3f3877d1ed876264fe9b983",
+      "note": "release 训练（3000 步）",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/14_training_loss.png",
+      "bytes": 4591,
+      "sha256": "f3d658d175817ad904e26803a2f9514a8991708afcaad008f84a29250a5ba443",
+      "note": "loss 曲线（真实日志）",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/15_checkpoint.png",
+      "bytes": 10688,
+      "sha256": "71bf0a39903f7664a1c2a45b6207fca1b9ca77617682cc222c673cf5010186da",
+      "note": "checkpoint 目录与哈希",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/16_model_reload.png",
+      "bytes": 5483,
+      "sha256": "1c8c8e837562a45304a963f846b4e241259b183041150a2e0f2702d7b124971f",
+      "note": "新进程 C++ 重载",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/17_inference.png",
+      "bytes": 4108,
+      "sha256": "20d0a762167fb95036bf99aadcb4accf58f21d3b902045098dda15c9000ab370",
+      "note": "C++ 推理与延时统计",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/18_evaluation.png",
+      "bytes": 6512,
+      "sha256": "e949f0183a333174cf0f0a95b778c2828caec65b50f8e7cede518d970b0ea6ec",
+      "note": "Offline Evaluation 结果",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "index",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/index.md",
+      "bytes": 3473,
+      "sha256": "92858f440aa113920e84990b4f51c4d7283f3fc421561260930b10a56e94b4f6",
+      "note": "evidence index",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/14_training_loss.txt",
+      "bytes": 378,
+      "sha256": "cbcf3fdff3879f987e93042087885724f753e0257d07c34111f275f1436cebf9",
+      "note": "loss summary (evidence pairing)",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/19_final_environment.txt",
+      "bytes": 753,
+      "sha256": "dc4f11ef2c6d3080648deba20e16feb32f6f5f41b013b2d61a85519ddcb0b345",
+      "note": "final environment overview",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/README.md",
+      "bytes": 7076,
+      "sha256": "634ddae80e45d3ad0f253fb5ffc2f959fbfe4cba582d2024e043f9badb78ef9c",
+      "note": "final report",
+      "recorded_at": "2026-09-19T19:51:44+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/00_hardware_check.png",
+      "bytes": 6668,
+      "sha256": "6f54a3cd2815cf2e2c2eb8e65291169416387f1ba4ebdab0b9b807399739e08f",
+      "note": "OS/GPU/CUDA/Python/conda/git/ffmpeg 探测",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/01_python_environment.png",
+      "bytes": 4576,
+      "sha256": "622bd67df35f3e103fba1062ecbda6cbfe3d372c454fa93bedcbed294c48f166",
+      "note": "conda env 与 python 版本",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/02_cuda_pytorch.png",
+      "bytes": 6223,
+      "sha256": "e76eeea28beb444e13f4f41572914f104068fe44572e47fa04c3f34a0aec6d11",
+      "note": "torch CUDA / sm_120 可用性",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/03_repo_clone.png",
+      "bytes": 3876,
+      "sha256": "ba377e07209d7cd71635b8c91fd63071fea68b74ea5bdfcb28c5d622f275efef",
+      "note": "LeRobot 源码 commit/branch",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png",
+      "bytes": 8129,
+      "sha256": "d3c04e25451d6cde943437889f20949f7b5cfaeecabd300eb5cb2c750b0e4d76",
+      "note": "editable 安装与 import 验证",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/05_lerobot_version.png",
+      "bytes": 5497,
+      "sha256": "dd577c50dec2f27ede72dc350ccde12bc34ffcdb2e08fd4aa4763669e3dc093a",
+      "note": "版本锁定（pip freeze / conda lock）",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/06_cli_check.png",
+      "bytes": 7673,
+      "sha256": "37a60074d9fe117a8fb322b102d19485e8598fb7134e7c247ba1cccd7bfc1613",
+      "note": "lerobot-train --help 关键参数",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png",
+      "bytes": 4886,
+      "sha256": "a3ab0f4773d19855e9cb0fcd4d24bd576beb85bc31934563a92a65f1ae97e181",
+      "note": "数据集落盘与规模",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/08_dataset_structure.png",
+      "bytes": 5863,
+      "sha256": "9703d233789ad70ac467c8e0f446f62b5a9dd137114c50cfbf1106571073fa92",
+      "note": "schema 审计结果",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png",
+      "bytes": 4725,
+      "sha256": "2d6de855fd2b2bdfa85f3a00d4593771d93955eea346059e4d6a78eab17da5c3",
+      "note": "可视化产物（.rrd / 帧拼图）",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/10_act_config.png",
+      "bytes": 7232,
+      "sha256": "f371f544d2c6a9e6fc3ebb694c9b657b0136f93ece9ba37cbdace70dfab5a5d9",
+      "note": "冻结的超参与配置哈希",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/11_act_model_init.png",
+      "bytes": 7421,
+      "sha256": "37e17497a16f03b13fa30a48cc544402b641741f5692630b428b37c3ff67b1f2",
+      "note": "最小初始化/前向/反向后端验证",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/12_training_start.png",
+      "bytes": 11563,
+      "sha256": "dd696c573ec47045d31568ab6c3e38e032817a35f7fa04cbdef629103fa62e43",
+      "note": "smoke 训练启动（100 步）",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/13_training_progress.png",
+      "bytes": 10876,
+      "sha256": "ebbd46c8c435546126a0bf78db95c06fa9d34ea3a3f3877d1ed876264fe9b983",
+      "note": "release 训练（3000 步）",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/14_training_loss.png",
+      "bytes": 4591,
+      "sha256": "f3d658d175817ad904e26803a2f9514a8991708afcaad008f84a29250a5ba443",
+      "note": "loss 曲线（真实日志）",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/15_checkpoint.png",
+      "bytes": 10688,
+      "sha256": "71bf0a39903f7664a1c2a45b6207fca1b9ca77617682cc222c673cf5010186da",
+      "note": "checkpoint 目录与哈希",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/16_model_reload.png",
+      "bytes": 5483,
+      "sha256": "1c8c8e837562a45304a963f846b4e241259b183041150a2e0f2702d7b124971f",
+      "note": "新进程 C++ 重载",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/17_inference.png",
+      "bytes": 4108,
+      "sha256": "20d0a762167fb95036bf99aadcb4accf58f21d3b902045098dda15c9000ab370",
+      "note": "C++ 推理与延时统计",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/18_evaluation.png",
+      "bytes": 6512,
+      "sha256": "e949f0183a333174cf0f0a95b778c2828caec65b50f8e7cede518d970b0ea6ec",
+      "note": "Offline Evaluation 结果",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/19_final_environment.png",
+      "bytes": 5599,
+      "sha256": "5c66cfbaa37a295e538f0c441fbc68b5a366e355c12e6a3440aad1acb52a6cca",
+      "note": "最终环境与产物总览",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "index",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/index.md",
+      "bytes": 3372,
+      "sha256": "cc409ea8843defce12bbc33f3dd02bca6d267d6fb7a3aeecb8caf5dec6e8a4a4",
+      "note": "evidence index",
+      "recorded_at": "2026-09-19T19:52:08+08:00"
+    },
+    {
+      "stage": "S15",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/eval_summary.md",
+      "bytes": 1131,
+      "sha256": "e6bc68e3da050c77441a6672ff9d2fd9980d0cb6ed00002a7280cb33fb31c098",
+      "note": "offline evaluation",
+      "recorded_at": "2026-09-19T19:52:30+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/14_training_loss.txt",
+      "bytes": 378,
+      "sha256": "cbcf3fdff3879f987e93042087885724f753e0257d07c34111f275f1436cebf9",
+      "note": "loss summary (evidence pairing)",
+      "recorded_at": "2026-09-19T19:52:31+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/19_final_environment.txt",
+      "bytes": 753,
+      "sha256": "606f78652ce3c3cc23f82715e1cadbabecc4cb5c61ecc7a46a20df351c999070",
+      "note": "final environment overview",
+      "recorded_at": "2026-09-19T19:52:31+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/README.md",
+      "bytes": 7106,
+      "sha256": "d3f325f677381f9fbdfe6b23d44bca16762cd1a6ec20af3ae6d40f724cbec3bd",
+      "note": "final report",
+      "recorded_at": "2026-09-19T19:52:31+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/00_hardware_check.png",
+      "bytes": 6668,
+      "sha256": "6f54a3cd2815cf2e2c2eb8e65291169416387f1ba4ebdab0b9b807399739e08f",
+      "note": "OS/GPU/CUDA/Python/conda/git/ffmpeg 探测",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/01_python_environment.png",
+      "bytes": 4576,
+      "sha256": "622bd67df35f3e103fba1062ecbda6cbfe3d372c454fa93bedcbed294c48f166",
+      "note": "conda env 与 python 版本",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/02_cuda_pytorch.png",
+      "bytes": 6223,
+      "sha256": "e76eeea28beb444e13f4f41572914f104068fe44572e47fa04c3f34a0aec6d11",
+      "note": "torch CUDA / sm_120 可用性",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/03_repo_clone.png",
+      "bytes": 3876,
+      "sha256": "ba377e07209d7cd71635b8c91fd63071fea68b74ea5bdfcb28c5d622f275efef",
+      "note": "LeRobot 源码 commit/branch",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png",
+      "bytes": 8129,
+      "sha256": "d3c04e25451d6cde943437889f20949f7b5cfaeecabd300eb5cb2c750b0e4d76",
+      "note": "editable 安装与 import 验证",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/05_lerobot_version.png",
+      "bytes": 5497,
+      "sha256": "dd577c50dec2f27ede72dc350ccde12bc34ffcdb2e08fd4aa4763669e3dc093a",
+      "note": "版本锁定（pip freeze / conda lock）",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/06_cli_check.png",
+      "bytes": 7673,
+      "sha256": "37a60074d9fe117a8fb322b102d19485e8598fb7134e7c247ba1cccd7bfc1613",
+      "note": "lerobot-train --help 关键参数",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png",
+      "bytes": 4886,
+      "sha256": "a3ab0f4773d19855e9cb0fcd4d24bd576beb85bc31934563a92a65f1ae97e181",
+      "note": "数据集落盘与规模",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/08_dataset_structure.png",
+      "bytes": 5863,
+      "sha256": "9703d233789ad70ac467c8e0f446f62b5a9dd137114c50cfbf1106571073fa92",
+      "note": "schema 审计结果",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png",
+      "bytes": 4725,
+      "sha256": "2d6de855fd2b2bdfa85f3a00d4593771d93955eea346059e4d6a78eab17da5c3",
+      "note": "可视化产物（.rrd / 帧拼图）",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/10_act_config.png",
+      "bytes": 7232,
+      "sha256": "f371f544d2c6a9e6fc3ebb694c9b657b0136f93ece9ba37cbdace70dfab5a5d9",
+      "note": "冻结的超参与配置哈希",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/11_act_model_init.png",
+      "bytes": 7421,
+      "sha256": "37e17497a16f03b13fa30a48cc544402b641741f5692630b428b37c3ff67b1f2",
+      "note": "最小初始化/前向/反向后端验证",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/12_training_start.png",
+      "bytes": 11563,
+      "sha256": "dd696c573ec47045d31568ab6c3e38e032817a35f7fa04cbdef629103fa62e43",
+      "note": "smoke 训练启动（100 步）",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/13_training_progress.png",
+      "bytes": 10876,
+      "sha256": "ebbd46c8c435546126a0bf78db95c06fa9d34ea3a3f3877d1ed876264fe9b983",
+      "note": "release 训练（3000 步）",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/14_training_loss.png",
+      "bytes": 4591,
+      "sha256": "f3d658d175817ad904e26803a2f9514a8991708afcaad008f84a29250a5ba443",
+      "note": "loss 曲线（真实日志）",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/15_checkpoint.png",
+      "bytes": 10688,
+      "sha256": "71bf0a39903f7664a1c2a45b6207fca1b9ca77617682cc222c673cf5010186da",
+      "note": "checkpoint 目录与哈希",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/16_model_reload.png",
+      "bytes": 5483,
+      "sha256": "1c8c8e837562a45304a963f846b4e241259b183041150a2e0f2702d7b124971f",
+      "note": "新进程 C++ 重载",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/17_inference.png",
+      "bytes": 4108,
+      "sha256": "20d0a762167fb95036bf99aadcb4accf58f21d3b902045098dda15c9000ab370",
+      "note": "C++ 推理与延时统计",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/18_evaluation.png",
+      "bytes": 6479,
+      "sha256": "33af444bee4cdec565deb2054d94a153a1a9d1e9b7615c355390ab1e2f8b6958",
+      "note": "Offline Evaluation 结果",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/19_final_environment.png",
+      "bytes": 5599,
+      "sha256": "5c66cfbaa37a295e538f0c441fbc68b5a366e355c12e6a3440aad1acb52a6cca",
+      "note": "最终环境与产物总览",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "index",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/index.md",
+      "bytes": 3372,
+      "sha256": "d7de8134a52804b7108b62d34e9a95cba848e082ec3d862b1d50ea9753cfbbcf",
+      "note": "evidence index",
+      "recorded_at": "2026-09-19T19:52:39+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_render_montage_ep000.png",
+      "bytes": 242633,
+      "sha256": "bb35a41e934bb909bdfe417669a03d7c5dd161e677110de61367b77cee04fae0",
+      "note": "SO-101 3D 回放关键帧拼图（含物体抓取）",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "video",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_ep000_replay.mp4",
+      "bytes": 78550,
+      "sha256": "74a0e6ec8e745f8b5472992fc9b3b73f719a9ebe2a4b4a730c6fa9da599c8f52",
+      "note": "SO-101 3D 回放视频（真实轨迹驱动）",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_compare_montage_ep000.png",
+      "bytes": 472949,
+      "sha256": "1db63f759af61df65e289a42f351546b45c7374841a2875e86f117bb6fad82e7",
+      "note": "真实相机帧 vs 3D 渲染 并排核对",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/grasp_info.json",
+      "bytes": 1182,
+      "sha256": "c0a80d8b8a6fa29577e853a66265f1197462caf145f82299512c70224f0f04b8",
+      "note": "由真实轨迹 FK 推断的抓取点/水平面/阶段参数",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/00_hardware_check.png",
+      "bytes": 6668,
+      "sha256": "6f54a3cd2815cf2e2c2eb8e65291169416387f1ba4ebdab0b9b807399739e08f",
+      "note": "OS/GPU/CUDA/Python/conda/git/ffmpeg 探测",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/01_python_environment.png",
+      "bytes": 4576,
+      "sha256": "622bd67df35f3e103fba1062ecbda6cbfe3d372c454fa93bedcbed294c48f166",
+      "note": "conda env 与 python 版本",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/02_cuda_pytorch.png",
+      "bytes": 6223,
+      "sha256": "e76eeea28beb444e13f4f41572914f104068fe44572e47fa04c3f34a0aec6d11",
+      "note": "torch CUDA / sm_120 可用性",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/03_repo_clone.png",
+      "bytes": 3876,
+      "sha256": "ba377e07209d7cd71635b8c91fd63071fea68b74ea5bdfcb28c5d622f275efef",
+      "note": "LeRobot 源码 commit/branch",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png",
+      "bytes": 8129,
+      "sha256": "d3c04e25451d6cde943437889f20949f7b5cfaeecabd300eb5cb2c750b0e4d76",
+      "note": "editable 安装与 import 验证",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/05_lerobot_version.png",
+      "bytes": 5497,
+      "sha256": "dd577c50dec2f27ede72dc350ccde12bc34ffcdb2e08fd4aa4763669e3dc093a",
+      "note": "版本锁定（pip freeze / conda lock）",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/06_cli_check.png",
+      "bytes": 7673,
+      "sha256": "37a60074d9fe117a8fb322b102d19485e8598fb7134e7c247ba1cccd7bfc1613",
+      "note": "lerobot-train --help 关键参数",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png",
+      "bytes": 4886,
+      "sha256": "a3ab0f4773d19855e9cb0fcd4d24bd576beb85bc31934563a92a65f1ae97e181",
+      "note": "数据集落盘与规模",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/08_dataset_structure.png",
+      "bytes": 5863,
+      "sha256": "9703d233789ad70ac467c8e0f446f62b5a9dd137114c50cfbf1106571073fa92",
+      "note": "schema 审计结果",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png",
+      "bytes": 4725,
+      "sha256": "2d6de855fd2b2bdfa85f3a00d4593771d93955eea346059e4d6a78eab17da5c3",
+      "note": "可视化产物（.rrd / 帧拼图）",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/10_act_config.png",
+      "bytes": 7232,
+      "sha256": "f371f544d2c6a9e6fc3ebb694c9b657b0136f93ece9ba37cbdace70dfab5a5d9",
+      "note": "冻结的超参与配置哈希",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/11_act_model_init.png",
+      "bytes": 7421,
+      "sha256": "37e17497a16f03b13fa30a48cc544402b641741f5692630b428b37c3ff67b1f2",
+      "note": "最小初始化/前向/反向后端验证",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/12_training_start.png",
+      "bytes": 11563,
+      "sha256": "dd696c573ec47045d31568ab6c3e38e032817a35f7fa04cbdef629103fa62e43",
+      "note": "smoke 训练启动（100 步）",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/13_training_progress.png",
+      "bytes": 10876,
+      "sha256": "ebbd46c8c435546126a0bf78db95c06fa9d34ea3a3f3877d1ed876264fe9b983",
+      "note": "release 训练（3000 步）",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/14_training_loss.png",
+      "bytes": 4591,
+      "sha256": "f3d658d175817ad904e26803a2f9514a8991708afcaad008f84a29250a5ba443",
+      "note": "loss 曲线（真实日志）",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/15_checkpoint.png",
+      "bytes": 10688,
+      "sha256": "71bf0a39903f7664a1c2a45b6207fca1b9ca77617682cc222c673cf5010186da",
+      "note": "checkpoint 目录与哈希",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/16_model_reload.png",
+      "bytes": 5483,
+      "sha256": "1c8c8e837562a45304a963f846b4e241259b183041150a2e0f2702d7b124971f",
+      "note": "新进程 C++ 重载",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/17_inference.png",
+      "bytes": 4108,
+      "sha256": "20d0a762167fb95036bf99aadcb4accf58f21d3b902045098dda15c9000ab370",
+      "note": "C++ 推理与延时统计",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/18_evaluation.png",
+      "bytes": 6479,
+      "sha256": "33af444bee4cdec565deb2054d94a153a1a9d1e9b7615c355390ab1e2f8b6958",
+      "note": "Offline Evaluation 结果",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/19_final_environment.png",
+      "bytes": 5599,
+      "sha256": "5c66cfbaa37a295e538f0c441fbc68b5a366e355c12e6a3440aad1acb52a6cca",
+      "note": "最终环境与产物总览",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/20_so101_mujoco_window.png",
+      "bytes": 272263,
+      "sha256": "7d8278eed3f8fac45f889b8f2f29ae4459cc60196ce0f91a32f69d81af4045a4",
+      "note": "SO-101 MuJoCo 桌面仿真窗口（真实物体：抓取前静置 → 夹住随爪移动 → 松开落回平面）",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "index",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/index.md",
+      "bytes": 3620,
+      "sha256": "6e091da37d8c15c59b1dbf5c88235308154673888d83b3f0f9009321bb538221",
+      "note": "evidence index",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/14_training_loss.txt",
+      "bytes": 378,
+      "sha256": "cbcf3fdff3879f987e93042087885724f753e0257d07c34111f275f1436cebf9",
+      "note": "loss summary (evidence pairing)",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/19_final_environment.txt",
+      "bytes": 753,
+      "sha256": "6f4798359852897e28c65135b2d806a36644bc095100caf7d5911374a3bb2cfa",
+      "note": "final environment overview",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/README.md",
+      "bytes": 7106,
+      "sha256": "944bbdeff9bbf06d86a28b990ab0e85746eb8f3d5b0944de86de2987383b6c5f",
+      "note": "final report",
+      "recorded_at": "2026-09-19T20:13:13+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_render_montage_ep000.png",
+      "bytes": 352123,
+      "sha256": "1c697d3f6c843016e0aaefec7f0227d2b9fc2d50bdc7d38466718178a1eec189",
+      "note": "SO-101 3D 回放关键帧拼图（含物体抓取）",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "video",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_ep000_replay.mp4",
+      "bytes": 120743,
+      "sha256": "2efa0862277e8f68e94a98fcdd3c04ad84cfe49cf8bb5bd15ccb1c4d620525af",
+      "note": "SO-101 3D 回放视频（真实轨迹驱动）",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_compare_montage_ep000.png",
+      "bytes": 472949,
+      "sha256": "1db63f759af61df65e289a42f351546b45c7374841a2875e86f117bb6fad82e7",
+      "note": "真实相机帧 vs 3D 渲染 并排核对",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/grasp_info.json",
+      "bytes": 1355,
+      "sha256": "6530fca8c04ec0214db85211f0e6d7aecbf18c79400910bdf38592f5fd4bcbb1",
+      "note": "由真实轨迹 FK 推断的抓取点/水平面/阶段参数",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/trajectory_compare.json",
+      "bytes": 388,
+      "sha256": "7f8d54b8fb6bd5fd734a18f49c81e211ea11ced41602bd7949ef51f94af6b639",
+      "note": "专家 vs ACT 预测 的夹爪轨迹偏差（EE MAE 等）",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/physics_summary.md",
+      "bytes": 774,
+      "sha256": "f8eb4930908b2fec41169de7bfff0677fd9652e89b2335912ec1db6a4928e8ce",
+      "note": "物理抓取稳定性检查汇总表（真实接触/摩擦）",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/00_hardware_check.png",
+      "bytes": 6668,
+      "sha256": "6f54a3cd2815cf2e2c2eb8e65291169416387f1ba4ebdab0b9b807399739e08f",
+      "note": "OS/GPU/CUDA/Python/conda/git/ffmpeg 探测",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/01_python_environment.png",
+      "bytes": 4576,
+      "sha256": "622bd67df35f3e103fba1062ecbda6cbfe3d372c454fa93bedcbed294c48f166",
+      "note": "conda env 与 python 版本",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/02_cuda_pytorch.png",
+      "bytes": 6223,
+      "sha256": "e76eeea28beb444e13f4f41572914f104068fe44572e47fa04c3f34a0aec6d11",
+      "note": "torch CUDA / sm_120 可用性",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/03_repo_clone.png",
+      "bytes": 3876,
+      "sha256": "ba377e07209d7cd71635b8c91fd63071fea68b74ea5bdfcb28c5d622f275efef",
+      "note": "LeRobot 源码 commit/branch",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png",
+      "bytes": 8129,
+      "sha256": "d3c04e25451d6cde943437889f20949f7b5cfaeecabd300eb5cb2c750b0e4d76",
+      "note": "editable 安装与 import 验证",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/05_lerobot_version.png",
+      "bytes": 5497,
+      "sha256": "dd577c50dec2f27ede72dc350ccde12bc34ffcdb2e08fd4aa4763669e3dc093a",
+      "note": "版本锁定（pip freeze / conda lock）",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/06_cli_check.png",
+      "bytes": 7673,
+      "sha256": "37a60074d9fe117a8fb322b102d19485e8598fb7134e7c247ba1cccd7bfc1613",
+      "note": "lerobot-train --help 关键参数",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png",
+      "bytes": 4886,
+      "sha256": "a3ab0f4773d19855e9cb0fcd4d24bd576beb85bc31934563a92a65f1ae97e181",
+      "note": "数据集落盘与规模",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/08_dataset_structure.png",
+      "bytes": 5863,
+      "sha256": "9703d233789ad70ac467c8e0f446f62b5a9dd137114c50cfbf1106571073fa92",
+      "note": "schema 审计结果",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png",
+      "bytes": 4725,
+      "sha256": "2d6de855fd2b2bdfa85f3a00d4593771d93955eea346059e4d6a78eab17da5c3",
+      "note": "可视化产物（.rrd / 帧拼图）",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/10_act_config.png",
+      "bytes": 7232,
+      "sha256": "f371f544d2c6a9e6fc3ebb694c9b657b0136f93ece9ba37cbdace70dfab5a5d9",
+      "note": "冻结的超参与配置哈希",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/11_act_model_init.png",
+      "bytes": 7421,
+      "sha256": "37e17497a16f03b13fa30a48cc544402b641741f5692630b428b37c3ff67b1f2",
+      "note": "最小初始化/前向/反向后端验证",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/12_training_start.png",
+      "bytes": 11563,
+      "sha256": "dd696c573ec47045d31568ab6c3e38e032817a35f7fa04cbdef629103fa62e43",
+      "note": "smoke 训练启动（100 步）",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/13_training_progress.png",
+      "bytes": 10876,
+      "sha256": "ebbd46c8c435546126a0bf78db95c06fa9d34ea3a3f3877d1ed876264fe9b983",
+      "note": "release 训练（3000 步）",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/14_training_loss.png",
+      "bytes": 4591,
+      "sha256": "f3d658d175817ad904e26803a2f9514a8991708afcaad008f84a29250a5ba443",
+      "note": "loss 曲线（真实日志）",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/15_checkpoint.png",
+      "bytes": 10688,
+      "sha256": "71bf0a39903f7664a1c2a45b6207fca1b9ca77617682cc222c673cf5010186da",
+      "note": "checkpoint 目录与哈希",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/16_model_reload.png",
+      "bytes": 5483,
+      "sha256": "1c8c8e837562a45304a963f846b4e241259b183041150a2e0f2702d7b124971f",
+      "note": "新进程 C++ 重载",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/17_inference.png",
+      "bytes": 4108,
+      "sha256": "20d0a762167fb95036bf99aadcb4accf58f21d3b902045098dda15c9000ab370",
+      "note": "C++ 推理与延时统计",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/18_evaluation.png",
+      "bytes": 6479,
+      "sha256": "33af444bee4cdec565deb2054d94a153a1a9d1e9b7615c355390ab1e2f8b6958",
+      "note": "Offline Evaluation 结果",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/19_final_environment.png",
+      "bytes": 5599,
+      "sha256": "5c66cfbaa37a295e538f0c441fbc68b5a366e355c12e6a3440aad1acb52a6cca",
+      "note": "最终环境与产物总览",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/20_so101_mujoco_window.png",
+      "bytes": 772927,
+      "sha256": "db44194a7d6b57f69b98a67e1499e34c38e73c1e905a05a3a99fe421e9ab34b8",
+      "note": "SO-101 MuJoCo 桌面仿真窗口（真实物体：抓取前静置 → 夹住随爪移动 → 松开落回平面）",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "index",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/index.md",
+      "bytes": 3620,
+      "sha256": "1ed2a1597cf95105bce50e0c9d36e3a1bc91d95ebefd5b150e9459e770231e8e",
+      "note": "evidence index",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/14_training_loss.txt",
+      "bytes": 378,
+      "sha256": "cbcf3fdff3879f987e93042087885724f753e0257d07c34111f275f1436cebf9",
+      "note": "loss summary (evidence pairing)",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/19_final_environment.txt",
+      "bytes": 753,
+      "sha256": "13e9a1677aca1a8e9860cc18002eddebf4db8972334bd55594d22c05245021b0",
+      "note": "final environment overview",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/README.md",
+      "bytes": 7106,
+      "sha256": "1fa8c64c8b55679c92a0ed50865ab0102cc38f699b0127628fd96e2ed7620ba6",
+      "note": "final report",
+      "recorded_at": "2026-09-19T20:17:18+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_render_montage_ep000.png",
+      "bytes": 352123,
+      "sha256": "1c697d3f6c843016e0aaefec7f0227d2b9fc2d50bdc7d38466718178a1eec189",
+      "note": "SO-101 3D 回放关键帧拼图（含物体抓取）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "video",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_ep000_replay.mp4",
+      "bytes": 120743,
+      "sha256": "2efa0862277e8f68e94a98fcdd3c04ad84cfe49cf8bb5bd15ccb1c4d620525af",
+      "note": "SO-101 3D 回放视频（真实轨迹驱动）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_compare_montage_ep000.png",
+      "bytes": 472949,
+      "sha256": "1db63f759af61df65e289a42f351546b45c7374841a2875e86f117bb6fad82e7",
+      "note": "真实相机帧 vs 3D 渲染 并排核对",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/grasp_info.json",
+      "bytes": 1355,
+      "sha256": "6530fca8c04ec0214db85211f0e6d7aecbf18c79400910bdf38592f5fd4bcbb1",
+      "note": "由真实轨迹 FK 推断的抓取点/水平面/阶段参数",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/trajectory_compare.json",
+      "bytes": 388,
+      "sha256": "7f8d54b8fb6bd5fd734a18f49c81e211ea11ced41602bd7949ef51f94af6b639",
+      "note": "专家 vs ACT 预测 的夹爪轨迹偏差（EE MAE 等）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/physics_summary.md",
+      "bytes": 774,
+      "sha256": "f8eb4930908b2fec41169de7bfff0677fd9652e89b2335912ec1db6a4928e8ce",
+      "note": "物理抓取稳定性检查汇总表（真实接触/摩擦）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/physics_grasp_scale1.05_montage.png",
+      "bytes": 68523,
+      "sha256": "71fb6f4b46893afc73005e6796ac876393426318c63384e8fe5a7b5875c86c2e",
+      "note": "物理抓取过程关键帧（默认尺寸）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/00_hardware_check.png",
+      "bytes": 6668,
+      "sha256": "6f54a3cd2815cf2e2c2eb8e65291169416387f1ba4ebdab0b9b807399739e08f",
+      "note": "OS/GPU/CUDA/Python/conda/git/ffmpeg 探测",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/01_python_environment.png",
+      "bytes": 4576,
+      "sha256": "622bd67df35f3e103fba1062ecbda6cbfe3d372c454fa93bedcbed294c48f166",
+      "note": "conda env 与 python 版本",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/02_cuda_pytorch.png",
+      "bytes": 6223,
+      "sha256": "e76eeea28beb444e13f4f41572914f104068fe44572e47fa04c3f34a0aec6d11",
+      "note": "torch CUDA / sm_120 可用性",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/03_repo_clone.png",
+      "bytes": 3876,
+      "sha256": "ba377e07209d7cd71635b8c91fd63071fea68b74ea5bdfcb28c5d622f275efef",
+      "note": "LeRobot 源码 commit/branch",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png",
+      "bytes": 8129,
+      "sha256": "d3c04e25451d6cde943437889f20949f7b5cfaeecabd300eb5cb2c750b0e4d76",
+      "note": "editable 安装与 import 验证",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/05_lerobot_version.png",
+      "bytes": 5497,
+      "sha256": "dd577c50dec2f27ede72dc350ccde12bc34ffcdb2e08fd4aa4763669e3dc093a",
+      "note": "版本锁定（pip freeze / conda lock）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/06_cli_check.png",
+      "bytes": 7673,
+      "sha256": "37a60074d9fe117a8fb322b102d19485e8598fb7134e7c247ba1cccd7bfc1613",
+      "note": "lerobot-train --help 关键参数",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png",
+      "bytes": 4886,
+      "sha256": "a3ab0f4773d19855e9cb0fcd4d24bd576beb85bc31934563a92a65f1ae97e181",
+      "note": "数据集落盘与规模",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/08_dataset_structure.png",
+      "bytes": 5863,
+      "sha256": "9703d233789ad70ac467c8e0f446f62b5a9dd137114c50cfbf1106571073fa92",
+      "note": "schema 审计结果",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png",
+      "bytes": 4725,
+      "sha256": "2d6de855fd2b2bdfa85f3a00d4593771d93955eea346059e4d6a78eab17da5c3",
+      "note": "可视化产物（.rrd / 帧拼图）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/10_act_config.png",
+      "bytes": 7232,
+      "sha256": "f371f544d2c6a9e6fc3ebb694c9b657b0136f93ece9ba37cbdace70dfab5a5d9",
+      "note": "冻结的超参与配置哈希",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/11_act_model_init.png",
+      "bytes": 7421,
+      "sha256": "37e17497a16f03b13fa30a48cc544402b641741f5692630b428b37c3ff67b1f2",
+      "note": "最小初始化/前向/反向后端验证",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/12_training_start.png",
+      "bytes": 11563,
+      "sha256": "dd696c573ec47045d31568ab6c3e38e032817a35f7fa04cbdef629103fa62e43",
+      "note": "smoke 训练启动（100 步）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/13_training_progress.png",
+      "bytes": 10876,
+      "sha256": "ebbd46c8c435546126a0bf78db95c06fa9d34ea3a3f3877d1ed876264fe9b983",
+      "note": "release 训练（3000 步）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/14_training_loss.png",
+      "bytes": 4591,
+      "sha256": "f3d658d175817ad904e26803a2f9514a8991708afcaad008f84a29250a5ba443",
+      "note": "loss 曲线（真实日志）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/15_checkpoint.png",
+      "bytes": 10688,
+      "sha256": "71bf0a39903f7664a1c2a45b6207fca1b9ca77617682cc222c673cf5010186da",
+      "note": "checkpoint 目录与哈希",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/16_model_reload.png",
+      "bytes": 5483,
+      "sha256": "1c8c8e837562a45304a963f846b4e241259b183041150a2e0f2702d7b124971f",
+      "note": "新进程 C++ 重载",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/17_inference.png",
+      "bytes": 4108,
+      "sha256": "20d0a762167fb95036bf99aadcb4accf58f21d3b902045098dda15c9000ab370",
+      "note": "C++ 推理与延时统计",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/18_evaluation.png",
+      "bytes": 6479,
+      "sha256": "33af444bee4cdec565deb2054d94a153a1a9d1e9b7615c355390ab1e2f8b6958",
+      "note": "Offline Evaluation 结果",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/19_final_environment.png",
+      "bytes": 5599,
+      "sha256": "5c66cfbaa37a295e538f0c441fbc68b5a366e355c12e6a3440aad1acb52a6cca",
+      "note": "最终环境与产物总览",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/20_so101_mujoco_window.png",
+      "bytes": 772927,
+      "sha256": "db44194a7d6b57f69b98a67e1499e34c38e73c1e905a05a3a99fe421e9ab34b8",
+      "note": "SO-101 MuJoCo 桌面仿真窗口（真实物体：抓取前静置 → 夹住随爪移动 → 松开落回平面）",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "index",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/index.md",
+      "bytes": 3620,
+      "sha256": "0d4b52b047f038fa2e8494827dd92e7f69644c12a06e47fb2cb8bab011ebb12d",
+      "note": "evidence index",
+      "recorded_at": "2026-09-19T20:17:24+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/00_hardware_check.txt",
+      "bytes": 5096,
+      "sha256": "95c8b04162b851cd284ab99fc33d142fe64aec5241952e3df15a5ed071f96400",
+      "note": "hardware probe",
+      "recorded_at": "2026-09-19T20:18:49+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/01_python_environment.txt",
+      "bytes": 1307,
+      "sha256": "a46f02357396602b876cb60b2d6e563a2f76abd21e86b2af3a291daaf5901560",
+      "note": "python/conda probe",
+      "recorded_at": "2026-09-19T20:18:49+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/02_cuda_pytorch.txt",
+      "bytes": 1367,
+      "sha256": "315d46babd0352b3df1a51816ed4e566d37f4cc5c7dd034a39fd0767087a2069",
+      "note": "CUDA/LibTorch probe",
+      "recorded_at": "2026-09-19T20:18:49+08:00"
+    },
+    {
+      "stage": "S15",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/eval_summary.md",
+      "bytes": 1133,
+      "sha256": "c1fbcec2ced3831b54b4f04aae761172aed746ee262557b4785b53bbadf64565",
+      "note": "offline evaluation",
+      "recorded_at": "2026-09-19T20:19:40+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_render_montage_ep000.png",
+      "bytes": 352123,
+      "sha256": "1c697d3f6c843016e0aaefec7f0227d2b9fc2d50bdc7d38466718178a1eec189",
+      "note": "SO-101 3D 回放关键帧拼图（含物体抓取）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "video",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_ep000_replay.mp4",
+      "bytes": 120743,
+      "sha256": "2efa0862277e8f68e94a98fcdd3c04ad84cfe49cf8bb5bd15ccb1c4d620525af",
+      "note": "SO-101 3D 回放视频（真实轨迹驱动）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_compare_montage_ep000.png",
+      "bytes": 472949,
+      "sha256": "1db63f759af61df65e289a42f351546b45c7374841a2875e86f117bb6fad82e7",
+      "note": "真实相机帧 vs 3D 渲染 并排核对",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/grasp_info.json",
+      "bytes": 1355,
+      "sha256": "6530fca8c04ec0214db85211f0e6d7aecbf18c79400910bdf38592f5fd4bcbb1",
+      "note": "由真实轨迹 FK 推断的抓取点/水平面/阶段参数",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/trajectory_compare.json",
+      "bytes": 388,
+      "sha256": "7f8d54b8fb6bd5fd734a18f49c81e211ea11ced41602bd7949ef51f94af6b639",
+      "note": "专家 vs ACT 预测 的夹爪轨迹偏差（EE MAE 等）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/physics_summary.md",
+      "bytes": 774,
+      "sha256": "f8eb4930908b2fec41169de7bfff0677fd9652e89b2335912ec1db6a4928e8ce",
+      "note": "物理抓取稳定性检查汇总表（真实接触/摩擦）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/physics_grasp_scale1.05_montage.png",
+      "bytes": 68523,
+      "sha256": "71fb6f4b46893afc73005e6796ac876393426318c63384e8fe5a7b5875c86c2e",
+      "note": "物理抓取过程关键帧（默认尺寸）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/00_hardware_check.png",
+      "bytes": 6822,
+      "sha256": "58dacd5590b3952bcf3afb63589d309129571d43bc29883f406a59f1f82c4951",
+      "note": "OS/GPU/CUDA/Python/conda/git/ffmpeg 探测",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/01_python_environment.png",
+      "bytes": 4535,
+      "sha256": "b237024b0e2db2fe146717ae498ea1154a77f113bc0912f8929b593c547ed4fa",
+      "note": "conda env 与 python 版本",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/02_cuda_pytorch.png",
+      "bytes": 6221,
+      "sha256": "aae630f426a83a940090301b412c78576de91a2f3e3ed7e7b21f03fbf81b0055",
+      "note": "torch CUDA / sm_120 可用性",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/03_repo_clone.png",
+      "bytes": 3876,
+      "sha256": "ba377e07209d7cd71635b8c91fd63071fea68b74ea5bdfcb28c5d622f275efef",
+      "note": "LeRobot 源码 commit/branch",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png",
+      "bytes": 8129,
+      "sha256": "d3c04e25451d6cde943437889f20949f7b5cfaeecabd300eb5cb2c750b0e4d76",
+      "note": "editable 安装与 import 验证",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/05_lerobot_version.png",
+      "bytes": 5497,
+      "sha256": "dd577c50dec2f27ede72dc350ccde12bc34ffcdb2e08fd4aa4763669e3dc093a",
+      "note": "版本锁定（pip freeze / conda lock）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/06_cli_check.png",
+      "bytes": 7673,
+      "sha256": "37a60074d9fe117a8fb322b102d19485e8598fb7134e7c247ba1cccd7bfc1613",
+      "note": "lerobot-train --help 关键参数",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png",
+      "bytes": 4886,
+      "sha256": "a3ab0f4773d19855e9cb0fcd4d24bd576beb85bc31934563a92a65f1ae97e181",
+      "note": "数据集落盘与规模",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/08_dataset_structure.png",
+      "bytes": 5863,
+      "sha256": "9703d233789ad70ac467c8e0f446f62b5a9dd137114c50cfbf1106571073fa92",
+      "note": "schema 审计结果",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png",
+      "bytes": 4725,
+      "sha256": "2d6de855fd2b2bdfa85f3a00d4593771d93955eea346059e4d6a78eab17da5c3",
+      "note": "可视化产物（.rrd / 帧拼图）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/10_act_config.png",
+      "bytes": 7232,
+      "sha256": "f371f544d2c6a9e6fc3ebb694c9b657b0136f93ece9ba37cbdace70dfab5a5d9",
+      "note": "冻结的超参与配置哈希",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/11_act_model_init.png",
+      "bytes": 7421,
+      "sha256": "37e17497a16f03b13fa30a48cc544402b641741f5692630b428b37c3ff67b1f2",
+      "note": "最小初始化/前向/反向后端验证",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/12_training_start.png",
+      "bytes": 11563,
+      "sha256": "dd696c573ec47045d31568ab6c3e38e032817a35f7fa04cbdef629103fa62e43",
+      "note": "smoke 训练启动（100 步）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/13_training_progress.png",
+      "bytes": 10876,
+      "sha256": "ebbd46c8c435546126a0bf78db95c06fa9d34ea3a3f3877d1ed876264fe9b983",
+      "note": "release 训练（3000 步）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/14_training_loss.png",
+      "bytes": 4591,
+      "sha256": "f3d658d175817ad904e26803a2f9514a8991708afcaad008f84a29250a5ba443",
+      "note": "loss 曲线（真实日志）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/15_checkpoint.png",
+      "bytes": 10688,
+      "sha256": "71bf0a39903f7664a1c2a45b6207fca1b9ca77617682cc222c673cf5010186da",
+      "note": "checkpoint 目录与哈希",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/16_model_reload.png",
+      "bytes": 5483,
+      "sha256": "1c8c8e837562a45304a963f846b4e241259b183041150a2e0f2702d7b124971f",
+      "note": "新进程 C++ 重载",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/17_inference.png",
+      "bytes": 4108,
+      "sha256": "20d0a762167fb95036bf99aadcb4accf58f21d3b902045098dda15c9000ab370",
+      "note": "C++ 推理与延时统计",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/18_evaluation.png",
+      "bytes": 6509,
+      "sha256": "f445d3abfb49947a50f61e1907a132f2e6a129194b77d87e911cba0cba9eea17",
+      "note": "Offline Evaluation 结果",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/19_final_environment.png",
+      "bytes": 5599,
+      "sha256": "5c66cfbaa37a295e538f0c441fbc68b5a366e355c12e6a3440aad1acb52a6cca",
+      "note": "最终环境与产物总览",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/20_so101_mujoco_window.png",
+      "bytes": 772927,
+      "sha256": "db44194a7d6b57f69b98a67e1499e34c38e73c1e905a05a3a99fe421e9ab34b8",
+      "note": "SO-101 MuJoCo 桌面仿真窗口（真实物体：抓取前静置 → 夹住随爪移动 → 松开落回平面）",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "index",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/index.md",
+      "bytes": 3620,
+      "sha256": "38ce71041ad83cb3a02bded3066df880213ccb3a4562cbf46b40ca0ed3409993",
+      "note": "evidence index",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/14_training_loss.txt",
+      "bytes": 378,
+      "sha256": "cbcf3fdff3879f987e93042087885724f753e0257d07c34111f275f1436cebf9",
+      "note": "loss summary (evidence pairing)",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/19_final_environment.txt",
+      "bytes": 753,
+      "sha256": "98a2a595a066e0a8361b0eebad51b1b08f74c38eb53f677502dbfec3e36715cb",
+      "note": "final environment overview",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/README.md",
+      "bytes": 7120,
+      "sha256": "b49e7326a899c5ab0725af30cc2931283300ba2893c02ec2baaa429d52eb4f42",
+      "note": "final report",
+      "recorded_at": "2026-09-19T20:19:41+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 3740,
+      "sha256": "234c8937ad146f0189a2283751c2043fc0a6a6211e22a43e6e630c22f1ca271d",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:19:45+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "bytes": 3748,
+      "sha256": "657a4800699e00504f476714703316422ed257dd85b6d3f1e617a7ff0218b9f1",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:19:45+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_preprocessor.json",
+      "bytes": 1324,
+      "sha256": "c1054c40c6fdfd1ad0768b58fd2a2cb6e0de2f6323259befcbeb6a072de680a5",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:19:45+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/train_config.json",
+      "bytes": 7621,
+      "sha256": "78a1ad749e4de562c1665b9370bb5d19616fb242377577ed62694e86558f493f",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:19:45+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_postprocessor.json",
+      "bytes": 660,
+      "sha256": "648b415125a183dfd6cbc47c1dc04ab3f2d912654ef22a12ca5e8b93d7d85cdd",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:19:45+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/config.json",
+      "bytes": 1697,
+      "sha256": "7c96d9faf048c290b0bff208dbc2ee988d5ffe3a5bf74a6a17e1561d64fa81f6",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:19:45+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/model.safetensors",
+      "bytes": 206699768,
+      "sha256": "1a78481baa98e91c490e1ff1936ba296fce444ebb8a706a63630c82cb4b8abce",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:19:46+08:00"
+    },
+    {
+      "stage": "S13",
+      "kind": "torchscript",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt",
+      "bytes": 147480850,
+      "sha256": "2062696acc38932a73d089975858db0c4144b0ddc5c7dbce5410a0895b73ff2d",
+      "note": "exported TorchScript policy",
+      "recorded_at": "2026-09-19T20:19:51+08:00"
+    },
+    {
+      "stage": "S13",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/16_model_reload.txt",
+      "bytes": 5261,
+      "sha256": "9f1d6bebfeac44b20382d1e68ce82622dbad7f7f812e7932e8d79bc34d6a4d54",
+      "note": "new-process reload evidence",
+      "recorded_at": "2026-09-19T20:19:52+08:00"
+    },
+    {
+      "stage": "S14",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/17_inference.txt",
+      "bytes": 628,
+      "sha256": "9142118dab41bf00e06beef639381b290c194afefca2998d7e7ebfd04b8b6891",
+      "note": "C++ inference",
+      "recorded_at": "2026-09-19T20:19:55+08:00"
+    },
+    {
+      "stage": "S14",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/inference_latency.csv",
+      "bytes": 121,
+      "sha256": "f2366d49543e06e81e6c5cbe59f538354f50562f9832542e7ecf67084471d288",
+      "note": "latency measurements",
+      "recorded_at": "2026-09-19T20:19:55+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_postprocessor_step_0_unnormalizer_processor.safetensors",
+      "bytes": 3740,
+      "sha256": "234c8937ad146f0189a2283751c2043fc0a6a6211e22a43e6e630c22f1ca271d",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:23:29+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_preprocessor_step_3_normalizer_processor.safetensors",
+      "bytes": 3748,
+      "sha256": "657a4800699e00504f476714703316422ed257dd85b6d3f1e617a7ff0218b9f1",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:23:29+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_preprocessor.json",
+      "bytes": 1324,
+      "sha256": "c1054c40c6fdfd1ad0768b58fd2a2cb6e0de2f6323259befcbeb6a072de680a5",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:23:29+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/train_config.json",
+      "bytes": 7621,
+      "sha256": "78a1ad749e4de562c1665b9370bb5d19616fb242377577ed62694e86558f493f",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:23:29+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/policy_postprocessor.json",
+      "bytes": 660,
+      "sha256": "648b415125a183dfd6cbc47c1dc04ab3f2d912654ef22a12ca5e8b93d7d85cdd",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:23:29+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/config.json",
+      "bytes": 1697,
+      "sha256": "7c96d9faf048c290b0bff208dbc2ee988d5ffe3a5bf74a6a17e1561d64fa81f6",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:23:29+08:00"
+    },
+    {
+      "stage": "S12",
+      "kind": "checkpoint",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model/model.safetensors",
+      "bytes": 206699768,
+      "sha256": "1a78481baa98e91c490e1ff1936ba296fce444ebb8a706a63630c82cb4b8abce",
+      "note": "checkpoint file",
+      "recorded_at": "2026-09-19T20:23:30+08:00"
+    },
+    {
+      "stage": "S13",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/15_checkpoint.txt",
+      "bytes": 965,
+      "sha256": "fa0d8ae7c0929409a394f6c41945d086f776551bb9658c210ecf9c8255d5bc68",
+      "note": "checkpoint/export log",
+      "recorded_at": "2026-09-19T20:23:30+08:00"
+    },
+    {
+      "stage": "S15",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/eval_summary.md",
+      "bytes": 1132,
+      "sha256": "260af065c0b0a60574a209a4949284b342d2de688608057ac28a3c84869af82f",
+      "note": "offline evaluation",
+      "recorded_at": "2026-09-19T20:23:34+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_render_montage_ep000.png",
+      "bytes": 352123,
+      "sha256": "1c697d3f6c843016e0aaefec7f0227d2b9fc2d50bdc7d38466718178a1eec189",
+      "note": "SO-101 3D 回放关键帧拼图（含物体抓取）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "video",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_ep000_replay.mp4",
+      "bytes": 120743,
+      "sha256": "2efa0862277e8f68e94a98fcdd3c04ad84cfe49cf8bb5bd15ccb1c4d620525af",
+      "note": "SO-101 3D 回放视频（真实轨迹驱动）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_compare_montage_ep000.png",
+      "bytes": 472949,
+      "sha256": "1db63f759af61df65e289a42f351546b45c7374841a2875e86f117bb6fad82e7",
+      "note": "真实相机帧 vs 3D 渲染 并排核对",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/grasp_info.json",
+      "bytes": 1355,
+      "sha256": "6530fca8c04ec0214db85211f0e6d7aecbf18c79400910bdf38592f5fd4bcbb1",
+      "note": "由真实轨迹 FK 推断的抓取点/水平面/阶段参数",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/trajectory_compare.json",
+      "bytes": 388,
+      "sha256": "7f8d54b8fb6bd5fd734a18f49c81e211ea11ced41602bd7949ef51f94af6b639",
+      "note": "专家 vs ACT 预测 的夹爪轨迹偏差（EE MAE 等）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/physics_summary.md",
+      "bytes": 774,
+      "sha256": "f8eb4930908b2fec41169de7bfff0677fd9652e89b2335912ec1db6a4928e8ce",
+      "note": "物理抓取稳定性检查汇总表（真实接触/摩擦）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/physics_grasp_scale1.05_montage.png",
+      "bytes": 68523,
+      "sha256": "71fb6f4b46893afc73005e6796ac876393426318c63384e8fe5a7b5875c86c2e",
+      "note": "物理抓取过程关键帧（默认尺寸）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/00_hardware_check.png",
+      "bytes": 6822,
+      "sha256": "58dacd5590b3952bcf3afb63589d309129571d43bc29883f406a59f1f82c4951",
+      "note": "OS/GPU/CUDA/Python/conda/git/ffmpeg 探测",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/01_python_environment.png",
+      "bytes": 4535,
+      "sha256": "b237024b0e2db2fe146717ae498ea1154a77f113bc0912f8929b593c547ed4fa",
+      "note": "conda env 与 python 版本",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/02_cuda_pytorch.png",
+      "bytes": 6221,
+      "sha256": "aae630f426a83a940090301b412c78576de91a2f3e3ed7e7b21f03fbf81b0055",
+      "note": "torch CUDA / sm_120 可用性",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/03_repo_clone.png",
+      "bytes": 3876,
+      "sha256": "ba377e07209d7cd71635b8c91fd63071fea68b74ea5bdfcb28c5d622f275efef",
+      "note": "LeRobot 源码 commit/branch",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png",
+      "bytes": 8129,
+      "sha256": "d3c04e25451d6cde943437889f20949f7b5cfaeecabd300eb5cb2c750b0e4d76",
+      "note": "editable 安装与 import 验证",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/05_lerobot_version.png",
+      "bytes": 5497,
+      "sha256": "dd577c50dec2f27ede72dc350ccde12bc34ffcdb2e08fd4aa4763669e3dc093a",
+      "note": "版本锁定（pip freeze / conda lock）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/06_cli_check.png",
+      "bytes": 7673,
+      "sha256": "37a60074d9fe117a8fb322b102d19485e8598fb7134e7c247ba1cccd7bfc1613",
+      "note": "lerobot-train --help 关键参数",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png",
+      "bytes": 4886,
+      "sha256": "a3ab0f4773d19855e9cb0fcd4d24bd576beb85bc31934563a92a65f1ae97e181",
+      "note": "数据集落盘与规模",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/08_dataset_structure.png",
+      "bytes": 5863,
+      "sha256": "9703d233789ad70ac467c8e0f446f62b5a9dd137114c50cfbf1106571073fa92",
+      "note": "schema 审计结果",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png",
+      "bytes": 4725,
+      "sha256": "2d6de855fd2b2bdfa85f3a00d4593771d93955eea346059e4d6a78eab17da5c3",
+      "note": "可视化产物（.rrd / 帧拼图）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/10_act_config.png",
+      "bytes": 7232,
+      "sha256": "f371f544d2c6a9e6fc3ebb694c9b657b0136f93ece9ba37cbdace70dfab5a5d9",
+      "note": "冻结的超参与配置哈希",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/11_act_model_init.png",
+      "bytes": 7421,
+      "sha256": "37e17497a16f03b13fa30a48cc544402b641741f5692630b428b37c3ff67b1f2",
+      "note": "最小初始化/前向/反向后端验证",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/12_training_start.png",
+      "bytes": 11563,
+      "sha256": "dd696c573ec47045d31568ab6c3e38e032817a35f7fa04cbdef629103fa62e43",
+      "note": "smoke 训练启动（100 步）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/13_training_progress.png",
+      "bytes": 10876,
+      "sha256": "ebbd46c8c435546126a0bf78db95c06fa9d34ea3a3f3877d1ed876264fe9b983",
+      "note": "release 训练（3000 步）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/14_training_loss.png",
+      "bytes": 4591,
+      "sha256": "f3d658d175817ad904e26803a2f9514a8991708afcaad008f84a29250a5ba443",
+      "note": "loss 曲线（真实日志）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/15_checkpoint.png",
+      "bytes": 7877,
+      "sha256": "f5de38bbc78abe2255e41c06cf3b656490c01a24980acd62d6afd2e7b45fc008",
+      "note": "checkpoint 目录与哈希",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/16_model_reload.png",
+      "bytes": 5454,
+      "sha256": "c1e1690141806d0a7670b98eb82782874293434dbb5cab1f98e26257dfe3e3bf",
+      "note": "新进程 C++ 重载",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/17_inference.png",
+      "bytes": 4139,
+      "sha256": "92f5149df678ddc0d416e7bb891d5b7656e4376bec724a92052c268af336ceaa",
+      "note": "C++ 推理与延时统计",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/18_evaluation.png",
+      "bytes": 6518,
+      "sha256": "cbeec392fac82f1f21989eaf9b59c24ee8f8548e9814bd700bdc42f17a65140f",
+      "note": "Offline Evaluation 结果",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/19_final_environment.png",
+      "bytes": 5599,
+      "sha256": "5c66cfbaa37a295e538f0c441fbc68b5a366e355c12e6a3440aad1acb52a6cca",
+      "note": "最终环境与产物总览",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/20_so101_mujoco_window.png",
+      "bytes": 772927,
+      "sha256": "db44194a7d6b57f69b98a67e1499e34c38e73c1e905a05a3a99fe421e9ab34b8",
+      "note": "SO-101 MuJoCo 桌面仿真窗口（真实物体：抓取前静置 → 夹住随爪移动 → 松开落回平面）",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "index",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/index.md",
+      "bytes": 3620,
+      "sha256": "c0933c3d20620bbae1671fe4d164a89eb426453d4113607e5aa7fa2b7e09b014",
+      "note": "evidence index",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/14_training_loss.txt",
+      "bytes": 378,
+      "sha256": "cbcf3fdff3879f987e93042087885724f753e0257d07c34111f275f1436cebf9",
+      "note": "loss summary (evidence pairing)",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/19_final_environment.txt",
+      "bytes": 753,
+      "sha256": "05da26ca3755dce38eea65be2b756b7c4c44260dba340f876c14c311d813cb37",
+      "note": "final environment overview",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/README.md",
+      "bytes": 7120,
+      "sha256": "3a7b776876d406cda2292a7e29d50a8a4e35133de9677a627c3aa00b0860fb31",
+      "note": "final report",
+      "recorded_at": "2026-09-19T20:23:35+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/00_hardware_check.txt",
+      "bytes": 5096,
+      "sha256": "74b3e5ae594c2fa3642c54c86e36457761dad98aa76f1c578fb50fae48dfc8bf",
+      "note": "hardware probe",
+      "recorded_at": "2026-09-19T20:24:58+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/01_python_environment.txt",
+      "bytes": 1307,
+      "sha256": "a46f02357396602b876cb60b2d6e563a2f76abd21e86b2af3a291daaf5901560",
+      "note": "python/conda probe",
+      "recorded_at": "2026-09-19T20:24:58+08:00"
+    },
+    {
+      "stage": "S0",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/02_cuda_pytorch.txt",
+      "bytes": 1367,
+      "sha256": "edd15c4c5f578e06f67a2f6b22f52366443fa1091241b04c95fbb8df78895e63",
+      "note": "CUDA/LibTorch probe",
+      "recorded_at": "2026-09-19T20:24:58+08:00"
+    },
+    {
+      "stage": "S15",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/eval_summary.md",
+      "bytes": 1133,
+      "sha256": "775da4232b135c70048f7543d0e337a2bf933a8b8bab5f8f1a5d6f2a1551632c",
+      "note": "offline evaluation",
+      "recorded_at": "2026-09-19T20:25:01+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_render_montage_ep000.png",
+      "bytes": 352123,
+      "sha256": "1c697d3f6c843016e0aaefec7f0227d2b9fc2d50bdc7d38466718178a1eec189",
+      "note": "SO-101 3D 回放关键帧拼图（含物体抓取）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "video",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_ep000_replay.mp4",
+      "bytes": 120743,
+      "sha256": "2efa0862277e8f68e94a98fcdd3c04ad84cfe49cf8bb5bd15ccb1c4d620525af",
+      "note": "SO-101 3D 回放视频（真实轨迹驱动）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_compare_montage_ep000.png",
+      "bytes": 472949,
+      "sha256": "1db63f759af61df65e289a42f351546b45c7374841a2875e86f117bb6fad82e7",
+      "note": "真实相机帧 vs 3D 渲染 并排核对",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/grasp_info.json",
+      "bytes": 1355,
+      "sha256": "6530fca8c04ec0214db85211f0e6d7aecbf18c79400910bdf38592f5fd4bcbb1",
+      "note": "由真实轨迹 FK 推断的抓取点/水平面/阶段参数",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "metrics",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/trajectory_compare.json",
+      "bytes": 388,
+      "sha256": "7f8d54b8fb6bd5fd734a18f49c81e211ea11ced41602bd7949ef51f94af6b639",
+      "note": "专家 vs ACT 预测 的夹爪轨迹偏差（EE MAE 等）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/physics_summary.md",
+      "bytes": 774,
+      "sha256": "f8eb4930908b2fec41169de7bfff0677fd9652e89b2335912ec1db6a4928e8ce",
+      "note": "物理抓取稳定性检查汇总表（真实接触/摩擦）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "so101_viz",
+      "kind": "figure",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/physics_grasp_scale1.05_montage.png",
+      "bytes": 68523,
+      "sha256": "71fb6f4b46893afc73005e6796ac876393426318c63384e8fe5a7b5875c86c2e",
+      "note": "物理抓取过程关键帧（默认尺寸）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/00_hardware_check.png",
+      "bytes": 6822,
+      "sha256": "cb38433cba054f88cd93971995827903714b81d9f9a104c196a61f39b3800585",
+      "note": "OS/GPU/CUDA/Python/conda/git/ffmpeg 探测",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/01_python_environment.png",
+      "bytes": 4533,
+      "sha256": "78eedc89c56c40a13eacf98aec0638063f0417784d2490bb6e7b2a2760ffd80a",
+      "note": "conda env 与 python 版本",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/02_cuda_pytorch.png",
+      "bytes": 6224,
+      "sha256": "83a27e5ad1defdfe5a95373905fdc0cc01f478af4f40493e86125c8934dc2c89",
+      "note": "torch CUDA / sm_120 可用性",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/03_repo_clone.png",
+      "bytes": 3876,
+      "sha256": "ba377e07209d7cd71635b8c91fd63071fea68b74ea5bdfcb28c5d622f275efef",
+      "note": "LeRobot 源码 commit/branch",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png",
+      "bytes": 8129,
+      "sha256": "d3c04e25451d6cde943437889f20949f7b5cfaeecabd300eb5cb2c750b0e4d76",
+      "note": "editable 安装与 import 验证",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/05_lerobot_version.png",
+      "bytes": 5497,
+      "sha256": "dd577c50dec2f27ede72dc350ccde12bc34ffcdb2e08fd4aa4763669e3dc093a",
+      "note": "版本锁定（pip freeze / conda lock）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/06_cli_check.png",
+      "bytes": 7673,
+      "sha256": "37a60074d9fe117a8fb322b102d19485e8598fb7134e7c247ba1cccd7bfc1613",
+      "note": "lerobot-train --help 关键参数",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png",
+      "bytes": 4886,
+      "sha256": "a3ab0f4773d19855e9cb0fcd4d24bd576beb85bc31934563a92a65f1ae97e181",
+      "note": "数据集落盘与规模",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/08_dataset_structure.png",
+      "bytes": 5863,
+      "sha256": "9703d233789ad70ac467c8e0f446f62b5a9dd137114c50cfbf1106571073fa92",
+      "note": "schema 审计结果",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png",
+      "bytes": 4725,
+      "sha256": "2d6de855fd2b2bdfa85f3a00d4593771d93955eea346059e4d6a78eab17da5c3",
+      "note": "可视化产物（.rrd / 帧拼图）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/10_act_config.png",
+      "bytes": 7232,
+      "sha256": "f371f544d2c6a9e6fc3ebb694c9b657b0136f93ece9ba37cbdace70dfab5a5d9",
+      "note": "冻结的超参与配置哈希",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/11_act_model_init.png",
+      "bytes": 7421,
+      "sha256": "37e17497a16f03b13fa30a48cc544402b641741f5692630b428b37c3ff67b1f2",
+      "note": "最小初始化/前向/反向后端验证",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/12_training_start.png",
+      "bytes": 11563,
+      "sha256": "dd696c573ec47045d31568ab6c3e38e032817a35f7fa04cbdef629103fa62e43",
+      "note": "smoke 训练启动（100 步）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/13_training_progress.png",
+      "bytes": 10876,
+      "sha256": "ebbd46c8c435546126a0bf78db95c06fa9d34ea3a3f3877d1ed876264fe9b983",
+      "note": "release 训练（3000 步）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/14_training_loss.png",
+      "bytes": 4591,
+      "sha256": "f3d658d175817ad904e26803a2f9514a8991708afcaad008f84a29250a5ba443",
+      "note": "loss 曲线（真实日志）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/15_checkpoint.png",
+      "bytes": 7877,
+      "sha256": "f5de38bbc78abe2255e41c06cf3b656490c01a24980acd62d6afd2e7b45fc008",
+      "note": "checkpoint 目录与哈希",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/16_model_reload.png",
+      "bytes": 5454,
+      "sha256": "c1e1690141806d0a7670b98eb82782874293434dbb5cab1f98e26257dfe3e3bf",
+      "note": "新进程 C++ 重载",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/17_inference.png",
+      "bytes": 4139,
+      "sha256": "92f5149df678ddc0d416e7bb891d5b7656e4376bec724a92052c268af336ceaa",
+      "note": "C++ 推理与延时统计",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/18_evaluation.png",
+      "bytes": 6469,
+      "sha256": "0fac8242d2255acdba4529a9b67e095c485d07b2ac38f14d884b8b5b3d12d3d9",
+      "note": "Offline Evaluation 结果",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/19_final_environment.png",
+      "bytes": 5606,
+      "sha256": "99c433f3775420ed7b42270273a11faa52104d1fc0b2614f9535614de63af683",
+      "note": "最终环境与产物总览",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "screenshot",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/20_so101_mujoco_window.png",
+      "bytes": 772927,
+      "sha256": "db44194a7d6b57f69b98a67e1499e34c38e73c1e905a05a3a99fe421e9ab34b8",
+      "note": "SO-101 MuJoCo 桌面仿真窗口（真实物体：抓取前静置 → 夹住随爪移动 → 松开落回平面）",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "evidence",
+      "kind": "index",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/index.md",
+      "bytes": 3620,
+      "sha256": "b98582725f8e228980ae53ab6463f940c9d79c0108adcdc92c2b49dcb0d6bf0a",
+      "note": "evidence index",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/14_training_loss.txt",
+      "bytes": 378,
+      "sha256": "cbcf3fdff3879f987e93042087885724f753e0257d07c34111f275f1436cebf9",
+      "note": "loss summary (evidence pairing)",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "log",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/19_final_environment.txt",
+      "bytes": 753,
+      "sha256": "a66701778c30425bd41385f19719ce7ac2eff79a7db4928234adf2e3364ca662",
+      "note": "final environment overview",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    },
+    {
+      "stage": "S16",
+      "kind": "report",
+      "path": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/README.md",
+      "bytes": 7120,
+      "sha256": "5d4179657eaefcbb91cd367b6dfd4f48a43b928b6be9cf8aa9eb86e6d5e7da4e",
+      "note": "final report",
+      "recorded_at": "2026-09-19T20:25:02+08:00"
+    }
+  ],
+  "commands": [
+    {
+      "stage": "env",
+      "command": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/build/gpu/gpu_smoke",
+      "ts": "2026-09-19T19:05:38+08:00"
+    },
+    {
+      "stage": "env",
+      "command": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/build/gpu/gpu_smoke",
+      "ts": "2026-09-19T19:08:58+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version",
+      "ts": "2026-09-19T19:09:17+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]",
+      "ts": "2026-09-19T19:09:17+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'",
+      "ts": "2026-09-19T19:10:35+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help",
+      "ts": "2026-09-19T19:10:36+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'",
+      "ts": "2026-09-19T19:10:40+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version",
+      "ts": "2026-09-19T19:11:36+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]",
+      "ts": "2026-09-19T19:11:36+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'",
+      "ts": "2026-09-19T19:11:38+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help",
+      "ts": "2026-09-19T19:11:39+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --policy.type=act --help",
+      "ts": "2026-09-19T19:11:42+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'",
+      "ts": "2026-09-19T19:11:45+08:00"
+    },
+    {
+      "stage": "dataset",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/scan_dataset_ref.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act --samples-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --fallback-repo-id lerobot/pusht --viz-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results --chunk-size 100",
+      "ts": "2026-09-19T19:12:14+08:00"
+    },
+    {
+      "stage": "dataset",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/scan_dataset_ref.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act --samples-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --fallback-repo-id lerobot/pusht --viz-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results --chunk-size 100",
+      "ts": "2026-09-19T19:13:34+08:00"
+    },
+    {
+      "stage": "dataset",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/scan_dataset_ref.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act --samples-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --fallback-repo-id lerobot/pusht --viz-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results --chunk-size 100",
+      "ts": "2026-09-19T19:14:07+08:00"
+    },
+    {
+      "stage": "train",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/act_forward_probe.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --device cuda --config-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/configs",
+      "ts": "2026-09-19T19:17:01+08:00"
+    },
+    {
+      "stage": "train",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --dataset.repo_id=lerobot/svla_so101_pickplace --dataset.root=/home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --policy.type=act --policy.device=cuda --policy.push_to_hub=false --output_dir=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke --job_name=act_baseline_smoke --batch_size=8 --steps=100 --num_workers=2 --seed=1000 --save_freq=500 --log_freq=50 --eval_steps=0 --policy.optimizer_lr=0.000010 --policy.optimizer_weight_decay=0.000100 --policy.chunk_size=100 --policy.n_action_steps=16 --policy.dim_model=512 --policy.n_heads=8 --policy.dim_feedforward=3200 --policy.n_encoder_layers=4 --policy.n_decoder_layers=1 --policy.n_vae_encoder_layers=4 --policy.latent_dim=32 --policy.dropout=0.100000 --policy.kl_weight=10.000000 --policy.use_vae=true",
+      "ts": "2026-09-19T19:17:26+08:00"
+    },
+    {
+      "stage": "train",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/act_forward_probe.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --device cuda --config-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/configs",
+      "ts": "2026-09-19T19:18:43+08:00"
+    },
+    {
+      "stage": "train",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --dataset.repo_id=lerobot/svla_so101_pickplace --dataset.root=/home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --policy.type=act --policy.device=cuda --policy.push_to_hub=false --output_dir=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke --job_name=act_baseline_smoke --batch_size=8 --steps=100 --num_workers=2 --seed=1000 --save_freq=500 --log_freq=50 --eval_steps=0 --policy.optimizer_lr=0.000010 --policy.optimizer_weight_decay=0.000100 --policy.chunk_size=100 --policy.n_action_steps=16 --policy.dim_model=512 --policy.n_heads=8 --policy.dim_feedforward=3200 --policy.n_encoder_layers=4 --policy.n_decoder_layers=1 --policy.n_vae_encoder_layers=4 --policy.latent_dim=32 --policy.dropout=0.100000 --policy.kl_weight=10.000000 --policy.use_vae=true",
+      "ts": "2026-09-19T19:18:52+08:00"
+    },
+    {
+      "stage": "train",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --dataset.repo_id=lerobot/svla_so101_pickplace --dataset.root=/home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --policy.type=act --policy.device=cuda --policy.push_to_hub=false --output_dir=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline --job_name=act_baseline --batch_size=8 --steps=3000 --num_workers=2 --seed=1000 --save_freq=500 --log_freq=50 --eval_steps=0 --policy.optimizer_lr=0.000010 --policy.optimizer_weight_decay=0.000100 --policy.chunk_size=100 --policy.n_action_steps=16 --policy.dim_model=512 --policy.n_heads=8 --policy.dim_feedforward=3200 --policy.n_encoder_layers=4 --policy.n_decoder_layers=1 --policy.n_vae_encoder_layers=4 --policy.latent_dim=32 --policy.dropout=0.100000 --policy.kl_weight=10.000000 --policy.use_vae=true",
+      "ts": "2026-09-19T19:25:24+08:00"
+    },
+    {
+      "stage": "verify",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda",
+      "ts": "2026-09-19T19:41:20+08:00"
+    },
+    {
+      "stage": "verify",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda",
+      "ts": "2026-09-19T19:41:44+08:00"
+    },
+    {
+      "stage": "verify",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda",
+      "ts": "2026-09-19T19:42:07+08:00"
+    },
+    {
+      "stage": "env",
+      "command": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/build/gpu/gpu_smoke",
+      "ts": "2026-09-19T19:45:01+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version",
+      "ts": "2026-09-19T19:45:05+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]",
+      "ts": "2026-09-19T19:45:05+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'",
+      "ts": "2026-09-19T19:45:08+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help",
+      "ts": "2026-09-19T19:45:09+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --policy.type=act --help",
+      "ts": "2026-09-19T19:45:12+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'",
+      "ts": "2026-09-19T19:45:15+08:00"
+    },
+    {
+      "stage": "dataset",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/scan_dataset_ref.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act --samples-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --fallback-repo-id lerobot/pusht --viz-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results --chunk-size 100",
+      "ts": "2026-09-19T19:46:11+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version",
+      "ts": "2026-09-19T19:49:08+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]",
+      "ts": "2026-09-19T19:49:08+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'",
+      "ts": "2026-09-19T19:49:09+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help",
+      "ts": "2026-09-19T19:49:11+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --policy.type=act --help",
+      "ts": "2026-09-19T19:49:14+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'",
+      "ts": "2026-09-19T19:49:16+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version",
+      "ts": "2026-09-19T19:50:09+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]",
+      "ts": "2026-09-19T19:50:09+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'",
+      "ts": "2026-09-19T19:50:10+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help",
+      "ts": "2026-09-19T19:50:12+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --policy.type=act --help",
+      "ts": "2026-09-19T19:50:15+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'",
+      "ts": "2026-09-19T19:50:17+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version",
+      "ts": "2026-09-19T19:51:24+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]",
+      "ts": "2026-09-19T19:51:24+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\\''lerobot'\\'', lerobot.__version__); print('\\''torch'\\'', torch.__version__); print('\\''torchvision'\\'', torchvision.__version__); print('\\''cuda_available'\\'', torch.cuda.is_available()); print('\\''arch_list'\\'', torch.cuda.get_arch_list()); print('\\''python'\\'', sys.version.split()[0])'",
+      "ts": "2026-09-19T19:51:25+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help",
+      "ts": "2026-09-19T19:51:27+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --policy.type=act --help",
+      "ts": "2026-09-19T19:51:30+08:00"
+    },
+    {
+      "stage": "install",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\\''act'\\''); cfg = make_policy_config('\\''act'\\''); print('\\''policy_class'\\'', cls.__name__); print('\\''config_class'\\'', type(cfg).__name__); print('\\''chunk_size'\\'', cfg.chunk_size); print('\\''n_action_steps'\\'', cfg.n_action_steps); print('\\''dim_model'\\'', cfg.dim_model); print('\\''ACTPOLICY_OK'\\'')'",
+      "ts": "2026-09-19T19:51:33+08:00"
+    },
+    {
+      "stage": "env",
+      "command": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/build/gpu/gpu_smoke",
+      "ts": "2026-09-19T20:18:48+08:00"
+    },
+    {
+      "stage": "verify",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda",
+      "ts": "2026-09-19T20:19:46+08:00"
+    },
+    {
+      "stage": "verify",
+      "command": "/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda",
+      "ts": "2026-09-19T20:23:30+08:00"
+    },
+    {
+      "stage": "env",
+      "command": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/build/gpu/gpu_smoke",
+      "ts": "2026-09-19T20:24:56+08:00"
+    }
+  ],
+  "environment": {
+    "os": "Ubuntu 26.04.1 LTS",
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "capability": "12.0",
+    "sm_120": true,
+    "sm_120_functional_matmul": true,
+    "libtorch": "2.12.0 (2.12.0+cu132)",
+    "conda_env": "lerobot_act",
+    "config_sha256": "e89e2540cd81310e79cce4279953712f6c2a7dbebed5b7c5c283fc9c66d1a3be",
+    "lerobot_commit": "c73cec56b04f50ebe9286c79905103866d970169",
+    "lerobot_branch": "main",
+    "lerobot_version_line": "version = \"0.6.2\"",
+    "lerobot_version": true
+  },
+  "dataset": {
+    "repo_id": "lerobot/svla_so101_pickplace",
+    "codebase_version": "v3.0",
+    "episodes": 50,
+    "frames": 11939,
+    "fps": 30,
+    "state_dim": 6,
+    "action_dim": 6,
+    "camera_keys": "observation.images.up (+1)"
+  },
+  "training": {
+    "config_sha256": "ef5a67204b30d77580b45db82fe93fb9bbfdd238b0f1b24c5d7aec39e3e55b69",
+    "chunk_size": 100,
+    "n_action_steps": 16,
+    "batch_size": 8,
+    "lr": 1.0000000000000001e-05,
+    "planned_steps": 3000,
+    "seed": 1000,
+    "steps_executed": 3000,
+    "final_loss": 0.71599999999999997,
+    "best_loss": 0.71599999999999997,
+    "samples_per_s": 27,
+    "peak_gpu_mem_gb": 3.6899999999999999,
+    "checkpoint_dir": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/last/pretrained_model"
+  },
+  "inference": {
+    "torchscript": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt",
+    "device": "cuda",
+    "output_shape": "(1, 100, 6)",
+    "latency_mean_ms": 12.692763366666666,
+    "latency_p95_ms": 14.045704000000001,
+    "samples_used": 8
+  },
+  "evaluation": {
+    "type": "Offline Evaluation",
+    "samples": 8,
+    "python_cxx_max_abs_diff": 0.04449462890625,
+    "sim_success_rate": "NOT_MEASURED",
+    "real_robot_success_rate": "NOT_MEASURED"
+  }
+}

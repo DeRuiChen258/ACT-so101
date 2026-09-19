@@ -1,0 +1,32 @@
+{
+  "grasp_frame": 162,
+  "grasp_xyz": [
+    0.01684940100186342,
+    -0.2749581907126433,
+    -0.08230740433292869
+  ],
+  "ee_min_z": -0.08230740433292869,
+  "ee_max_z": 0.19642425687314535,
+  "ee_start_z": 0.16444705213338434,
+  "ee_end_z": 0.1648901037131622,
+  "surface_z": -0.08230740433292869,
+  "object_xyz": [
+    0.01684940100186342,
+    -0.2749581907126433,
+    -0.06530740433292868
+  ],
+  "object_half_size": 0.015,
+  "object_lift": 0.002,
+  "scene_xml": "results/so101_mujoco/diag/generated/so101_model/scene_with_object.xml",
+  "phases": {
+    "jaw_min": -0.20134222507476807,
+    "jaw_max": 19.19463086128235,
+    "close_threshold": 9.49664431810379,
+    "open_threshold": 11.436241626739502,
+    "grasp_frame": 169,
+    "release_frame": 226,
+    "carried_frames": 57
+  },
+  "episode_frames": 303,
+  "align_home": true
+}

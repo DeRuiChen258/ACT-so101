@@ -1,0 +1,48 @@
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\''lerobot'\'', lerobot.__version__); print('\''torch'\'', torch.__version__); print('\''torchvision'\'', torchvision.__version__); print('\''cuda_available'\'', torch.cuda.is_available()); print('\''arch_list'\'', torch.cuda.get_arch_list()); print('\''python'\'', sys.version.split()[0])'
+lerobot 0.6.2
+torch 2.11.0+cu130
+torchvision 0.26.0+cu130
+cuda_available True
+arch_list ['sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+python 3.12.14
+[exit_code=0 duration_ms=1821.05]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\''lerobot'\'', lerobot.__version__); print('\''torch'\'', torch.__version__); print('\''torchvision'\'', torchvision.__version__); print('\''cuda_available'\'', torch.cuda.is_available()); print('\''arch_list'\'', torch.cuda.get_arch_list()); print('\''python'\'', sys.version.split()[0])'
+lerobot 0.6.2
+torch 2.11.0+cu130
+torchvision 0.26.0+cu130
+cuda_available True
+arch_list ['sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+python 3.12.14
+[exit_code=0 duration_ms=1490.94]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\''lerobot'\'', lerobot.__version__); print('\''torch'\'', torch.__version__); print('\''torchvision'\'', torchvision.__version__); print('\''cuda_available'\'', torch.cuda.is_available()); print('\''arch_list'\'', torch.cuda.get_arch_list()); print('\''python'\'', sys.version.split()[0])'
+lerobot 0.6.2
+torch 2.11.0+cu130
+torchvision 0.26.0+cu130
+cuda_available True
+arch_list ['sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+python 3.12.14
+[exit_code=0 duration_ms=1660.5]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\''lerobot'\'', lerobot.__version__); print('\''torch'\'', torch.__version__); print('\''torchvision'\'', torchvision.__version__); print('\''cuda_available'\'', torch.cuda.is_available()); print('\''arch_list'\'', torch.cuda.get_arch_list()); print('\''python'\'', sys.version.split()[0])'
+lerobot 0.6.2
+torch 2.11.0+cu130
+torchvision 0.26.0+cu130
+cuda_available True
+arch_list ['sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+python 3.12.14
+[exit_code=0 duration_ms=1528.94]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\''lerobot'\'', lerobot.__version__); print('\''torch'\'', torch.__version__); print('\''torchvision'\'', torchvision.__version__); print('\''cuda_available'\'', torch.cuda.is_available()); print('\''arch_list'\'', torch.cuda.get_arch_list()); print('\''python'\'', sys.version.split()[0])'
+lerobot 0.6.2
+torch 2.11.0+cu130
+torchvision 0.26.0+cu130
+cuda_available True
+arch_list ['sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+python 3.12.14
+[exit_code=0 duration_ms=1551.12]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\''lerobot'\'', lerobot.__version__); print('\''torch'\'', torch.__version__); print('\''torchvision'\'', torchvision.__version__); print('\''cuda_available'\'', torch.cuda.is_available()); print('\''arch_list'\'', torch.cuda.get_arch_list()); print('\''python'\'', sys.version.split()[0])'
+lerobot 0.6.2
+torch 2.11.0+cu130
+torchvision 0.26.0+cu130
+cuda_available True
+arch_list ['sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+python 3.12.14
+[exit_code=0 duration_ms=1620.53]

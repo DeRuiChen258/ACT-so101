@@ -1,0 +1,7 @@
+home align offsets (deg): [1.96, -8.79, 8.97, -15.13, 38.5, 1.41]
+model      : /home/violet/Workspace/IDE/Physical_AI/third_party/mujoco_menagerie/trs_so_arm100/scene.xml
+episode    : 0, frames=303, rendering 26 frames (stride=12)
+renderer   : 640x480, MUJOCO_GL=egl
+frames     : 26 PNG written to results/so101_mujoco
+montage    : results/so101_mujoco/so101_render_montage_ep000.png
+video      : results/so101_mujoco/so101_ep000_replay.mp4 (ffmpeg exit=0)

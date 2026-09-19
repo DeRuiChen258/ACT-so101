@@ -1,0 +1,20 @@
+{
+  "count": 8,
+  "camera_keys": [
+    "observation.images.up",
+    "observation.images.side"
+  ],
+  "state_dim": 6,
+  "action_dim": 6,
+  "chunk_size": 100,
+  "indices": [
+    0,
+    1705,
+    3411,
+    5116,
+    6822,
+    8527,
+    10233,
+    11938
+  ]
+}

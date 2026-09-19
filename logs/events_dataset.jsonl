@@ -1,0 +1,121 @@
+# actlab structured log (JSON Lines) — stage=dataset
+{
+"ts": "2026-09-19T19:12:14+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:12:14+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/scan_dataset_ref.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act --samples-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --fallback-repo-id lerobot/pusht --viz-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results --chunk-size 100"
+}
+{
+"ts": "2026-09-19T19:12:32+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "proc",
+"message": "exit=0 duration_ms=18002",
+"duration_ms": 18002.738459
+}
+{
+"ts": "2026-09-19T19:12:34+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "stage",
+"message": "dataset -> PASS: root=/home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace codebase=v3.0 robot=so100_follower episodes=50 frames=11939 fps=30 cameras=observation.images.up,observation.images.side state_dim=6 action_dim=6 problems=0",
+"duration_ms": 19183.266184
+}
+{
+"ts": "2026-09-19T19:13:34+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:13:34+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/scan_dataset_ref.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act --samples-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --fallback-repo-id lerobot/pusht --viz-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results --chunk-size 100"
+}
+{
+"ts": "2026-09-19T19:13:37+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "proc",
+"message": "exit=0 duration_ms=2524",
+"duration_ms": 2524.4277529999999
+}
+{
+"ts": "2026-09-19T19:13:38+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "stage",
+"message": "dataset -> PASS: root=/home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace codebase=v3.0 robot=so100_follower episodes=50 frames=11939 fps=30 cameras=observation.images.up,observation.images.side state_dim=6 action_dim=6 problems=0",
+"duration_ms": 3783.9639040000002
+}
+{
+"ts": "2026-09-19T19:14:07+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:14:07+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/scan_dataset_ref.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act --samples-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --fallback-repo-id lerobot/pusht --viz-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results --chunk-size 100"
+}
+{
+"ts": "2026-09-19T19:16:41+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "proc",
+"message": "exit=0 duration_ms=154253",
+"duration_ms": 154253.56967500001
+}
+{
+"ts": "2026-09-19T19:16:43+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "stage",
+"message": "dataset -> PASS: root=/home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace codebase=v3.0 robot=so100_follower episodes=50 frames=11939 fps=30 cameras=observation.images.up,observation.images.side state_dim=6 action_dim=6 problems=0",
+"duration_ms": 155533.85682399999
+}
+{
+"ts": "2026-09-19T19:46:11+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:46:11+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/scan_dataset_ref.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act --samples-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --fallback-repo-id lerobot/pusht --viz-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results --chunk-size 100"
+}
+{
+"ts": "2026-09-19T19:48:46+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "proc",
+"message": "exit=0 duration_ms=155559",
+"duration_ms": 155559.79240199999
+}
+{
+"ts": "2026-09-19T19:49:00+08:00",
+"level": "INFO",
+"stage": "dataset",
+"module": "stage",
+"message": "dataset -> PASS: root=/home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace codebase=v3.0 robot=so100_follower episodes=50 frames=11939 fps=30 cameras=observation.images.up,observation.images.side state_dim=6 action_dim=6 problems=0",
+"duration_ms": 169578.06927499999
+}

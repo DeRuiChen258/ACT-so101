@@ -1,0 +1,18 @@
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version
+pip 26.2.1 from /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages/pip (python 3.12)
+[exit_code=0 duration_ms=108.968]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version
+pip 26.2.1 from /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages/pip (python 3.12)
+[exit_code=0 duration_ms=84.8591]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version
+pip 26.2.1 from /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages/pip (python 3.12)
+[exit_code=0 duration_ms=111.791]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version
+pip 26.2.1 from /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages/pip (python 3.12)
+[exit_code=0 duration_ms=100.328]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version
+pip 26.2.1 from /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages/pip (python 3.12)
+[exit_code=0 duration_ms=92.9944]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version
+pip 26.2.1 from /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages/pip (python 3.12)
+[exit_code=0 duration_ms=99.9995]

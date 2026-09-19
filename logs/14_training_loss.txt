@@ -1,0 +1,10 @@
+# training loss summary (derived from results/loss_curve.csv by actlab report)
+# generated_at: 2026-09-19T19:51:44+08:00
+
+metric_samples : 63
+first_step     : 50
+final_step     : 3000
+first_loss     : 13.628
+best_loss      : 0.716
+final_loss     : 0.716
+curve_file     : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/loss_curve.png

@@ -1,0 +1,14 @@
+home align offsets (deg): [1.96, -8.79, 8.97, -15.13, 38.5, 1.41]
+=== object / grasp info (derived from real trajectory FK) ===
+grasp frame  : 162 / 302
+grasp xyz    : [0.0168, -0.275, -0.0823] m
+surface(plane) z : -0.0823 m
+object center: [0.0168, -0.275, -0.0653] m (half size 0.015 m)
+grasp/release: 169 / 226 (carried 57 frames)
+jaw min/max  : -0.20 / 19.19 deg
+scene xml    : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/generated/so101_model/scene_with_object.xml
+pair 0: dataset frame 0 -> compare_ep000_000_frame0000.png
+pair 1: dataset frame 101 -> compare_ep000_001_frame0101.png
+pair 2: dataset frame 201 -> compare_ep000_002_frame0201.png
+pair 3: dataset frame 302 -> compare_ep000_003_frame0302.png
+montage    : /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/so101_compare_montage_ep000.png

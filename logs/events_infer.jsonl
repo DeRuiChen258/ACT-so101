@@ -1,0 +1,46 @@
+# actlab structured log (JSON Lines) — stage=infer
+{
+"ts": "2026-09-19T19:42:24+08:00",
+"level": "INFO",
+"stage": "infer",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:42:25+08:00",
+"level": "INFO",
+"stage": "infer",
+"module": "stage",
+"message": "infer -> PASS: shape=(1, 100, 6) mean=12.578464ms",
+"duration_ms": 1314.188611
+}
+{
+"ts": "2026-09-19T19:42:46+08:00",
+"level": "INFO",
+"stage": "infer",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:42:48+08:00",
+"level": "INFO",
+"stage": "infer",
+"module": "stage",
+"message": "infer -> PASS: shape=(1, 100, 6) mean=12.622846ms",
+"duration_ms": 1914.867338
+}
+{
+"ts": "2026-09-19T20:19:54+08:00",
+"level": "INFO",
+"stage": "infer",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:19:56+08:00",
+"level": "INFO",
+"stage": "infer",
+"module": "stage",
+"message": "infer -> PASS: shape=(1, 100, 6) mean=12.692763ms",
+"duration_ms": 1914.4101519999999
+}

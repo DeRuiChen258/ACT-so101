@@ -1,0 +1,151 @@
+# actlab structured log (JSON Lines) — stage=verify
+{
+"ts": "2026-09-19T19:41:19+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:41:20+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda"
+}
+{
+"ts": "2026-09-19T19:41:27+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "proc",
+"message": "exit=1 duration_ms=6507",
+"duration_ms": 6507.1792020000003
+}
+{
+"ts": "2026-09-19T19:41:28+08:00",
+"level": "ERROR",
+"stage": "verify",
+"module": "stage",
+"message": "verify -> BLOCKED: TorchScript export failed; C++ inference gate cannot be satisfied (see /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/15_checkpoint.txt)",
+"duration_ms": 8147.8571599999996
+}
+{
+"ts": "2026-09-19T19:41:43+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:41:44+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda"
+}
+{
+"ts": "2026-09-19T19:41:49+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "proc",
+"message": "exit=0 duration_ms=4859",
+"duration_ms": 4859.4725500000004
+}
+{
+"ts": "2026-09-19T19:41:57+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "stage",
+"message": "verify -> PASS: checkpoint=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline_smoke/checkpoints/000100/pretrained_model; torchscript=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt; new-process reload OK",
+"duration_ms": 13563.764491
+}
+{
+"ts": "2026-09-19T19:42:06+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:42:07+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda"
+}
+{
+"ts": "2026-09-19T19:42:12+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "proc",
+"message": "exit=0 duration_ms=4752",
+"duration_ms": 4752.2580690000004
+}
+{
+"ts": "2026-09-19T19:42:15+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "stage",
+"message": "verify -> PASS: checkpoint=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model; torchscript=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt; new-process reload OK",
+"duration_ms": 8581.2644189999992
+}
+{
+"ts": "2026-09-19T20:19:45+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:19:46+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda"
+}
+{
+"ts": "2026-09-19T20:19:51+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "proc",
+"message": "exit=0 duration_ms=4797",
+"duration_ms": 4797.9117580000002
+}
+{
+"ts": "2026-09-19T20:19:54+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "stage",
+"message": "verify -> PASS: checkpoint=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model; torchscript=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript/act_policy.pt; new-process reload OK",
+"duration_ms": 8664.3148860000001
+}
+{
+"ts": "2026-09-19T20:23:29+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:23:30+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "proc",
+"message": "exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/export_act_torchscript.py --checkpoint /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model --out-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/act_baseline/torchscript --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace --samples-dir /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --device cuda"
+}
+{
+"ts": "2026-09-19T20:23:30+08:00",
+"level": "INFO",
+"stage": "verify",
+"module": "proc",
+"message": "exit=127 duration_ms=7",
+"duration_ms": 7.3401310000000004
+}
+{
+"ts": "2026-09-19T20:23:31+08:00",
+"level": "ERROR",
+"stage": "verify",
+"module": "stage",
+"message": "verify -> BLOCKED: TorchScript export failed; C++ inference gate cannot be satisfied (see /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/15_checkpoint.txt)",
+"duration_ms": 1652.12934
+}

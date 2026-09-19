@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+<rect width="100%" height="100%" fill="white"/>
+<text x="80" y="24" font-family="monospace" font-size="16">ACT training loss (real log data, n=63)</text>
+<rect x="80" y="40" width="840" height="440" fill="none" stroke="black"/>
+<polyline fill="none" stroke="#c0392b" stroke-width="2" points="80,40 94,344 108,373 80,41 94,344 108,373 122,386 136,396 151,401 165,405 179,409 193,416 208,421 222,424 236,427 250,431 265,431 279,434 293,437 307,439 322,441 336,441 350,443 350,445 350,446 350,448 350,449 350,451 350,451 350,452 350,454 350,455 635,457 635,457 635,458 635,460 635,461 635,462 635,463 635,463 635,465 635,466 635,466 635,468 635,468 635,468 635,469 635,471 635,472 635,472 635,472 635,473 635,474 920,475 920,476 920,476 920,477 920,477 920,478 920,478 920,479 920,480 920,480 "/>
+<text x="80" y="504" font-family="monospace" font-size="13">step 50 → 3000</text>
+<text x="80" y="524" font-family="monospace" font-size="13">loss 0.716 → 13.628</text>
+</svg>

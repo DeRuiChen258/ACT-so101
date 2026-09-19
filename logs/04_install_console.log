@@ -1,0 +1,975 @@
+[INFO][install][context] experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775
+[INFO][install][proc] exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip --version
+pip 26.2.1 from /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages/pip (python 3.12)
+[INFO][install][proc] exit=0 duration_ms=108 (108.968 ms)
+[INFO][install][proc] exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip install -e /home/violet/Workspace/IDE/Physical_AI/repo[training]
+Obtaining file:///home/violet/Workspace/IDE/Physical_AI/repo
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: torch<2.12.0,>=2.7 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from lerobot==0.6.2) (2.11.0+cu130)
+Requirement already satisfied: torchvision<0.27.0,>=0.22.0 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from lerobot==0.6.2) (0.26.0+cu130)
+Collecting numpy<2.3.0,>=2.0.0 (from lerobot==0.6.2)
+  Downloading numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting opencv-python-headless<4.14.0,>=4.9.0 (from lerobot==0.6.2)
+  Downloading opencv_python_headless-4.13.0.92-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+Requirement already satisfied: Pillow<13.0.0,>=10.0.0 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from lerobot==0.6.2) (12.3.0)
+Collecting einops<0.9.0,>=0.8.0 (from lerobot==0.6.2)
+  Downloading einops-0.8.2-py3-none-any.whl.metadata (13 kB)
+Collecting draccus<0.12.0,>=0.11.6 (from lerobot==0.6.2)
+  Downloading draccus-0.11.6-py3-none-any.whl.metadata (22 kB)
+Collecting huggingface-hub<2.0.0,>=1.6.0 (from lerobot==0.6.2)
+  Downloading huggingface_hub-1.32.0-py3-none-any.whl.metadata (16 kB)
+Collecting requests<3.0.0,>=2.32.0 (from lerobot==0.6.2)
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting gymnasium<2.0.0,>=1.1.1 (from lerobot==0.6.2)
+  Downloading gymnasium-1.3.0-py3-none-any.whl.metadata (10 kB)
+Collecting safetensors<1.0.0,>=0.4.3 (from lerobot==0.6.2)
+  Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.2 kB)
+Collecting packaging<26.0,>=24.2 (from lerobot==0.6.2)
+  Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting termcolor<4.0.0,>=2.4.0 (from lerobot==0.6.2)
+  Downloading termcolor-3.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting tqdm<5.0.0,>=4.66.0 (from lerobot==0.6.2)
+  Downloading tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting cmake<4.2.0,>=3.29.0.1 (from lerobot==0.6.2)
+  Downloading cmake-4.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.5 kB)
+Requirement already satisfied: setuptools<82.0.0,>=71.0.0 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from lerobot==0.6.2) (81.0.0)
+Collecting wandb<0.28.0,>=0.24.0 (from lerobot==0.6.2)
+  Downloading wandb-0.27.2-py3-none-manylinux_2_28_x86_64.whl.metadata (11 kB)
+Collecting mergedeep~=1.3 (from draccus<0.12.0,>=0.11.6->lerobot==0.6.2)
+  Downloading mergedeep-1.3.4-py3-none-any.whl.metadata (4.3 kB)
+Collecting pyyaml~=6.0 (from draccus<0.12.0,>=0.11.6->lerobot==0.6.2)
+  Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting toml~=0.10 (from draccus<0.12.0,>=0.11.6->lerobot==0.6.2)
+  Downloading toml-0.10.2-py2.py3-none-any.whl.metadata (7.1 kB)
+Collecting typing-inspect~=0.9.0 (from draccus<0.12.0,>=0.11.6->lerobot==0.6.2)
+  Downloading typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting cloudpickle>=1.2.0 (from gymnasium<2.0.0,>=1.1.1->lerobot==0.6.2)
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: typing-extensions>=4.3.0 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from gymnasium<2.0.0,>=1.1.1->lerobot==0.6.2) (4.16.0)
+Collecting farama-notifications>=0.0.1 (from gymnasium<2.0.0,>=1.1.1->lerobot==0.6.2)
+  Downloading farama_notifications-0.0.6-py3-none-any.whl.metadata (729 bytes)
+Collecting click<9.0.0,>=8.4.2 (from huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2)
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Requirement already satisfied: filelock>=3.10.0 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2) (4.0.1)
+Requirement already satisfied: fsspec>=2023.5.0 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2) (2026.9.0)
+Collecting hf-xet<2.0.0,>=1.5.2 (from huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2)
+  Downloading hf_xet-1.6.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+Collecting httpx<1,>=0.23.0 (from huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2)
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting anyio (from httpx<1,>=0.23.0->huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2)
+  Using cached anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting certifi (from httpx<1,>=0.23.0->huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2)
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.23.0->huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2)
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting idna (from httpx<1,>=0.23.0->huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2)
+  Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2)
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting charset_normalizer<4,>=2 (from requests<3.0.0,>=2.32.0->lerobot==0.6.2)
+  Downloading charset_normalizer-3.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (45 kB)
+Collecting urllib3<3,>=1.26 (from requests<3.0.0,>=2.32.0->lerobot==0.6.2)
+  Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Requirement already satisfied: sympy>=1.13.3 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from torch<2.12.0,>=2.7->lerobot==0.6.2) (1.14.0)
+Requirement already satisfied: networkx>=2.5.1 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from torch<2.12.0,>=2.7->lerobot==0.6.2) (3.6.1)
+Requirement already satisfied: jinja2 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from torch<2.12.0,>=2.7->lerobot==0.6.2) (3.1.6)
+Requirement already satisfied: cuda-toolkit==13.0.2 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (13.0.2)
+Requirement already satisfied: cuda-bindings<14,>=13.0.3 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from torch<2.12.0,>=2.7->lerobot==0.6.2) (13.4.2)
+Requirement already satisfied: nvidia-cudnn-cu13==9.19.0.56 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from torch<2.12.0,>=2.7->lerobot==0.6.2) (9.19.0.56)
+Requirement already satisfied: nvidia-cusparselt-cu13==0.8.0 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from torch<2.12.0,>=2.7->lerobot==0.6.2) (0.8.0)
+Requirement already satisfied: nvidia-nccl-cu13==2.28.9 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from torch<2.12.0,>=2.7->lerobot==0.6.2) (2.28.9)
+Requirement already satisfied: nvidia-nvshmem-cu13==3.4.5 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from torch<2.12.0,>=2.7->lerobot==0.6.2) (3.4.5)
+Requirement already satisfied: triton==3.6.0 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from torch<2.12.0,>=2.7->lerobot==0.6.2) (3.6.0)
+Requirement already satisfied: nvidia-cublas==13.1.0.3.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (13.1.0.3)
+Requirement already satisfied: nvidia-cuda-runtime==13.0.96.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (13.0.96)
+Requirement already satisfied: nvidia-cufft==12.0.0.61.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (12.0.0.61)
+Requirement already satisfied: nvidia-cufile==1.15.1.6.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (1.15.1.6)
+Requirement already satisfied: nvidia-cuda-cupti==13.0.85.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (13.0.85)
+Requirement already satisfied: nvidia-curand==10.4.0.35.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (10.4.0.35)
+Requirement already satisfied: nvidia-cusolver==12.0.4.66.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (12.0.4.66)
+Requirement already satisfied: nvidia-cusparse==12.6.3.3.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (12.6.3.3)
+Requirement already satisfied: nvidia-nvjitlink==13.0.88.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (13.0.88)
+Requirement already satisfied: nvidia-cuda-nvrtc==13.0.88.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (13.0.88)
+Requirement already satisfied: nvidia-nvtx==13.0.85.* in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.2; platform_system == "Linux"->torch<2.12.0,>=2.7->lerobot==0.6.2) (13.0.85)
+Requirement already satisfied: cuda-pathfinder>=1.4.2 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from cuda-bindings<14,>=13.0.3->torch<2.12.0,>=2.7->lerobot==0.6.2) (1.8.2)
+Collecting mypy-extensions>=0.3.0 (from typing-inspect~=0.9.0->draccus<0.12.0,>=0.11.6->lerobot==0.6.2)
+  Using cached mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting gitpython!=3.1.29,>=1.0.0 (from wandb<0.28.0,>=0.24.0->lerobot==0.6.2)
+  Downloading gitpython-3.1.62-py3-none-any.whl.metadata (13 kB)
+Collecting platformdirs (from wandb<0.28.0,>=0.24.0->lerobot==0.6.2)
+  Downloading platformdirs-4.11.11-py3-none-any.whl.metadata (5.5 kB)
+Collecting protobuf!=5.28.0,!=5.29.0,<8,>4.21.0 (from wandb<0.28.0,>=0.24.0->lerobot==0.6.2)
+  Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl.metadata (595 bytes)
+Collecting pydantic<3,>=2.6 (from wandb<0.28.0,>=0.24.0->lerobot==0.6.2)
+  Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)
+Collecting sentry-sdk>=2.0.0 (from wandb<0.28.0,>=0.24.0->lerobot==0.6.2)
+  Downloading sentry_sdk-2.69.2-py3-none-any.whl.metadata (11 kB)
+Collecting annotated-types>=0.6.0 (from pydantic<3,>=2.6->wandb<0.28.0,>=0.24.0->lerobot==0.6.2)
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.5 (from pydantic<3,>=2.6->wandb<0.28.0,>=0.24.0->lerobot==0.6.2)
+  Downloading pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic<3,>=2.6->wandb<0.28.0,>=0.24.0->lerobot==0.6.2)
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting gitdb<5,>=4.0.1 (from gitpython!=3.1.29,>=1.0.0->wandb<0.28.0,>=0.24.0->lerobot==0.6.2)
+  Downloading gitdb-4.0.12-py3-none-any.whl.metadata (1.2 kB)
+Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->gitpython!=3.1.29,>=1.0.0->wandb<0.28.0,>=0.24.0->lerobot==0.6.2)
+  Downloading smmap-5.0.3-py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from sympy>=1.13.3->torch<2.12.0,>=2.7->lerobot==0.6.2) (1.3.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/violet/Workspace/miniconda/envs/lerobot_act/lib/python3.12/site-packages (from jinja2->torch<2.12.0,>=2.7->lerobot==0.6.2) (3.0.3)
+Collecting accelerate<2.0.0,>=1.14.0 (from lerobot==0.6.2)
+  Downloading accelerate-1.15.0-py3-none-any.whl.metadata (19 kB)
+Collecting psutil (from accelerate<2.0.0,>=1.14.0->lerobot==0.6.2)
+  Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting datasets<5.0.0,>=4.8.0 (from lerobot==0.6.2)
+  Downloading datasets-4.8.5-py3-none-any.whl.metadata (19 kB)
+Collecting pandas<3.0.0,>=2.0.0 (from lerobot==0.6.2)
+  Downloading pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+Collecting pyarrow<30.0.0,>=21.0.0 (from lerobot==0.6.2)
+  Downloading pyarrow-25.0.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+Collecting torchcodec<0.12.0,>=0.3.0 (from lerobot==0.6.2)
+  Downloading torchcodec-0.11.1-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (11 kB)
+Collecting jsonlines<5.0.0,>=4.0.0 (from lerobot==0.6.2)
+  Downloading jsonlines-4.0.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting dill<0.4.2,>=0.3.0 (from datasets<5.0.0,>=4.8.0->lerobot==0.6.2)
+  Downloading dill-0.4.1-py3-none-any.whl.metadata (10 kB)
+Collecting xxhash (from datasets<5.0.0,>=4.8.0->lerobot==0.6.2)
+  Downloading xxhash-4.0.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (17 kB)
+Collecting multiprocess<0.70.20 (from datasets<5.0.0,>=4.8.0->lerobot==0.6.2)
+  Downloading multiprocess-0.70.19-py312-none-any.whl.metadata (7.5 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<2.0.0,>=1.6.0->lerobot==0.6.2)
+  Downloading fsspec-2026.2.0-py3-none-any.whl.metadata (10 kB)
+Collecting aiohttp!=4.0.0a0,!=4.0.0a1 (from fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5.0.0,>=4.8.0->lerobot==0.6.2)
+  Downloading aiohttp-3.14.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+Collecting attrs>=19.2.0 (from jsonlines<5.0.0,>=4.0.0->lerobot==0.6.2)
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting python-dateutil>=2.8.2 (from pandas<3.0.0,>=2.0.0->lerobot==0.6.2)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas<3.0.0,>=2.0.0->lerobot==0.6.2)
+  Downloading pytz-2026.3.post1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas<3.0.0,>=2.0.0->lerobot==0.6.2)
+  Downloading tzdata-2026.4-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5.0.0,>=4.8.0->lerobot==0.6.2)
+  Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5.0.0,>=4.8.0->lerobot==0.6.2)
+  Downloading aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5.0.0,>=4.8.0->lerobot==0.6.2)
+  Downloading frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5.0.0,>=4.8.0->lerobot==0.6.2)
+  Downloading multidict-6.9.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5.0.0,>=4.8.0->lerobot==0.6.2)
+  Downloading propcache-0.5.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (25 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets<5.0.0,>=4.8.0->lerobot==0.6.2)
+  Downloading yarl-1.25.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (111 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas<3.0.0,>=2.0.0->lerobot==0.6.2)
+  Downloading six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting av<16.0.0,>=15.0.0 (from lerobot==0.6.2)
+  Downloading av-15.1.0-cp312-cp312-manylinux_2_28_x86_64.whl.metadata (4.6 kB)
+Downloading cmake-4.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (29.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.7/29.7 MB 10.4 MB/s  0:00:03
+Downloading draccus-0.11.6-py3-none-any.whl (85 kB)
+Downloading einops-0.8.2-py3-none-any.whl (65 kB)
+Downloading gymnasium-1.3.0-py3-none-any.whl (953 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 953.9/953.9 kB 10.2 MB/s  0:00:00
+Downloading huggingface_hub-1.32.0-py3-none-any.whl (842 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 842.9/842.9 kB 10.0 MB/s  0:00:00
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Downloading hf_xet-1.6.0-cp38-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 11.3 MB/s  0:00:00
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading mergedeep-1.3.4-py3-none-any.whl (6.4 kB)
+Downloading numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.5/16.5 MB 11.4 MB/s  0:00:01
+Downloading opencv_python_headless-4.13.0.92-cp37-abi3-manylinux_2_28_x86_64.whl (60.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.4/60.4 MB 10.3 MB/s  0:00:05
+Downloading packaging-25.0-py3-none-any.whl (66 kB)
+Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 10.2 MB/s  0:00:00
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading charset_normalizer-3.5.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (248 kB)
+Downloading idna-3.20-py3-none-any.whl (69 kB)
+Downloading safetensors-0.8.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (516 kB)
+Downloading termcolor-3.3.0-py3-none-any.whl (7.7 kB)
+Downloading toml-0.10.2-py2.py3-none-any.whl (16 kB)
+Downloading tqdm-4.70.1-py3-none-any.whl (80 kB)
+Downloading typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Downloading wandb-0.27.2-py3-none-manylinux_2_28_x86_64.whl (26.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 26.4/26.4 MB 9.4 MB/s  0:00:02
+Downloading protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (343 kB)
+Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+Downloading pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 20.1 MB/s  0:00:00
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading farama_notifications-0.0.6-py3-none-any.whl (2.9 kB)
+Downloading gitpython-3.1.62-py3-none-any.whl (222 kB)
+Downloading gitdb-4.0.12-py3-none-any.whl (62 kB)
+Downloading smmap-5.0.3-py3-none-any.whl (24 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Downloading sentry_sdk-2.69.2-py3-none-any.whl (528 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 528.8/528.8 kB 12.3 MB/s  0:00:00
+Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Using cached anyio-4.15.1-py3-none-any.whl (132 kB)
+Downloading accelerate-1.15.0-py3-none-any.whl (394 kB)
+Downloading datasets-4.8.5-py3-none-any.whl (528 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 529.0/529.0 kB 12.0 MB/s  0:00:00
+Downloading dill-0.4.1-py3-none-any.whl (120 kB)
+Downloading fsspec-2026.2.0-py3-none-any.whl (202 kB)
+Downloading jsonlines-4.0.0-py3-none-any.whl (8.7 kB)
+Downloading multiprocess-0.70.19-py312-none-any.whl (150 kB)
+Downloading pandas-2.3.3-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.4/12.4 MB 9.7 MB/s  0:00:01
+Downloading pyarrow-25.0.1-cp312-cp312-manylinux_2_28_x86_64.whl (50.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.1/50.1 MB 10.6 MB/s  0:00:04
+Downloading torchcodec-0.11.1-cp312-cp312-manylinux_2_28_x86_64.whl (2.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 11.0 MB/s  0:00:00
+Downloading aiohttp-3.14.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 10.9 MB/s  0:00:00
+Downloading multidict-6.9.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (317 kB)
+Downloading yarl-1.25.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (117 kB)
+Downloading aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+Downloading aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Downloading frozenlist-1.8.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (242 kB)
+Downloading propcache-0.5.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (250 kB)
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading pytz-2026.3.post1-py2.py3-none-any.whl (508 kB)
+Downloading six-1.17.0-py2.py3-none-any.whl (11 kB)
+Downloading tzdata-2026.4-py2.py3-none-any.whl (347 kB)
+Downloading av-15.1.0-cp312-cp312-manylinux_2_28_x86_64.whl (39.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.9/39.9 MB 11.5 MB/s  0:00:03
+Downloading platformdirs-4.11.11-py3-none-any.whl (24 kB)
+Downloading psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Downloading xxhash-4.0.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (261 kB)
+Building wheels for collected packages: lerobot
+  Building editable for lerobot (pyproject.toml): started
+  Building editable for lerobot (pyproject.toml): finished with status 'done'
+  Created wheel for lerobot: filename=lerobot-0.6.2-0.editable-py3-none-any.whl size=14808 sha256=283fc83732e719d2679baf0d3971f8ac38569ffb586d4ddcd8cea26daf14dd9f
+  Stored in directory: /tmp/pip-ephem-wheel-cache-rkswv0lh/wheels/e2/d1/df/5474e6de2675bd59d583074d926e00917451de312d1a5f2502
+Successfully built lerobot
+Installing collected packages: pytz, farama-notifications, xxhash, urllib3, tzdata, typing-inspection, tqdm, torchcodec, toml, termcolor, smmap, six, safetensors, pyyaml, pydantic-core, pyarrow, psutil, protobuf, propcache, platformdirs, packaging, numpy, mypy-extensions, multidict, mergedeep, idna, hf-xet, h11, fsspec, frozenlist, einops, dill, cmake, cloudpickle, click, charset_normalizer, certifi, av, attrs, annotated-types, aiohappyeyeballs, yarl, typing-inspect, sentry-sdk, requests, python-dateutil, pydantic, opencv-python-headless, multiprocess, jsonlines, httpcore, gymnasium, gitdb, anyio, aiosignal, pandas, httpx, gitpython, draccus, aiohttp, wandb, huggingface-hub, datasets, accelerate, lerobot
+  Attempting uninstall: packaging
+    Found existing installation: packaging 26.3
+    Uninstalling packaging-26.3:
+      Successfully uninstalled packaging-26.3
+  Attempting uninstall: numpy
+    Found existing installation: numpy 2.5.3
+    Uninstalling numpy-2.5.3:
+      Successfully uninstalled numpy-2.5.3
+  Attempting uninstall: fsspec
+    Found existing installation: fsspec 2026.9.0
+    Uninstalling fsspec-2026.9.0:
+      Successfully uninstalled fsspec-2026.9.0
+
+Successfully installed accelerate-1.15.0 aiohappyeyeballs-2.7.1 aiohttp-3.14.3 aiosignal-1.4.0 annotated-types-0.8.0 anyio-4.15.1 attrs-26.1.0 av-15.1.0 certifi-2026.7.22 charset_normalizer-3.5.1 click-8.5.0 cloudpickle-3.1.2 cmake-4.1.3 datasets-4.8.5 dill-0.4.1 draccus-0.11.6 einops-0.8.2 farama-notifications-0.0.6 frozenlist-1.8.0 fsspec-2026.2.0 gitdb-4.0.12 gitpython-3.1.62 gymnasium-1.3.0 h11-0.16.0 hf-xet-1.6.0 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-1.32.0 idna-3.20 jsonlines-4.0.0 lerobot-0.6.2 mergedeep-1.3.4 multidict-6.9.0 multiprocess-0.70.19 mypy-extensions-1.1.0 numpy-2.2.6 opencv-python-headless-4.13.0.92 packaging-25.0 pandas-2.3.3 platformdirs-4.11.11 propcache-0.5.4 protobuf-7.36.2 psutil-7.2.2 pyarrow-25.0.1 pydantic-2.13.5 pydantic-core-2.46.5 python-dateutil-2.9.0.post0 pytz-2026.3.post1 pyyaml-6.0.3 requests-2.34.2 safetensors-0.8.0 sentry-sdk-2.69.2 six-1.17.0 smmap-5.0.3 termcolor-3.3.0 toml-0.10.2 torchcodec-0.11.1 tqdm-4.70.1 typing-inspect-0.9.0 typing-inspection-0.4.4 tzdata-2026.4 urllib3-2.8.0 wandb-0.27.2 xxhash-4.0.1 yarl-1.25.1
+[INFO][install][proc] exit=0 duration_ms=77318 (77319 ms)
+[INFO][install][proc] exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\''lerobot'\'', lerobot.__version__); print('\''torch'\'', torch.__version__); print('\''torchvision'\'', torchvision.__version__); print('\''cuda_available'\'', torch.cuda.is_available()); print('\''arch_list'\'', torch.cuda.get_arch_list()); print('\''python'\'', sys.version.split()[0])'
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'import lerobot, torch, torchvision, sys; print('\''lerobot'\'', lerobot.__version__); print('\''torch'\'', torch.__version__); print('\''torchvision'\'', torchvision.__version__); print('\''cuda_available'\'', torch.cuda.is_available()); print('\''arch_list'\'', torch.cuda.get_arch_list()); print('\''python'\'', sys.version.split()[0])'
+lerobot 0.6.2
+torch 2.11.0+cu130
+torchvision 0.26.0+cu130
+cuda_available True
+arch_list ['sm_75', 'sm_80', 'sm_86', 'sm_90', 'sm_100', 'sm_120']
+python 3.12.14
+[INFO][install][proc] exit=0 duration_ms=1821 (1821.05 ms)
+[INFO][install][proc] exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m lerobot.scripts.lerobot_train --help
+usage: lerobot_train.py [-h] [--config_path str] [--dataset str]
+                        [--dataset.repo_id str] [--dataset.repo_type str]
+                        [--dataset.root [str]]
+                        [--dataset.episodes [list[int]]]
+                        [--dataset.exclude_episodes [list[int]]]
+                        [--image_transforms str]
+                        [--dataset.image_transforms.enable bool]
+                        [--dataset.image_transforms.max_num_transforms int]
+                        [--dataset.image_transforms.random_order bool]
+                        [--dataset.image_transforms.tfs dict[str,ImageTransformConfig]]
+                        [--dataset.revision [str]]
+                        [--dataset.use_imagenet_stats bool]
+                        [--dataset.video_backend str]
+                        [--dataset.return_uint8 bool]
+                        [--dataset.depth_output_unit str]
+                        [--dataset.streaming bool]
+                        [--dataset.eval_split float] [--env str]
+                        [--env.type {aloha,pusht,gym_manipulator,libero,metaworld,robocasa,vlabench,isaaclab_arena,unitree_g1_mujoco,libero_plus,robotwin,robomme}]
+                        [--policy str]
+                        [--policy.type {act,diffusion,eo1,evo1,groot,molmoact2,fastwam,gaussian_actor,lawam,lingbot_va,multi_task_dit,pi0,pi0_fast,pi05,smolvla,tdmpc,vla_jepa,vqbet,wall_x,xvla}]
+                        [--reward_model str]
+                        [--reward_model.type {reward_classifier,robometer,sarm,topreward}]
+                        [--output_dir [Path]] [--job_name [str]]
+                        [--resume bool] [--seed [int]]
+                        [--cudnn_deterministic bool] [--num_workers int]
+                        [--batch_size int] [--prefetch_factor int]
+                        [--persistent_workers bool]
+                        [--dataloader_multiprocessing_context [str]]
+                        [--steps int] [--env_eval_freq int] [--log_freq int]
+                        [--eval_steps int] [--max_eval_samples int]
+                        [--tolerance_s float] [--save_checkpoint bool]
+                        [--save_freq int]
+                        [--checkpoint_format CheckpointFormat]
+                        [--use_policy_training_preset bool] [--optimizer str]
+                        [--optimizer.type {adam,adamw,sgd,xvla-adamw,multi_adam,molmoact2_adamw}]
+                        [--scheduler str]
+                        [--scheduler.type {diffuser,vqbet,constant_with_warmup,cosine_annealing_with_warmup,cosine_decay_with_warmup,molmoact2_cosine_with_warmup,lawam_cosine_with_min_lr}]
+                        [--parallelism str] [--parallelism.dp_replicate int]
+                        [--parallelism.dp_shard int] [--context_parallel str]
+                        [--parallelism.context_parallel.ring_degree int]
+                        [--parallelism.context_parallel.ulysses_degree int]
+                        [--parallelism.cfg_parallel int] [--accelerator str]
+                        [--accelerator.mixed_precision str]
+                        [--gradient_accumulation str]
+                        [--accelerator.gradient_accumulation.steps int]
+                        [--fsdp str]
+                        [--accelerator.fsdp.reshard_after_forward bool]
+                        [--accelerator.fsdp.wrap_modules [list[str]]]
+                        [--accelerator.fsdp.min_num_params [int]]
+                        [--accelerator.fsdp.cpu_offload bool]
+                        [--accelerator.fsdp.ignored_modules [str]] [--ddp str]
+                        [--accelerator.ddp.find_unused_parameters bool]
+                        [--accelerator.ddp.gradient_as_bucket_view bool]
+                        [--accelerator.ddp.static_graph bool] [--compile str]
+                        [--accelerator.compile.enabled bool]
+                        [--accelerator.compile.backend str]
+                        [--accelerator.compile.mode [str]]
+                        [--accelerator.compile.regional bool]
+                        [--activation_checkpointing str]
+                        [--accelerator.activation_checkpointing.mode ActivationCheckpointingMode]
+                        [--eval str] [--eval.n_episodes int]
+                        [--eval.batch_size int] [--eval.use_async_envs bool]
+                        [--eval.recording bool]
+                        [--eval.recording_repo_id [str]]
+                        [--eval.recording_private bool] [--ema str]
+                        [--ema.enable bool] [--ema.decay [float]]
+                        [--ema.update_after_step int] [--ema.inv_gamma float]
+                        [--ema.power float] [--ema.min_decay float]
+                        [--ema.max_decay float] [--ema.use_for_eval bool]
+                        [--wandb str] [--wandb.enable bool]
+                        [--wandb.disable_artifact bool] [--wandb.project str]
+                        [--wandb.entity [str]] [--wandb.notes [str]]
+                        [--wandb.run_id [str]] [--wandb.resume [str]]
+                        [--wandb.mode [str]] [--wandb.console str]
+                        [--wandb.console_multipart bool]
+                        [--wandb.console_chunk_max_seconds int]
+                        [--wandb.add_tags bool] [--peft str]
+                        [--peft.target_modules [list[str]|str]]
+                        [--peft.full_training_modules [list[str]]]
+                        [--peft.method_type str] [--peft.init_type [str]]
+                        [--peft.r int] [--peft.lora_alpha [int]] [--job str]
+                        [--job.target [str]] [--job.image str]
+                        [--job.timeout [str]] [--job.detach bool]
+                        [--job.tags list[str]] [--save_checkpoint_to_hub bool]
+                        [--sample_weighting str] [--sample_weighting.type str]
+                        [--sample_weighting.progress_path [str]]
+                        [--sample_weighting.head_mode str]
+                        [--sample_weighting.kappa float]
+                        [--sample_weighting.epsilon float]
+                        [--sample_weighting.extra_params dict]
+                        [--rename_map dict[str,str]]
+
+options:
+  -h, --help            show this help message and exit
+  --config_path str     Path for a config file to parse with draccus (default:
+                        None)
+  --dataset str         Config file for dataset (default: None)
+  --image_transforms str
+                        Config file for image_transforms (default: None)
+  --env str             Config file for env (default: None)
+  --policy str          Config file for policy (default: None)
+  --reward_model str    Config file for reward_model (default: None)
+  --optimizer str       Config file for optimizer (default: None)
+  --scheduler str       Config file for scheduler (default: None)
+  --parallelism str     Config file for parallelism (default: None)
+  --context_parallel str
+                        Config file for context_parallel (default: None)
+  --accelerator str     Config file for accelerator (default: None)
+  --gradient_accumulation str
+                        Config file for gradient_accumulation (default: None)
+  --fsdp str            Config file for fsdp (default: None)
+  --ddp str             Config file for ddp (default: None)
+  --compile str         Config file for compile (default: None)
+  --activation_checkpointing str
+                        Config file for activation_checkpointing (default:
+                        None)
+  --eval str            Config file for eval (default: None)
+  --ema str             Config file for ema (default: None)
+  --wandb str           Config file for wandb (default: None)
+  --peft str            Config file for peft (default: None)
+  --job str             Config file for job (default: None)
+  --sample_weighting str
+                        Config file for sample_weighting (default: None)
+
+TrainPipelineConfig:
+
+  --output_dir [Path]   Set `dir` to where you would like to save all of the
+                        run outputs. If you run another training session with
+                        the same value for `dir` its contents will be
+                        overwritten unless you set `resume` to true. (default:
+                        None)
+  --job_name [str]
+  --resume bool         Set `resume` to true to resume a previous run. Pass
+                        `--config_path` pointing at either a local
+                        checkpoint's train_config.json or a Hub repo id
+                        holding `checkpoints/<step>/` subtrees (the latest
+                        checkpoint is downloaded and resumed from). Note that
+                        when resuming, the default behavior is to use the
+                        configuration from the checkpoint, regardless of
+                        what's provided with the training command at the time
+                        of resumption (CLI `--*` flags still override).
+                        (default: False)
+  --seed [int]          `seed` is used for training (eg: model initialization,
+                        dataset shuffling) AND for the evaluation
+                        environments. (default: 1000)
+  --cudnn_deterministic bool
+                        Set to True to use deterministic cuDNN algorithms for
+                        reproducibility. This disables cudnn.benchmark and may
+                        reduce training speed by ~10-20 percent. (default:
+                        False)
+  --num_workers int     Number of workers for the dataloader. (default: 4)
+  --batch_size int      
+  --prefetch_factor int
+  --persistent_workers bool
+  --dataloader_multiprocessing_context [str]
+                        DataLoader worker start method. "spawn" is safer than
+                        "fork" with non-fork-safe libs (PyAV / torchcodec /
+                        ffmpeg), but adds some worker-startup time per run
+                        since workers re-import modules instead of inheriting
+                        parent state. Override with
+                        `--dataloader_multiprocessing_context=fork` when
+                        appropriate, or set it to `null` to use Python's
+                        platform default. (default: spawn)
+  --steps int           
+  --env_eval_freq int   Run policy in the simulation environment every N steps
+                        to measure reward/success (0 = disabled). (default:
+                        20000)
+  --log_freq int        
+  --eval_steps int      Compute eval loss on held-out episodes every N steps
+                        (0 = disabled). Requires eval_split > 0. (default: 0)
+  --max_eval_samples int
+                        Cap on total eval samples, split uniformly across
+                        tasks (0 = use all held-out data). (default: 0)
+  --tolerance_s float   
+  --save_checkpoint bool
+  --save_freq int       Checkpoint is saved every `save_freq` training
+                        iterations and after the last training step. A non-
+                        positive value disables periodic saving, keeping only
+                        the final checkpoint. (default: 20000)
+  --checkpoint_format CheckpointFormat
+                        Model-artifact format inside checkpoints; non-default
+                        values require a sharded run. (default:
+                        CheckpointFormat.SAFETENSORS)
+  --use_policy_training_preset bool
+  --save_checkpoint_to_hub bool
+                        Push each saved checkpoint to the Hub (policy.repo_id)
+                        as it is written, not just the final model (useful to
+                        monitor progress mid-run). Optional; the final model
+                        is pushed regardless. Works the same locally and
+                        remotely. (default: False)
+  --rename_map dict[str,str]
+                        Rename map for the observation to override the image
+                        and state keys (default: {})
+
+DatasetConfig ['dataset']:
+
+  --dataset.repo_id str
+                        You may provide a list of datasets here. `train.py`
+                        creates them all and concatenates them. Note: only
+                        data keys common between the datasets are kept. Each
+                        dataset gets and additional transform that inserts the
+                        "dataset_index" into the returned item. The index
+                        mapping is made according to the order in which the
+                        datasets are provided. (default: None)
+  --dataset.repo_type str
+                        Hub repository type: "dataset" (default) or "bucket"
+                        for an HF Storage Bucket (hf://buckets/). Whether a
+                        bucket needs streaming=true depends on the dataset's
+                        storage format, so that is checked at load time in the
+                        dataset factory. (default: dataset)
+  --dataset.root [str]  Root directory for a concrete local dataset tree (e.g.
+                        'dataset/path'). If None, local datasets are looked up
+                        under $HF_LEROBOT_HOME/repo_id and Hub downloads use a
+                        revision-safe cache under $HF_LEROBOT_HOME/hub.
+                        (default: None)
+  --dataset.episodes [list[int]]
+  --dataset.exclude_episodes [list[int]]
+                        Episode indices to drop (e.g. corrupt or heterogeneous
+                        ones). Applied on top of `episodes`. (default: None)
+  --dataset.revision [str]
+  --dataset.use_imagenet_stats bool
+  --dataset.video_backend str
+  --dataset.return_uint8 bool
+                        When True, RGB video frames are returned as uint8
+                        tensors (0-255) instead of float32 (0.0-1.0). This
+                        reduces memory and speeds up DataLoader IPC. The
+                        training pipeline handles the conversion. (default:
+                        False)
+  --dataset.depth_output_unit str
+                        Physical unit depth maps are dequantized to at load
+                        time: "mm" (millimeters) or "m" (metres). Has no
+                        effect on datasets without depth cameras. (default:
+                        mm)
+  --dataset.streaming bool
+  --dataset.eval_split float
+                        Fraction of episodes held out per task for offline
+                        evaluation (0.0 = disabled). (default: 0.0)
+
+ImageTransformsConfig ['dataset.image_transforms']:
+  
+      These transforms are all using standard torchvision.transforms.v2
+      You can find out how these transformations affect images here:
+      https://pytorch.org/vision/0.18/auto_examples/transforms/plot_transforms_illustrations.html
+      We use a custom RandomSubsetApply container to sample them.
+      
+
+  --dataset.image_transforms.enable bool
+                        Set this flag to `true` to enable transforms during
+                        training (default: False)
+  --dataset.image_transforms.max_num_transforms int
+                        This is the maximum number of transforms (sampled from
+                        these below) that will be applied to each frame. It's
+                        an integer in the interval [1,
+                        number_of_available_transforms]. (default: 3)
+  --dataset.image_transforms.random_order bool
+                        By default, transforms are applied in Torchvision's
+                        suggested order (shown below). Set this to True to
+                        apply them in a random order. (default: False)
+  --dataset.image_transforms.tfs dict[str,ImageTransformConfig]
+
+Optional ['env']:
+
+EnvConfig ['env']:
+
+  --env.type {aloha,pusht,gym_manipulator,libero,metaworld,robocasa,vlabench,isaaclab_arena,unitree_g1_mujoco,libero_plus,robotwin,robomme}
+                        Which type of EnvConfig ['env'] to use (default: None)
+
+Optional ['policy']:
+
+PreTrainedConfig ['policy']:
+  
+      Base configuration class for policy models.
+  
+      Args:
+          n_obs_steps: Number of environment steps worth of observations to pass to the policy (takes the
+              current step and additional steps going back).
+          input_features: A dictionary defining the PolicyFeature of the input data for the policy. The key represents
+              the input data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+          output_features: A dictionary defining the PolicyFeature of the output data for the policy. The key represents
+              the output data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+          normalization_mapping: A dictionary that maps from a str value of FeatureType (e.g., "STATE", "VISUAL") to
+              a corresponding NormalizationMode (e.g., NormalizationMode.MIN_MAX)
+      
+
+  --policy.type {act,diffusion,eo1,evo1,groot,molmoact2,fastwam,gaussian_actor,lawam,lingbot_va,multi_task_dit,pi0,pi0_fast,pi05,smolvla,tdmpc,vla_jepa,vqbet,wall_x,xvla}
+                        Which type of PreTrainedConfig ['policy'] to use
+                        (default: None)
+
+Optional ['reward_model']:
+
+RewardModelConfig ['reward_model']:
+  Base configuration for reward models.
+  
+      Args:
+      input_features: A dictionary defining the PolicyFeature of the input data for the reward. The key represents
+          the input data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+      output_features: A dictionary defining the PolicyFeature of the output data for the reward. The key represents
+          the output data name, and the value is PolicyFeature, which consists of FeatureType and shape attributes.
+      
+
+  --reward_model.type {reward_classifier,robometer,sarm,topreward}
+                        Which type of RewardModelConfig ['reward_model'] to
+                        use (default: None)
+
+Optional ['optimizer']:
+
+OptimizerConfig ['optimizer']:
+
+  --optimizer.type {adam,adamw,sgd,xvla-adamw,multi_adam,molmoact2_adamw}
+                        Which type of OptimizerConfig ['optimizer'] to use
+                        (default: None)
+
+Optional ['scheduler']:
+
+LRSchedulerConfig ['scheduler']:
+
+  --scheduler.type {diffuser,vqbet,constant_with_warmup,cosine_annealing_with_warmup,cosine_decay_with_warmup,molmoact2_cosine_with_warmup,lawam_cosine_with_min_lr}
+                        Which type of LRSchedulerConfig ['scheduler'] to use
+                        (default: None)
+
+ParallelismConfig ['parallelism']:
+  Process topology: dp_replicate / dp_shard (HSDP) and context-parallel degree placeholders.
+
+  --parallelism.dp_replicate int
+  --parallelism.dp_shard int
+                        -1 is an explicit opt-in sentinel: shard over
+                        world_size // (dp_replicate * cp). (default: 1)
+  --parallelism.cfg_parallel int
+                        Classifier-free-guidance parallelism — inference-only
+                        (cosmos/vllm-omni precedent: cond/uncond branches on
+                        different ranks). Reserved for the serving round;
+                        training validates it to 1. Meaningful values are 1 or
+                        2 (Cosmos3 has two CFG branches). (default: 1)
+
+ContextParallelConfig ['parallelism.context_parallel']:
+  Ring x Ulysses context parallelism (sequence parallelism for attention).
+  
+      Both degrees are configured placeholders in this release: the CP engine is not implemented
+      yet, and enabling either degree > 1 fails fast at config validation. The fields exist now so
+      that the CLI surface, checkpoint metadata, and mesh math are stable when the engine lands.
+      
+
+  --parallelism.context_parallel.ring_degree int
+  --parallelism.context_parallel.ulysses_degree int
+
+AcceleratorConfig ['accelerator']:
+  Execution runtime handed to the Accelerator: mixed precision, gradient accumulation,
+  FSDP/DDP tuning knobs, compile & activation-checkpointing placeholders.
+
+  --accelerator.mixed_precision str
+
+GradientAccumulationConfig ['accelerator.gradient_accumulation']:
+  Mirror of the `GradientAccumulationPlugin` subset LeRobot supports.
+  
+      Only the step count is a knob. ``sync_with_dataloader`` is pinned to False by
+      :meth:`build_plugin`: the training loop cycles a finite dataloader, so accelerate's default
+      of syncing at every dataloader end would force an optimizer step at every dataset epoch
+      boundary instead of every ``steps`` micro-batches.
+      
+
+  --accelerator.gradient_accumulation.steps int
+
+FSDPConfig ['accelerator.fsdp']:
+  Mirror of the `FullyShardedDataParallelPlugin` subset LeRobot supports (FSDP2 only).
+  
+      Exactly one wrap policy applies: `wrap_modules` (module *class names* forming the FSDP
+      units — and, later, the activation-checkpointing units) or `min_num_params` (size-based).
+      When both are None, the policy's own `_fsdp_wrap_modules` declaration is used; a run where
+      no wrap source exists at all fails loudly rather than silently wrapping only the root.
+      
+
+  --accelerator.fsdp.reshard_after_forward bool
+  --accelerator.fsdp.wrap_modules [list[str]]
+  --accelerator.fsdp.min_num_params [int]
+  --accelerator.fsdp.cpu_offload bool
+  --accelerator.fsdp.ignored_modules [str]
+                        Regex matched against module FQNs to exclude their
+                        parameters from sharding. (default: None)
+
+DDPConfig ['accelerator.ddp']:
+  Mirror of the `DistributedDataParallelKwargs` subset LeRobot exposes.
+
+  --accelerator.ddp.find_unused_parameters bool
+                        Today's in-script default, kept for models with
+                        conditional computation. (default: True)
+  --accelerator.ddp.gradient_as_bucket_view bool
+  --accelerator.ddp.static_graph bool
+
+CompileConfig ['accelerator.compile']:
+  torch.compile knobs — a configured placeholder: wiring lands in a later round.
+  
+      The setup-order contract it will follow is already fixed: compile applies
+      after CP dispatch install and activation checkpointing, before `fully_shard`, regionally
+      (per wrap unit) — the only combination proven with FSDP2.
+      
+
+  --accelerator.compile.enabled bool
+  --accelerator.compile.backend str
+  --accelerator.compile.mode [str]
+  --accelerator.compile.regional bool
+
+ActivationCheckpointingConfig ['accelerator.activation_checkpointing']:
+  Activation-checkpointing knobs — a configured placeholder: wiring lands in a later round.
+  
+      AC units will coincide with the FSDP wrap units (one declaration drives both), applied
+      before torch.compile and `fully_shard` (the same ordering contract as CompileConfig).
+      
+
+  --accelerator.activation_checkpointing.mode ActivationCheckpointingMode
+
+EvalConfig ['eval']:
+
+  --eval.n_episodes int
+  --eval.batch_size int
+                        `batch_size` specifies the number of environments to
+                        use in a gym.vector.VectorEnv. Set to 0 for auto-
+                        tuning based on available CPU cores and n_episodes.
+                        (default: 0)
+  --eval.use_async_envs bool
+                        `use_async_envs` specifies whether to use asynchronous
+                        environments (multiprocessing). Defaults to True;
+                        automatically downgraded to SyncVectorEnv when
+                        batch_size=1. (default: True)
+  --eval.recording bool
+                        Whether to record eval rollouts as a LeRobot dataset
+                        on disk. (default: False)
+  --eval.recording_repo_id [str]
+                        If set, push recorded eval datasets to the Hub under
+                        this repo id (one repo per task, suffixed by task and
+                        env index). Requires recording=true. (default: None)
+  --eval.recording_private bool
+                        Whether the pushed recording repositories should be
+                        private. (default: False)
+
+EMAConfig ['ema']:
+  Maintain an EMA shadow of the policy weights during training (see EMAConfig).
+
+  --ema.enable bool     
+  --ema.decay [float]   Constant decay coefficient (openpi-style, e.g. 0.99
+                        for pi0/pi05). When set, the warmup schedule below is
+                        bypassed and the shadow uses this decay at every step.
+                        (default: None)
+  --ema.update_after_step int
+                        Number of optimizer steps during which the shadow
+                        stays a hard copy of the live weights. (default: 0)
+  --ema.inv_gamma float
+                        Warmup schedule parameters (see class docstring).
+                        (default: 1.0)
+  --ema.power float     
+  --ema.min_decay float
+  --ema.max_decay float
+  --ema.use_for_eval bool
+                        Evaluate the EMA weights (instead of the live ones)
+                        during periodic env eval. Offline eval-loss
+                        (--eval_steps) always uses the live weights: it runs
+                        on every rank while the EMA shadow only lives on the
+                        main process. (default: True)
+
+WandBConfig ['wandb']:
+
+  --wandb.enable bool   
+  --wandb.disable_artifact bool
+                        Set to true to disable saving an artifact despite
+                        training.save_checkpoint=True (default: False)
+  --wandb.project str   
+  --wandb.entity [str]
+  --wandb.notes [str]
+  --wandb.run_id [str]
+  --wandb.resume [str]  Allowed values: 'allow', 'must', 'never', or 'auto'.
+                        (default: None)
+  --wandb.mode [str]    Allowed values: 'online', 'offline' 'disabled'.
+                        Defaults to 'online' (default: None)
+  --wandb.console str   
+  --wandb.console_multipart bool
+  --wandb.console_chunk_max_seconds int
+  --wandb.add_tags bool
+                        If True, save configuration as tags in the WandB run.
+                        (default: True)
+
+Optional ['peft']:
+
+PeftConfig ['peft']:
+
+  --peft.target_modules [list[str]|str]
+                        PEFT offers many fine-tuning methods, layer adapters
+                        being the most common and currently also the most
+                        effective methods so we'll focus on those in this
+                        high-level config interface. Either a string (module
+                        name suffix or 'all-linear'), a list of module name
+                        suffixes or a regular expression describing module
+                        names to target with the configured PEFT method. Some
+                        policies have a default value for this so that you
+                        don't *have* to choose which layers to adapt but it
+                        might still be worthwhile depending on your case.
+                        (default: None)
+  --peft.full_training_modules [list[str]]
+                        Names/suffixes of modules to fully fine-tune and store
+                        alongside adapter weights. Useful for layers that are
+                        not part of a pre-trained model (e.g., action state
+                        projections). Depending on the policy this defaults to
+                        layers that are newly created in pre-trained policies.
+                        If you're fine-tuning an already trained policy you
+                        might want to set this to `[]`. Corresponds to PEFT's
+                        `modules_to_save`. (default: None)
+  --peft.method_type str
+                        The PEFT (adapter) method to apply to the policy.
+                        Needs to be a valid PEFT type. (default: LORA)
+  --peft.init_type [str]
+                        Adapter initialization method. Look at the specific
+                        PEFT adapter documentation for defaults. (default:
+                        None)
+  --peft.r int          We expect that all PEFT adapters are in some way doing
+                        rank-decomposition therefore this parameter specifies
+                        the rank used for the adapter. In general a higher
+                        rank means more trainable parameters and closer to
+                        full fine-tuning. (default: 16)
+  --peft.lora_alpha [int]
+                        Alpha parameter for LoRA scaling (scaling = lora_alpha
+                        / r). In general, a higher alpha means stronger
+                        adaptation signal. If None, the PEFT library defaults
+                        to alpha=8, which may dampen high-rank adapters.
+                        Common values are r (alpha == rank) or 2*r. (default:
+                        None)
+
+JobConfig ['job']:
+  Where to run training (local default, or an HF Jobs flavor). See JobConfig.
+
+  --job.target [str]    Where training runs. None (omitted) or "local" runs on
+                        this machine. Any other value is an HF Jobs flavor and
+                        submits the run to HF Jobs. List available flavors +
+                        pricing with `hf jobs hardware` command. (default:
+                        None)
+  --job.image str       Runtime image for the remote job (ignored for local
+                        runs). (default: huggingface/lerobot-gpu:latest)
+  --job.timeout [str]   Max wall-clock for the remote job as an HF Jobs
+                        duration string (e.g. "2h"). Defaults to "2d": We pass
+                        an explicit, generous cap instead. Set a smaller value
+                        to fail fast, or a larger one for long runs. (default:
+                        2d)
+  --job.detach bool     Submit and exit instead of streaming the job logs in
+                        the foreground. (default: False)
+  --job.tags list[str]  Extra tags attached to the HF job and to any dataset
+                        this run pushes to the Hub. A "lerobot" tag is always
+                        added; e.g. --job.tags '["lelab"]' adds more.
+                        (default: [])
+
+Optional ['sample_weighting']:
+  Sample weighting configuration (e.g., for RA-BC training)
+
+SampleWeightingConfig ['sample_weighting']:
+  Sample weighting configuration (e.g., for RA-BC training)
+
+  --sample_weighting.type str
+  --sample_weighting.progress_path [str]
+  --sample_weighting.head_mode str
+  --sample_weighting.kappa float
+  --sample_weighting.epsilon float
+  --sample_weighting.extra_params dict
+                        Additional type-specific params can be added here or
+                        passed via extra_params (default: {})
+[INFO][install][proc] exit=0 duration_ms=3051 (3051.88 ms)
+[INFO][install][proc] exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\''act'\''); cfg = make_policy_config('\''act'\''); print('\''policy_class'\'', cls.__name__); print('\''config_class'\'', type(cfg).__name__); print('\''chunk_size'\'', cfg.chunk_size); print('\''n_action_steps'\'', cfg.n_action_steps); print('\''dim_model'\'', cfg.dim_model); print('\''ACTPOLICY_OK'\'')'
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\''act'\''); cfg = make_policy_config('\''act'\''); print('\''policy_class'\'', cls.__name__); print('\''config_class'\'', type(cfg).__name__); print('\''chunk_size'\'', cfg.chunk_size); print('\''n_action_steps'\'', cfg.n_action_steps); print('\''dim_model'\'', cfg.dim_model); print('\''ACTPOLICY_OK'\'')'
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+policy_class ACTPolicy
+config_class ACTConfig
+chunk_size 100
+n_action_steps 100
+dim_model 512
+ACTPOLICY_OK
+[INFO][install][proc] exit=0 duration_ms=2503 (2503.48 ms)
+$ bash -lc '/home/violet/Workspace/miniconda/bin/conda env export -n lerobot_act --no-builds > /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/configs/conda_env.lock.yml'
+/home/violet/Workspace/miniconda/lib/python3.14/site-packages/conda/cli/main_export.py:295: CondaExportWarning: The exported environment contains 3rd party Python packages.
+
+Your environment contains 95 packages installed via pip. Conda cannot reliably lock these packages for reproducible environments.
+
+Detected packages:
+  - accelerate==1.15.0
+  - aiohappyeyeballs==2.7.1
+  - aiohttp==3.14.3
+  - aiosignal==1.4.0
+  - annotated-types==0.8.0
+  - anyio==4.15.1
+  - attrs==26.1.0
+  - av==15.1.0
+  - certifi==2026.7.22
+  - charset-normalizer==3.5.1
+  - click==8.5.0
+  - cloudpickle==3.1.2
+  - cmake==4.1.3
+  - cuda-bindings==13.4.2
+  - cuda-pathfinder==1.8.2
+  - cuda-toolkit==13.0.2
+  - datasets==4.8.5
+  - dill==0.4.1
+  - draccus==0.11.6
+  - einops==0.8.2
+  - farama-notifications==0.0.6
+  - filelock==4.0.1
+  - frozenlist==1.8.0
+  - fsspec==2026.2.0
+  - gitdb==4.0.12
+  - gitpython==3.1.62
+  - gymnasium==1.3.0
+  - h11==0.16.0
+  - hf-xet==1.6.0
+  - httpcore==1.0.9
+  - httpx==0.28.1
+  - huggingface-hub==1.32.0
+  - idna==3.20
+  - jinja2==3.1.6
+  - jsonlines==4.0.0
+  - lerobot==0.6.2
+  - markupsafe==3.0.3
+  - mergedeep==1.3.4
+  - mpmath==1.3.0
+  - multidict==6.9.0
+  - multiprocess==0.70.19
+  - mypy-extensions==1.1.0
+  - networkx==3.6.1
+  - numpy==2.2.6
+  - nvidia-cublas==13.1.0.3
+  - nvidia-cuda-cupti==13.0.85
+  - nvidia-cuda-nvrtc==13.0.88
+  - nvidia-cuda-runtime==13.0.96
+  - nvidia-cudnn-cu13==9.19.0.56
+  - nvidia-cufft==12.0.0.61
+  - nvidia-cufile==1.15.1.6
+  - nvidia-curand==10.4.0.35
+  - nvidia-cusolver==12.0.4.66
+  - nvidia-cusparse==12.6.3.3
+  - nvidia-cusparselt-cu13==0.8.0
+  - nvidia-nccl-cu13==2.28.9
+  - nvidia-nvjitlink==13.0.88
+  - nvidia-nvshmem-cu13==3.4.5
+  - nvidia-nvtx==13.0.85
+  - opencv-python-headless==4.13.0.92
+  - packaging==25.0
+  - pandas==2.3.3
+  - pillow==12.3.0
+  - platformdirs==4.11.11
+  - propcache==0.5.4
+  - protobuf==7.36.2
+  - psutil==7.2.2
+  - pyarrow==25.0.1
+  - pydantic==2.13.5
+  - pydantic-core==2.46.5
+  - python-dateutil==2.9.0.post0
+  - pytz==2026.3.post1
+  - pyyaml==6.0.3
+  - requests==2.34.2
+  - safetensors==0.8.0
+  - sentry-sdk==2.69.2
+  - setuptools==81.0.0
+  - six==1.17.0
+  - smmap==5.0.3
+  - sympy==1.14.0
+  - termcolor==3.3.0
+  - toml==0.10.2
+  - torch==2.11.0+cu130
+  - torchcodec==0.11.1
+  - torchvision==0.26.0+cu130
+  - tqdm==4.70.1
+  - triton==3.6.0
+  - typing-extensions==4.16.0
+  - typing-inspect==0.9.0
+  - typing-inspection==0.4.4
+  - tzdata==2026.4
+  - urllib3==2.8.0
+  - wandb==0.27.2
+  - xxhash==4.0.1
+  - yarl==1.25.1
+
+Learn more: https://docs.conda.io/projects/conda/en/stable/user-guide/configuration/pip-interoperability.html
+  warnings.warn(warning, CondaExportWarning)
+$ bash -lc '/home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip freeze > /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/pip_freeze.txt'
+$ /usr/bin/import -window 0x2c00020 /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/04_lerobot_install.png
+[ERROR][install][stage] install -> FAIL: lerobot-train --help is missing required flags (97046.2 ms)
+
+[阶段 1/1] install
+状态：FAIL
+实际执行：actlab install
+关键结果：lerobot-train --help is missing required flags
+产生文件：(none)
+截图：SCREENSHOT_UNAVAILABLE
+下一步：修正失败原因后重跑本阶段
+

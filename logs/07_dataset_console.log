@@ -1,0 +1,74 @@
+[INFO][dataset][context] experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775
+[INFO][dataset][proc] exec: /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/scan_dataset_ref.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act --samples-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --fallback-repo-id lerobot/pusht --viz-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results --chunk-size 100
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/scripts/py/scan_dataset_ref.py --repo-id lerobot/svla_so101_pickplace --root /home/violet/Workspace/Data/lerobot_act --samples-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples --fallback-repo-id lerobot/pusht --viz-out /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results --chunk-size 100
+=== scan_dataset_ref.py ===
+HF_LEROBOT_HOME : /home/violet/Workspace/Data/lerobot_act
+repo_id         : lerobot/svla_so101_pickplace
+dataset root    : /home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:02,  1.12it/s]Fetching 4 files:  75%|███████▌  | 3/4 [00:02<00:00,  1.03it/s]Fetching 4 files: 100%|██████████| 4/4 [00:03<00:00,  1.34it/s]Fetching 4 files: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files:  56%|█████▌    | 5/9 [00:00<00:00, 10.98it/s]Fetching 9 files:  78%|███████▊  | 7/9 [00:03<00:01,  1.88it/s]Fetching 9 files:  89%|████████▉ | 8/9 [00:10<00:01,  1.99s/it]Fetching 9 files: 100%|██████████| 9/9 [00:10<00:00,  1.18s/it]
+
+=== dataset metadata ===
+repo_id         : lerobot/svla_so101_pickplace
+codebase_version: unknown
+robot_type      : so100_follower
+fps             : 30.0
+num_frames      : 11939
+num_episodes    : 50
+num_tasks       : 1
+camera_keys     : ['observation.images.up', 'observation.images.side']
+
+=== features ===
+action                           dtype=float32 shape=(6,)
+observation.state                dtype=float32 shape=(6,)
+observation.images.up            dtype=video shape=(480, 640, 3)
+observation.images.side          dtype=video shape=(480, 640, 3)
+timestamp                        dtype=float32 shape=(1,)
+frame_index                      dtype=int64 shape=(1,)
+episode_index                    dtype=int64 shape=(1,)
+index                            dtype=int64 shape=(1,)
+task_index                       dtype=int64 shape=(1,)
+[sample] observation.images.up: shape=(3, 480, 640) dtype=torch.float32 min=0.0000 max=0.8667
+[sample] observation.images.side: shape=(3, 480, 640) dtype=torch.float32 min=0.0000 max=0.9294
+[sample] observation.state: shape=(6,) dtype=torch.float32
+[sample] action(chunk): shape=(100, 6) dtype=torch.float32
+
+=== exported samples ===
+{
+  "count": 8,
+  "camera_keys": [
+    "observation.images.up",
+    "observation.images.side"
+  ],
+  "state_dim": 6,
+  "action_dim": 6,
+  "chunk_size": 100,
+  "indices": [
+    0,
+    1705,
+    3411,
+    5116,
+    6822,
+    8527,
+    10233,
+    11938
+  ]
+}
+
+=== visualization ===
+VIZ_UNAVAILABLE: TypeError: visualize_dataset() missing 1 required positional argument: 'dataset'
+
+SCAN_DONE
+[INFO][dataset][proc] exit=0 duration_ms=18002 (18002.7 ms)
+[INFO][dataset][stage] dataset -> PASS: root=/home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace codebase=v3.0 robot=so100_follower episodes=50 frames=11939 fps=30 cameras=observation.images.up,observation.images.side state_dim=6 action_dim=6 problems=0 (19183.3 ms)
+
+[阶段 1/1] dataset
+状态：PASS
+实际执行：actlab dataset
+关键结果：root=/home/violet/Workspace/Data/lerobot_act/lerobot/svla_so101_pickplace codebase=v3.0 robot=so100_follower episodes=50 frames=11939 fps=30 cameras=observation.images.up,observation.images.side state_dim=6 action_dim=6 problems=0
+产生文件：/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/07_dataset_download.txt, /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/08_dataset_schema.txt
+截图：/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/07_dataset_download.png, /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/evidence/09_dataset_visualization.png
+下一步：train（配置冻结 → 最小初始化 → smoke → release）
+

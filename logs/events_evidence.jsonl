@@ -1,0 +1,151 @@
+# actlab structured log (JSON Lines) — stage=evidence
+{
+"ts": "2026-09-19T19:42:54+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:42:54+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "stage",
+"message": "evidence -> PASS: index.md generated; screenshots present=15, missing=5, logs missing=4",
+"duration_ms": 4.9998509999999996
+}
+{
+"ts": "2026-09-19T19:51:44+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:51:44+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "stage",
+"message": "evidence -> PASS: index.md generated; screenshots present=19, missing=1, logs missing=2",
+"duration_ms": 7.2022700000000004
+}
+{
+"ts": "2026-09-19T19:52:08+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:52:08+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "stage",
+"message": "evidence -> PASS: index.md generated; screenshots present=20, missing=0, logs missing=0",
+"duration_ms": 2.3195000000000001
+}
+{
+"ts": "2026-09-19T19:52:39+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=ef5a67204b30d775"
+}
+{
+"ts": "2026-09-19T19:52:39+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "stage",
+"message": "evidence -> PASS: index.md generated; screenshots present=20, missing=0, logs missing=0",
+"duration_ms": 2.262753
+}
+{
+"ts": "2026-09-19T20:13:13+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:13:13+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "stage",
+"message": "evidence -> PASS: index.md generated; screenshots present=21, missing=0, logs missing=0",
+"duration_ms": 5.8235970000000004
+}
+{
+"ts": "2026-09-19T20:17:18+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:17:18+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "stage",
+"message": "evidence -> PASS: index.md generated; screenshots present=21, missing=0, logs missing=0",
+"duration_ms": 8.6937770000000008
+}
+{
+"ts": "2026-09-19T20:17:24+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:17:24+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "stage",
+"message": "evidence -> PASS: index.md generated; screenshots present=21, missing=0, logs missing=0",
+"duration_ms": 8.9651999999999994
+}
+{
+"ts": "2026-09-19T20:19:41+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:19:41+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "stage",
+"message": "evidence -> PASS: index.md generated; screenshots present=21, missing=0, logs missing=0",
+"duration_ms": 8.9991240000000001
+}
+{
+"ts": "2026-09-19T20:23:35+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:23:35+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "stage",
+"message": "evidence -> PASS: index.md generated; screenshots present=21, missing=0, logs missing=0",
+"duration_ms": 9.2207819999999998
+}
+{
+"ts": "2026-09-19T20:25:02+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "context",
+"message": "experiment_root=/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT env_root=/home/violet/Workspace/IDE/Physical_AI config_sha256=e89e2540cd81310e"
+}
+{
+"ts": "2026-09-19T20:25:02+08:00",
+"level": "INFO",
+"stage": "evidence",
+"module": "stage",
+"message": "evidence -> PASS: index.md generated; screenshots present=21, missing=0, logs missing=0",
+"duration_ms": 9.730836
+}

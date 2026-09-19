@@ -1,0 +1,10 @@
+# Stage S3 version lock
+# timestamp: 2026-09-19T19:51:35+08:00
+
+$ /home/violet/Workspace/miniconda/bin/conda env export -n lerobot_act --no-builds > /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/configs/conda_env.lock.yml
+[exit=0]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -m pip freeze > /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/logs/pip_freeze.txt
+[exit=0]
+
+conda lock bytes: 3277
+pip freeze bytes: 1942

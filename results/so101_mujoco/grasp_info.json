@@ -1,0 +1,48 @@
+{
+  "grasp_frame": 169,
+  "grasp_xyz": [
+    0.02149375311521529,
+    -0.260862526630649,
+    -0.1514377040393231
+  ],
+  "ee_min_z": -0.1514377040393231,
+  "ee_max_z": 0.12789100200963738,
+  "ee_start_z": 0.0943470999133852,
+  "ee_end_z": 0.09481402215815338,
+  "surface_z": -0.16465115676569506,
+  "object_xyz": [
+    0.02149375311521529,
+    -0.260862526630649,
+    -0.1494377040393231
+  ],
+  "object_half_size": 0.013213452726371947,
+  "object_size_mode": "auto(\u5b9e\u6d4b\u6307\u57ab\u95f4\u9699)",
+  "pad_gap_at_grasp": 0.033858080534409744,
+  "pad_gap_min_carried": 0.02649313829849012,
+  "grasp_pad_center": [
+    0.02149375311521529,
+    -0.260862526630649,
+    -0.1514377040393231
+  ],
+  "object_lift": 0.002,
+  "scene_xml": "/home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/so101_mujoco/generated/so101_model/scene_with_object.xml",
+  "phases": {
+    "jaw_min": -0.20134222507476807,
+    "jaw_max": 19.19463086128235,
+    "close_threshold": 9.49664431810379,
+    "open_threshold": 11.436241626739502,
+    "grasp_frame": 169,
+    "release_frame": 226,
+    "carried_frames": 57
+  },
+  "episode_frames": 303,
+  "align_home": true,
+  "align_offsets_deg": [
+    1.9560878276824951,
+    -8.789347172761538,
+    8.969873906159975,
+    -15.134534358000181,
+    38.50138234994354,
+    1.4093959331512451
+  ]
+}

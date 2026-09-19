@@ -1,0 +1,29 @@
+<mujoco model="so101 lab scene">
+  <include file="so_arm100.xml"/>
+
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <!-- 离屏渲染缓冲：放宽上限，允许 800x600 等更高分辨率出图 -->
+    <global azimuth="120" elevation="-18" offwidth="1920" offheight="1080"/>
+  </visual>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+    <texture type="2d" name="tablestexture" builtin="checker" mark="edge" rgb1="0.35 0.36 0.38"
+      rgb2="0.28 0.29 0.31" markrgb="0.75 0.75 0.75" width="300" height="300"/>
+    <material name="tablemat" texture="tablestexture" texuniform="true" texrepeat="4 4" reflectance="0.1"/>
+  </asset>
+
+  <worldbody>
+    <light pos="0.3 -0.3 1.2" dir="-0.2 0.2 -1" directional="true"/>
+    <!-- 水平面：高度取自真实抓取高度（轨迹 FK 推断） -->
+    <geom name="surface" type="plane" pos="0 0 -0.164651" size="1.2 1.2 0.05" material="tablemat"/>
+    <!-- 目标物体：水平坐标 = 抓取点 xy，整体位于水平面之上 -->
+    <body name="target_object" pos="0.021494 -0.260863 -0.149438">
+      <freejoint name="object_free"/>
+      <geom name="object" type="box" size="0.0132 0.0132 0.0132"
+        rgba="0.90 0.25 0.20 1" contype="0" conaffinity="0"/>
+    </body>
+  </worldbody>
+</mujoco>

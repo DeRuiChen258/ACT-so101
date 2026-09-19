@@ -1,0 +1,11 @@
+{
+  "max_abs_diff": 0.0,
+  "relative": 0.0,
+  "shape": [
+    1,
+    100,
+    6
+  ],
+  "device": "cuda",
+  "action_scale": 108.8696060180674
+}

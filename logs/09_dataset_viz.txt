@@ -1,0 +1,7 @@
+# Stage S6 dataset visualization
+# timestamp: 2026-09-19T19:48:46+08:00
+
+montage from 8 real dataset frames -> /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/results/dataset_frames.png (exit=0)
+montage source: /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/artifacts/dataset_samples/frames_montage.ppm
+
+# viz 由受控脚本 scan_dataset_ref.py --viz-out 触发（同一调用点，避免新增 Python 进程）

@@ -1,0 +1,10 @@
+home align offsets (deg): [1.96, -8.79, 8.97, -15.13, 38.5, 1.41]
+window mode: model=/home/violet/Workspace/IDE/Physical_AI/third_party/mujoco_menagerie/trs_so_arm100/scene.xml episode=0 frames=303 fps=30
+DISPLAY=:0 MUJOCO_GL=glfw
+WINDOW_OPEN (window will close after the requested loops or when closed by user)
+loop 1 finished
+loop 2 finished
+loop 3 finished
+loop 4 finished
+loop 5 finished
+WINDOW_CLOSED

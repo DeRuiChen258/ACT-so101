@@ -1,0 +1,20 @@
+# Stage S12 checkpoint verification
+# timestamp: 2026-09-19T20:23:29+08:00
+checkpoint: /home/violet/Workspace/Code/Embedded_code/unitree_workspace/a_Visual_experiment/ACT/outputs/train/act_baseline/checkpoints/003000/pretrained_model
+job: act_baseline
+
+files:
+  - policy_postprocessor_step_0_unnormalizer_processor.safetensors (3740 bytes, sha256 234c8937ad146f01)
+  - policy_preprocessor_step_3_normalizer_processor.safetensors (3748 bytes, sha256 657a4800699e0050)
+  - policy_preprocessor.json (1324 bytes, sha256 c1054c40c6fdfd1a)
+  - train_config.json (7621 bytes, sha256 78a1ad749e4de562)
+  - policy_postprocessor.json (660 bytes, sha256 648b415125a183df)
+  - config.json (1697 bytes, sha256 7c96d9faf048c290)
+  - model.safetensors (206699768 bytes, sha256 1a78481baa98e91c)
+
+has_weights=true has_config=true
+
+===== export =====
+run_process: execvp failed for /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python: No such file or directory
+
+[exit=127]

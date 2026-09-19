@@ -1,0 +1,54 @@
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\''act'\''); cfg = make_policy_config('\''act'\''); print('\''policy_class'\'', cls.__name__); print('\''config_class'\'', type(cfg).__name__); print('\''chunk_size'\'', cfg.chunk_size); print('\''n_action_steps'\'', cfg.n_action_steps); print('\''dim_model'\'', cfg.dim_model); print('\''ACTPOLICY_OK'\'')'
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+policy_class ACTPolicy
+config_class ACTConfig
+chunk_size 100
+n_action_steps 100
+dim_model 512
+ACTPOLICY_OK
+[exit_code=0 duration_ms=2503.48]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\''act'\''); cfg = make_policy_config('\''act'\''); print('\''policy_class'\'', cls.__name__); print('\''config_class'\'', type(cfg).__name__); print('\''chunk_size'\'', cfg.chunk_size); print('\''n_action_steps'\'', cfg.n_action_steps); print('\''dim_model'\'', cfg.dim_model); print('\''ACTPOLICY_OK'\'')'
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+policy_class ACTPolicy
+config_class ACTConfig
+chunk_size 100
+n_action_steps 100
+dim_model 512
+ACTPOLICY_OK
+[exit_code=0 duration_ms=2510.3]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\''act'\''); cfg = make_policy_config('\''act'\''); print('\''policy_class'\'', cls.__name__); print('\''config_class'\'', type(cfg).__name__); print('\''chunk_size'\'', cfg.chunk_size); print('\''n_action_steps'\'', cfg.n_action_steps); print('\''dim_model'\'', cfg.dim_model); print('\''ACTPOLICY_OK'\'')'
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+policy_class ACTPolicy
+config_class ACTConfig
+chunk_size 100
+n_action_steps 100
+dim_model 512
+ACTPOLICY_OK
+[exit_code=0 duration_ms=2499.11]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\''act'\''); cfg = make_policy_config('\''act'\''); print('\''policy_class'\'', cls.__name__); print('\''config_class'\'', type(cfg).__name__); print('\''chunk_size'\'', cfg.chunk_size); print('\''n_action_steps'\'', cfg.n_action_steps); print('\''dim_model'\'', cfg.dim_model); print('\''ACTPOLICY_OK'\'')'
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+policy_class ACTPolicy
+config_class ACTConfig
+chunk_size 100
+n_action_steps 100
+dim_model 512
+ACTPOLICY_OK
+[exit_code=0 duration_ms=2543.94]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\''act'\''); cfg = make_policy_config('\''act'\''); print('\''policy_class'\'', cls.__name__); print('\''config_class'\'', type(cfg).__name__); print('\''chunk_size'\'', cfg.chunk_size); print('\''n_action_steps'\'', cfg.n_action_steps); print('\''dim_model'\'', cfg.dim_model); print('\''ACTPOLICY_OK'\'')'
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+policy_class ACTPolicy
+config_class ACTConfig
+chunk_size 100
+n_action_steps 100
+dim_model 512
+ACTPOLICY_OK
+[exit_code=0 duration_ms=2448.77]
+$ /home/violet/Workspace/miniconda/envs/lerobot_act/bin/python -c 'from lerobot.policies.factory import get_policy_class, make_policy_config; cls = get_policy_class('\''act'\''); cfg = make_policy_config('\''act'\''); print('\''policy_class'\'', cls.__name__); print('\''config_class'\'', type(cfg).__name__); print('\''chunk_size'\'', cfg.chunk_size); print('\''n_action_steps'\'', cfg.n_action_steps); print('\''dim_model'\'', cfg.dim_model); print('\''ACTPOLICY_OK'\'')'
+WARNING:lerobot.configs.policies:Device 'None' is not available. Switching to 'cuda'.
+policy_class ACTPolicy
+config_class ACTConfig
+chunk_size 100
+n_action_steps 100
+dim_model 512
+ACTPOLICY_OK
+[exit_code=0 duration_ms=2631.63]

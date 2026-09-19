@@ -1,0 +1,18 @@
+# Stage S1 repo probe
+# timestamp: 2026-09-19T19:09:07+08:00
+
+repo already present (reused, not re-cloned)
+commit      : c73cec56b04f50ebe9286c79905103866d970169
+branch      : main
+describe    : c73cec5
+remote      : https://gitcode.com/GitHub_Trending/le/lerobot.git
+status      : (clean)
+pyproject   : version = "0.6.2" | requires-python = ">=3.12"
+torch req   :     "torch>=2.7,<2.12.0",
+tv req      :     "torchvision>=0.22.0,<0.27.0",
+training    : training = [
+src files   : policies=174 datasets=27 scripts=21
+ACT impl    : /home/violet/Workspace/IDE/Physical_AI/repo/src/lerobot/policies/act
+  - configuration_act.py : present (sha256 35a60c0dd3c811b1, 8697 bytes)
+  - modeling_act.py : present (sha256 8d622935319af7d0, 35219 bytes)
+  - processor_act.py : present (sha256 247d3b13c93568c1, 1991 bytes)

@@ -1,0 +1,12 @@
+# ==============================================================================
+# runtime.yaml — 运行期参数（超时预算、采样间隔、OOM 降级顺序）
+# ==============================================================================
+
+runtime:
+  log_level: info
+  metric_sample_interval: 10
+  smoke_steps: 100
+  default_timeout_seconds: 900
+  train_timeout_seconds: 14400
+  max_parallel_subprocess: 2
+  oom_ladder: batch,resolution,workers,precision
